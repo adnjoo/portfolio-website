@@ -115,6 +115,11 @@ img {
     transform:scale(1.3);
 }
 
+#footer{
+    margin-bottom: 30px;
+    color: red;
+}
+
 /* media queries */
 @media(max-width:780px){
     #experience {
