@@ -102,6 +102,7 @@ img {
     height:35%;
     display: inline;
     border-radius: 20px;
+    box-shadow: 3px 3px 3px grey;
 }
 
 
