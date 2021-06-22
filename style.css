@@ -118,7 +118,7 @@ img {
 /* media queries */
 @media(max-width:780px){
     #experience {
-        padding:0 100px;
+        padding:0 60px;
     }
     .section-1 {
         height:300px;
