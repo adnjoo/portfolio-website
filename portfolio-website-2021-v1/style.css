@@ -6,6 +6,10 @@
     outline: 1px solid red;
 } */
 
+#profile {
+    max-height:150px;
+}
+
 .grid-2{
     height:70%;
     display: grid;
