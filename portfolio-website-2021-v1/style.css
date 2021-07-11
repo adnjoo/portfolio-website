@@ -8,6 +8,11 @@
 
 #profile {
     max-height:150px;
+    transition: 0.2s;
+}
+
+#profile:hover {
+    transform: scale(1.02);
 }
 
 .grid-2{
