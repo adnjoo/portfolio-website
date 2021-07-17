@@ -1,4 +1,5 @@
 # portfolio-website
-I made this website to practice H/C/J
+
+> portfolio site
 
 ## [Link](https://adnjoo.com/portfolio-website-2021-v1/index.html)
