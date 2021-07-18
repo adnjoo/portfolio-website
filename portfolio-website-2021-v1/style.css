@@ -143,9 +143,9 @@ img {
         padding-top: 5rem;
     }
     .section-2{
-        padding: 0 20px;
+        /* padding: 0 20px; */
         padding-top: 2rem;
-        width: 90%;
+        /* width: 90%; */
         text-align: center;
     }
     .section-2 a{
