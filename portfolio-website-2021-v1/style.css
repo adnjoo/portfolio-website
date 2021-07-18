@@ -18,7 +18,7 @@
 .grid-2{
     height:70%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
 }
 
 
@@ -31,10 +31,6 @@ body{
     color: black;
 }
 
-/* h2,.white{
-    color: #000000;
-} */
-
 a{
     color: black;
     text-decoration: none;
@@ -42,7 +38,7 @@ a{
 /* section 1 */
 .section-1{
     height:60%;
-    padding-top: 25vh;
+    padding-top: 10vh;
     text-align: center;
     max-height: 800px;
 }
@@ -65,8 +61,9 @@ a{
 /* section 2 */
 .section-2{
     height:80%;
-    padding-top: 10vh;
-    width: 85%;
+    padding-top: 1vh;
+    width: 100%;
+    text-align: center;
 }
 
 .section-2 h2{
@@ -108,7 +105,7 @@ a{
 }
 
 img {
-    height:35%;
+    height:80%;
     display: inline;
     border-radius: 20px;
     box-shadow: 3px 3px 3px grey;
