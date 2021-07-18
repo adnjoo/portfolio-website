@@ -22,5 +22,3 @@ let x= document.getElementById('typed');
 x.setAttribute('style','font-size:1.2em')
 
 
-
-M.toast({html: '😃 hi!'})
