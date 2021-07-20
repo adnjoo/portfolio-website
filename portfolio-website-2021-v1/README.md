@@ -4,4 +4,4 @@
 
 Description: I made this website to practice H/C/J.
 
-using tailwind css
+Libraries used: tailwind
