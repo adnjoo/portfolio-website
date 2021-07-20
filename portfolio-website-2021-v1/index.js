@@ -11,7 +11,7 @@ profile.addEventListener("click", function () {
 
 
 var typed = new Typed('#typed',{
-  strings : ['Hi, ^2000 my name is drew. ^2000', 'I like making stuff.'],
+  strings : ['Hi, ^2000 my name is drew.^2000', 'I like making stuff.'],
   typeSpeed : 40,
   backSpeed: 20,
   loop : false,
