@@ -18,7 +18,7 @@
   <section id='sidebar'>
     <div class='inner navbar'>
       <nav>
-        Andrew's Site<br><br><br>
+        adnjoo<br><br><br>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a><br>
@@ -44,25 +44,43 @@
 
     <!-- Intro -->
     <section id='about'>
-      <div id='mycontainer'>
-        <h1>adnjoo</h1>
-        <h4 class='element'></h4>
+      <div class='parent' id='mycontainer'>
+          <h2>Andrew Njoo</h2>
+          <div id='typedcontainer'>
+            <h4 class='element'></h4>
+          </div>
+          <br>
+          <img src='https://raw.githubusercontent.com/adnjoo/portfolio-website/main/portfolio-website-2021-v1/pic.jpeg'
+          class='profilepic'
+          >
+          <div class='child' id='bottomarrow'>
+            <a href='#experience'>
+              <i class="fas fa-arrow-circle-down fa-2x"></i>
+            </a>
+          </div>
       </div>
     </section>
     <section id='experience'>
-      <h4 class='title'>Experience:</h4>
-      <div id='mycontainer'>
-        <p style='padding-right: 50px;'>
-          I've always been interested by technology.<br> I find it really cool
-          that you can make stuff with creativity + logic.<br>
-          In 2021 I did the DevMtn bootcamp to boost my skills in web development.
+      <div class='parent' id='mycontainer'>
+        <h4 class=''>Experience:</h4>
+        <br>
+        <p class='experiencetext'>
+          I've always been interested in technology.<br><br>
+          In 2021 I decided to pursue the DevMtn bootcamp to boost my skills in web development.
         </p>
+        <div class='child' id='bottomarrow'>
+          <a href='#skills'>
+            <i class="fas fa-arrow-circle-down fa-2x"></i>
+          </a>
+        </div>
+
       </div>
     </section>
     <section id='skills'>
-      <h4 class='title'>Skills:</h4>
-      <div id='mycontainer' style='padding-left: 50px;'>
-        <table class='table table-borderless' style='width:60%'>
+      <div class='skillscontainer parent' id='mycontainer'>
+        <h4 class=''>Skills:</h4>
+        <br>
+        <table class='table table-borderless mytable'>
           <tbody>
             <tr>
               <td>
@@ -107,24 +125,41 @@
               </tr>
             </tbody>
           </table>
+      <div class='child' id='bottomarrow'>
+        <a href='#projects'>
+          <i class="fas fa-arrow-circle-down fa-2x"></i>
+        </a>
+      </div>
       </div>
     </section>
     <section id='projects'>
-      <h4 class='title'>Projects:</h4>
-      <div id='mycontainer'>
+      <div class='parent' id='mycontainer'>
+        <h4 class=''>Projects:</h4>
+        <br>
         <p>
           <a href='https://adnjoo.github.io/movie-app/'>
             Movie App (full stack app)
             <br>
             <img class='projectimg' src='https://raw.githubusercontent.com/adnjoo/movie-app/main/v0.0.0.3.png'>
           </a>
-          <br>
+          <br><br>
           <a href='https://adnjoo.github.io/weather-app/'>
             Weather App (React)
             <br>
             <img class='projectimg' src='https://raw.githubusercontent.com/adnjoo/weather-app/master/scrn4.png'>
           </a>
+          <br><br>
+          <a href='https://adnjoo.github.io/ExpenseTracker'>
+            ExpenseTracker (Ruby on Rails)
+            <br>
+            <img class='projectimg' src='https://raw.githubusercontent.com/adnjoo/ExpenseTracker/main/scrn3.png'>
+          </a>
         </p>
+      <div class='child' id='bottomarrow'>
+        <a href='#about'>
+          <i class="fas fa-arrow-circle-up fa-2x"></i>
+        </a>
+      </div>
       </div>
     </section>
     <footer>
@@ -137,7 +172,7 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     var options = {
-      strings: ['<i>Hi my name is Andrew Njoo</i>.', "I'm a full stack web developer." ],
+      strings: ['<i>Hello, ^1000 my name is Andrew</i>.', "I'm a web developer." ],
       typeSpeed: 60,
       backSpeed: 40,
       // showCursor: false

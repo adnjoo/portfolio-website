@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
-body{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .navbar {
   position: fixed;
@@ -9,8 +10,8 @@ body{
   /* top: 0; */
   background-color: E9C46A;
   z-index: 10000;
-  opacity:1;
-  display:flex;
+  opacity: 1;
+  display: flex;
 }
 
 nav {
@@ -24,16 +25,9 @@ nav {
   margin-left: 150px;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: 2A9D8F;
-  }
-  .navbar {
-    opacity: 0;
-  }
-  #wrapper {
-    margin-left: 0px;
-  }
+#mycontainer {
+  margin-left: 50px;
+  padding-top: 50px;
 }
 
 #about {
@@ -41,10 +35,6 @@ nav {
   background-color: F6F0ED;
 }
 
-#mycontainer {
-  margin-left: 50px;
-  padding-top: 50px;
-}
 
 #experience {
   height: 100%;
@@ -61,25 +51,29 @@ nav {
   background-color: E76F51;
 }
 
-footer{
+footer {
   padding-left: 50px;
-  height:30px;
+  height: 30px;
   background-color: d7f2ba;
+  text-align: center;
 }
 
 .element {
   display: inline;
 }
 
+#typedcontainer {
+  height: 10px;
+}
 
 a {
   text-decoration: none;
   color: black;
-  font-weight:500;
+  font-weight: 500;
 }
 
-a:hover{
-  color:2A9D8F;
+a:hover {
+  color: rebeccapurple;
   font-weight: 600;
 }
 
@@ -88,11 +82,88 @@ td {
 }
 
 .title {
-  padding-top:50px;
+  padding-top: 50px;
   padding-left: 50px;
 }
 
 .projectimg {
-  width:100px;
-  margin-left:50px;
+  width: 100px;
+  margin-left: 50px;
+}
+
+.profilepic {
+  padding-top: 30px;
+  max-height: 300px;
+  border-radius: 50px;
+}
+
+p {
+  font-size: 1.3em;
+
+}
+
+.experiencetext {
+  padding-right: 50px;
+}
+
+.mytable {
+  width:80%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .experiencetext {
+    padding-right: 0;
+    margin:0 10px 0 10px;
+  }
+  body {
+    background-color: 2a9d8f;
+  }
+  .navbar {
+    opacity: 0;
+    display: none;
+  }
+  #wrapper {
+    margin-left: 0px;
+  }
+
+  #mycontainer{
+    /* margin-left:40px; */
+    margin-left:0;
+    text-align: center;
+  }
+
+  .title {
+    padding-left: 0px;
+    text-align: center;;
+  }
+
+  #about, #experience, #skills, #projects {
+    height:80%;
+  }
+  .mytable {
+    margin: auto;
+  }
+  .profilepic {
+    max-height:220px;
+  }
+
+  .projectimg {
+    margin-left:0px;
+    padding-top:20px;
+  }
+}
+
+
+.parent{
+  position:relative;
+  height:100%;
+}
+
+.child {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width:100%;
 }
