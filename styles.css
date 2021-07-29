@@ -36,7 +36,6 @@ nav {
   /* text-align:center; */
 }
 
-
 #experience {
   height: 100%;
   background-color: F4A261;
@@ -140,8 +139,12 @@ p {
     text-align: center;;
   }
 
-  #about, #experience, #skills, #projects {
+  #about, #experience, #skills {
     height:80%;
+  }
+
+  #projects{
+    height:90%;
   }
   .mytable {
     margin: auto;
@@ -167,4 +170,7 @@ p {
   bottom: 10px;
   text-align: center;
   width:100%;
+}
+
+#bottomarrowlast {
 }
