@@ -1,3 +1,9 @@
+/* smooth scrolling */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -144,7 +150,7 @@ p {
   }
 
   #projects{
-    height:90%;
+    height:100%;
   }
   .mytable {
     margin: auto;
@@ -170,7 +176,4 @@ p {
   bottom: 10px;
   text-align: center;
   width:100%;
-}
-
-#bottomarrowlast {
 }
