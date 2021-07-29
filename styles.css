@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.navbar {
+  position: fixed;
+  height: 100%;
+  width: 150px;
+  /* top: 0; */
+  background-color: E9C46A;
+  z-index: 10000;
+  opacity:1;
+  display:flex;
+}
+
+nav {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+#wrapper {
+  position: relative;
+  margin-left: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: 2A9D8F;
+  }
+  .navbar {
+    opacity: 0;
+  }
+  #wrapper {
+    margin-left: 0px;
+  }
+}
+
+#about {
+  height: 100%;
+  background-color: F6F0ED;
+}
+
+#mycontainer {
+  margin-left: 50px;
+  padding-top: 50px;
+}
+
+#experience {
+  height: 100%;
+  background-color: F4A261;
+}
+
+#skills {
+  height: 100%;
+  background-color: 2a9d8f;
+}
+
+#projects {
+  height: 100%;
+  background-color: E76F51;
+}
+
+footer{
+  padding-left: 50px;
+  height:30px;
+  background-color: d7f2ba;
+}
+
+.element {
+  display: inline;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight:500;
+}
+
+a:hover{
+  color:2A9D8F;
+  font-weight: 600;
+}
+
+td {
+  text-align: center;
+}
+
+.title {
+  padding-top:50px;
+  padding-left: 50px;
+}
+
+.projectimg {
+  width:100px;
+  margin-left:50px;
+}
