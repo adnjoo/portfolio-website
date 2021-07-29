@@ -2,6 +2,6 @@
 
 > portfolio site
 
-## [Link](https://adnjoo.com/portfolio-website-2021-v1/index.html)
+## [Link](https://adnjoo.github.io/portfolio-website)
 
 Technology: tailwind, and typed.js
