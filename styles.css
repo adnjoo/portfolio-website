@@ -60,7 +60,7 @@ nav {
 footer {
   padding-left: 50px;
   height: 30px;
-  background-color: d7f2ba;
+  background-color: f6f0ed;
   text-align: center;
 }
 
@@ -124,7 +124,7 @@ p {
     margin:0 10px 0 10px;
   }
   body {
-    background-color: 2a9d8f;
+    background-color: #f6f0ed;
   }
   .navbar {
     opacity: 0;
