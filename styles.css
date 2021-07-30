@@ -39,22 +39,25 @@ nav {
 #about {
   height: 100%;
   background-color: F6F0ED;
-  /* text-align:center; */
+  min-height: 500px;
 }
 
 #experience {
   height: 100%;
   background-color: F4A261;
+  min-height: 400px;
 }
 
 #skills {
   height: 100%;
   background-color: 2a9d8f;
+  min-height: 500px;
 }
 
 #projects {
   height: 100%;
   background-color: E76F51;
+  min-height: 700px;
 }
 
 footer {
