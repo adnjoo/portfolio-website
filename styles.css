@@ -179,7 +179,7 @@ p {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #04AA6D;
+  background-color: #212529;
   color: white;
 }
 
