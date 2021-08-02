@@ -98,6 +98,12 @@ td {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  border-radius: 20px;
+  transition: all 1s ease-in-out
+}
+
+.projectimg:hover{
+  transform:scale(1.07)
 }
 
 .profilepic {
@@ -179,10 +185,6 @@ p {
     max-height:220px;
   }
 
-  .projectimg {
-    margin-left:0px;
-    padding-top:20px;
-  }
 }
 
 .parent{
