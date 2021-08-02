@@ -25,8 +25,10 @@
       <a class='mobilemenu' href="#skills">Skills</a>
       <a class='mobilemenu' href="#projects">Projects</a>
       <a class="nav-link mobilemenu" href="http://github.com/adnjoo" target="_blank"><i class="fab fa-github"></i></a>
-        <a class="nav-link mobilemenu" href="https://twitter.com/adnjoo" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a class="nav-link mobilemenu" href="https://linkedin.com/in/adnjoo" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="nav-link mobilemenu" href="https://twitter.com/adnjoo" target="_blank"><i
+          class="fab fa-twitter"></i></a>
+      <a class="nav-link mobilemenu" href="https://linkedin.com/in/adnjoo" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
     </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -34,12 +36,9 @@
     </a>
   </div>
   <!-- navbar -->
-  <nav id="navbar" class="navbar navbar-light bg-dark px-3"
-  style='align-items: flex-start;'>
+  <nav id="navbar" class="navbar navbar-light bg-dark px-3" style='align-items: flex-start;'>
 
-    <a href="#" class="text-light navbar-brand"
-    style='display:block; padding: .5rem 1rem;margin-top:30px'
-    >adnjoo</a>
+    <a href="#" class="text-light navbar-brand" style='display:block; padding: .5rem 1rem;margin-top:30px'>adnjoo</a>
     <ul class="nav nav-pills flex-column">
       <li class="nav-item">
         <a class="nav-link" href="#about">About</a>
@@ -54,15 +53,12 @@
         <a class="nav-link" href="#projects">Projects</a>
       </li>
       <li class="nav-item list-inline-item" style='margin-top:20px'>
-        <a class="nav-link" href="http://github.com/adnjoo"
-        style='display:inline;padding: 0.5rem 0 0.5rem 1rem;'
-        target="_blank"><i class="fab fa-github"></i></a>
-        <a class="nav-link" href="https://twitter.com/adnjoo"
-        style='display:inline;padding: 0.5rem 0rem'
-        target="_blank"><i class="fab fa-twitter"></i></a>
-        <a class="nav-link" href="https://linkedin.com/in/adnjoo"
-        style='display:inline;padding: 0.5rem 0rem'
-        target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="nav-link" href="http://github.com/adnjoo" style='display:inline;padding: 0.5rem 0 0.5rem 1rem;'
+          target="_blank"><i class="fab fa-github"></i></a>
+        <a class="nav-link" href="https://twitter.com/adnjoo" style='display:inline;padding: 0.5rem 0rem'
+          target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="nav-link" href="https://linkedin.com/in/adnjoo" style='display:inline;padding: 0.5rem 0rem'
+          target="_blank"><i class="fab fa-linkedin"></i></a>
       </li>
     </ul>
   </nav>
@@ -89,7 +85,7 @@
     <!-- Experience -->
     <section id='experience'>
       <div class='parent' id='mycontainer'>
-        <h4 >Experience:</h4>
+        <h4>Experience:</h4>
         <br>
         <p class='experiencetext'>
           I've always been interested in technology.<br><br>
@@ -105,7 +101,7 @@
     <!-- Skills -->
     <section id='skills'>
       <div class='skillscontainer parent' id='mycontainer'>
-        <h4 >Skills:</h4>
+        <h4>Skills:</h4>
         <br>
         <table class='table table-borderless mytable'>
           <tbody>
@@ -217,7 +213,7 @@
       strings: ['<i>Hello, ^1000 my name is Andrew</i>.', "I'm a web developer.^3000"],
       typeSpeed: 60,
       backSpeed: 40,
-      loop:true
+      loop: true
       // showCursor: false
     };
     var typed = new Typed('.element', options);
@@ -225,23 +221,23 @@
 
 
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-let x = document.getElementById("myLinks");
-function myFunction() {
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    let x = document.getElementById("myLinks");
+    function myFunction() {
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
 
-const navLinks = document.querySelectorAll('.mobilemenu')
-navLinks.forEach((l) => {
-  l.addEventListener('click',()=>{
-    console.log('test')
-    x.style.display='none'
-  })
-})
+    const navLinks = document.querySelectorAll('.mobilemenu')
+    navLinks.forEach((l) => {
+      l.addEventListener('click', () => {
+        console.log('test')
+        x.style.display = 'none'
+      })
+    })
   </script>
 </body>
 
