@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
 /* smooth scrolling */
 * {
   -webkit-overflow-scrolling: touch;
@@ -6,29 +8,16 @@
 #navbar {
   height:100%;
   width:150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   position:relative;
-}
-/* .navbar {
-  position: fixed;
-  height: 100%;
-  width: 150px;
-  /* top: 0; */
-  background-color: E9C46A;
-  z-index: 10000;
-  opacity: 1;
-  display: flex;
-} */
-
-nav {
-  margin: auto;
-  width: 70%;
-  text-align: center;
 }
 
 #wrapper {
@@ -40,7 +29,6 @@ nav {
   margin-left: 150px;
   padding-top: 60px;
 }
-
 
 #about {
   height: 100%;
@@ -118,7 +106,6 @@ td {
 
 p {
   font-size: 1.3em;
-
 }
 
 .experiencetext {
@@ -131,9 +118,8 @@ p {
   margin:auto;
 }
 
-
+/* responsive */
 @media only screen and (max-width: 600px) {
-
   .experiencetext {
     padding-right: 0;
     padding-left: 0;
@@ -180,7 +166,6 @@ p {
     padding-top:20px;
   }
 }
-
 
 .parent{
   position:relative;
