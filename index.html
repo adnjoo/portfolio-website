@@ -1,275 +1,361 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>adnjoo</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- glide js css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+      integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-	<title>adnjoo</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  <body class="is-preload">
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="container">
+        <li><a href="#top">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
+    <!-- Home -->
+    <article id="top" class="wrapper style1">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-5-large col-12-medium">
+            <span class="image fit"
+              ><img
+                src="https://avatars.githubusercontent.com/u/22807629?v=4"
+                alt=""
+            /></span>
+          </div>
+          <div class="col-8 col-7-large col-12-medium">
+            <header>
+              <h1>Hi. I'm <strong>Andrew Njoo</strong>.</h1>
+            </header>
+            <p>And I'm a <strong>Software Engineer.</strong></p>
+            <a href="#skills" class="button large scrolly"
+              >Learn about what I do</a
+            >
+          </div>
+        </div>
+      </div>
+    </article>
 
-</head>
+    <!-- Work -->
+    <article id="skills" class="wrapper style2">
+      <div class="container">
+        <header>
+          <h2>Skills</h2>
+        </header>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="col-4 col-6-medium col-12-small">
+                  <section class="box style1">
+                    <span
+                      class="fab fa-react fa-5x"
+                      style="color: #5ed2f3"
+                    ></span>
+                    <h3>React</h3>
+                  </section>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="col-4 col-6-medium col-12-small">
+                  <section class="box style1">
+                    <span
+                      class="fab fa-js-square fa-5x"
+                      style="color: #efd81d"
+                    ></span>
+                    <h3>Javascript</h3>
+                  </section>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="col-4 col-6-medium col-12-small">
+                  <section class="box style1">
+                    <span
+                      class="fab fa-node-js fa-5x"
+                      style="color: #7fbc02"
+                    ></span>
+                    <h3>Node.js</h3>
+                  </section>
+                </div>
+              </li>
 
-<body class="is-preload">
+              <li class="glide__slide">
+                <div class="col-4 col-6-medium col-12-small">
+                  <section class="box style1">
+                    <span
+                      class="fab fa-python fa-5x"
+                      style="color: #356c9b"
+                    ></span>
+                    <h3>Python</h3>
+                  </section>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="col-4 col-6-medium col-12-small">
+                  <section class="box style1">
+                    <span
+                      class="fab fa-html5 fa-5x"
+                      style="color: #e96228"
+                    ></span>
+                    <h3>HTML5</h3>
+                  </section>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="col-4 col-6-medium col-12-small">
+                  <section class="box style1">
+                    <span
+                      class="fab fa-css3 fa-5x"
+                      style="color: #264bdd"
+                    ></span>
+                    <h3>CSS3</h3>
+                  </section>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="col-4 col-6-medium col-12-small">
+                  <section class="box style1">
+                    <span class="fab fa-git fa-5x" style="color: tomato"></span>
+                    <h3>Git</h3>
+                  </section>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="col-4 col-6-medium col-12-small">
+                  <section class="box style1">
+                    <span
+                      class="fas fa-gem fa-5x"
+                      style="color: #c60000"
+                    ></span>
+                    <h3>Ruby</h3>
+                  </section>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="col-4 col-6-medium col-12-small">
+                  <section class="box style1">
+                    <span
+                      class="fas fa-road fa-5x"
+                      style="color: #8e0d15"
+                    ></span>
+                    <h3>Rails</h3>
+                  </section>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row aln-center"></div>
+        <footer>
+          <a href="#portfolio" class="button large scrolly"
+            >See some of my recent work</a
+          >
+        </footer>
+      </div>
+    </article>
 
-	<!-- Nav -->
-	<nav id="nav">
-		<ul class="container">
-			<li><a href="#top">About</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
+    <!-- Portfolio -->
+    <article id="portfolio" class="wrapper style3">
+      <div class="container">
+        <header>
+          <h2>Here’s some stuff I made recently.</h2>
+        </header>
+        <div class="row">
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://github.com/adnjoo/movie-app"
+                class="image featured"
+                ><img
+                  src="https://raw.githubusercontent.com/adnjoo/movie-app/main/v0.0.0.3.png"
+                  alt=""
+                  style="max-height: 240px; object-fit: cover"
+              /></a>
+              <h3>
+                <a href="https://github.com/adnjoo/movie-app">Movie app</a>
+              </h3>
+              <p>Made with reactjs, express, postgres.</p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://github.com/adnjoo/expensetracker"
+                class="image featured"
+                ><img
+                  src="https://raw.githubusercontent.com/adnjoo/ExpenseTracker/main/scrn3.png"
+                  alt=""
+                  style="max-height: 240px; object-fit: cover"
+              /></a>
+              <h3>
+                <a href="https://github.com/adnjoo/expensetracker"
+                  >ExpenseTracker</a
+                >
+              </h3>
+              <p>Ruby on Rails app using postgres.</p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://github.com/adnjoo/weather-app"
+                class="image featured"
+                ><img
+                  src="https://raw.githubusercontent.com/adnjoo/weather-app/master/scrn4.png"
+                  alt=""
+                  style="max-height: 240px; object-fit: cover"
+              /></a>
+              <h3>
+                <a href="https://github.com/adnjoo/weather-app">Weather App</a>
+              </h3>
+              <p>Made with reactjs.</p>
+            </article>
+          </div>
+        </div>
+        <footer>
+          <a href="#contact" class="button large scrolly"
+            >Get in touch with me</a
+          >
+        </footer>
+      </div>
+    </article>
 
-	<!-- Home -->
-	<article id="top" class="wrapper style1">
-		<div class="container">
-			<div class="row">
-				<div class="col-4 col-5-large col-12-medium">
-					<span class="image fit"><img src="https://avatars.githubusercontent.com/u/22807629?v=4" alt="" /></span>
-				</div>
-				<div class="col-8 col-7-large col-12-medium">
-					<header>
-						<h1>Hi. I'm <strong>Andrew Njoo</strong>.</h1>
-					</header>
-					<p>And I'm a <strong>Software Engineer.</strong></p>
-					<a href="#skills" class="button large scrolly">Learn about what I do</a>
-				</div>
-			</div>
-		</div>
-	</article>
+    <!-- Contact -->
+    <article id="contact" class="wrapper style4">
+      <div class="container medium">
+        <header>
+          <h2>Have me make stuff for you.</h2>
+        </header>
+        <div class="row">
+          <div class="col-12">
+            <form
+              method="post"
+              action="mailto:adnjoo@protonmail.com"
+              enctype="text/plain"
+              onsubmit="alertFunction()"
+            >
+              <div class="row">
+                <div class="col-6 col-12-small">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                </div>
+                <div class="col-6 col-12-small">
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <ul class="actions">
+                    <li><input type="submit" value="Send Message" /></li>
+                    <li>
+                      <input type="reset" value="Clear Form" class="alt" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-12">
+            <hr />
+            <h3>Find me on ...</h3>
+            <ul class="social">
+              <li>
+                <a
+                  href="https://twitter.com/adnjoo"
+                  class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/adnjoo"
+                  class="icon brands fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/adnjoo"
+                  class="icon brands fa-github"
+                  ><span class="label">Github</span></a
+                >
+              </li>
+            </ul>
+            <hr />
+          </div>
+        </div>
+        <footer>
+          <ul id="copyright">
+            <li>&copy; Andrew Njoo (2021)</li>
+          </ul>
+        </footer>
+      </div>
+    </article>
 
-	<!-- Work -->
-	<article id="skills" class="wrapper style2">
-		<div class="container">
-			<header>
-				<h2>Skills</h2>
-				<!-- <p>Odio turpis amet sed consequat eget posuere consequat.</p> -->
-			</header>
-			<div class="glide">
-				<div class="glide__track" data-glide-el="track">
-				  <ul class="glide__slides">
-					<li class="glide__slide">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="fab fa-react fa-5x" style='color: #5ed2f3'></span>
-								<h3>React</h3>
-								</section>
-						</div>
-					</li>
-					<li class="glide__slide">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="fab fa-js-square fa-5x" style='color: #efd81d'></span>
-								<h3>Javascript</h3>
-								</section>
-						</div>
-					</li>
-					<li class="glide__slide">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="fab fa-node-js fa-5x" style='color: #7fbc02'></span>
-								<h3>Node.js</h3>
-								</section>
-						</div>
-					</li>
-					
-					<li class="glide__slide">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="fab fa-python fa-5x" style='color: #356c9b'></span>
-								<h3>Python</h3>
-								</section>
-						</div>
-					</li>
-					<li class="glide__slide">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="fab fa-html5 fa-5x" style='color: #e96228'></span>
-								<h3>HTML5</h3>
-								</section>
-						</div>
-					</li>
-					<li class="glide__slide">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="fab fa-css3 fa-5x" style='color: #264bdd'></span>
-								<h3>CSS3</h3>
-								</section>
-						</div>
-					</li>
-					<li class="glide__slide">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="fab fa-git fa-5x" style='color: tomato'></span>
-								<h3>Git</h3>
-								</section>
-						</div>
-					</li>
-					<li class="glide__slide">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="fas fa-gem fa-5x" style='color: #c60000'></span>
-								<h3>Ruby</h3>
-								</section>
-						</div>
-					</li>
-					<li class="glide__slide">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="fas fa-road fa-5x" style='color: #8e0d15'></span>
-								<h3>Rails</h3>
-								</section>
-						</div>
-					</li>
-				  </ul>
-				</div>
-			  </div>
-
-
-			<div class="row aln-center">
-				
-				
-				
-			</div>
-			<footer>
-				<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-			</footer>
-		</div>
-	</article>
-
-	<!-- Portfolio -->
-	<article id="portfolio" class="wrapper style3">
-		<div class="container">
-			<header>
-				<h2>Here’s some stuff I made recently.</h2>
-			</header>
-			<div class="row">
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/adnjoo/movie-app" class="image featured"><img
-								src="https://raw.githubusercontent.com/adnjoo/movie-app/main/v0.0.0.3.png" alt=""
-								style='max-height:240px; object-fit: cover;' /></a>
-						<h3><a href="https://github.com/adnjoo/movie-app">Movie app</a></h3>
-						<p>Made with reactjs, express, postgres.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/adnjoo/expensetracker" class="image featured"><img
-								src="https://raw.githubusercontent.com/adnjoo/ExpenseTracker/main/scrn3.png" alt=""
-								style='max-height:240px; object-fit: cover;' /></a>
-						<h3><a href="https://github.com/adnjoo/expensetracker">ExpenseTracker</a></h3>
-						<p>Ruby on Rails app using postgres.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/adnjoo/weather-app" class="image featured"><img
-								src="https://raw.githubusercontent.com/adnjoo/weather-app/master/scrn4.png" alt=""
-								style='max-height:240px; object-fit: cover;' /></a>
-						<h3><a href="https://github.com/adnjoo/weather-app">Weather App</a></h3>
-						<p>Made with reactjs.</p>
-					</article>
-				</div>
-
-			</div>
-			<footer>
-				<a href="#contact" class="button large scrolly">Get in touch with me</a>
-			</footer>
-		</div>
-	</article>
-
-	<!-- Contact -->
-	<article id="contact" class="wrapper style4">
-		<div class="container medium">
-			<header>
-				<h2>Have me make stuff for you.</h2>
-			</header>
-			<div class="row">
-				<div class="col-12">
-					<form method="post" action="mailto:adnjoo@protonmail.com" enctype="text/plain"
-						onsubmit="alertFunction()">
-						<div class="row">
-							<div class="col-6 col-12-small">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-small">
-								<input type="text" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<input type="text" name="subject" id="subject" placeholder="Subject" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-									<li><input type="reset" value="Clear Form" class="alt" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="col-12">
-					<hr />
-					<h3>Find me on ...</h3>
-					<ul class="social">
-						<li><a href="https://twitter.com/adnjoo" class="icon brands fa-twitter"><span
-									class="label">Twitter</span></a></li>
-						<li><a href="https://www.linkedin.com/in/adnjoo" class="icon brands fa-linkedin-in"><span
-									class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/adnjoo" class="icon brands fa-github"><span
-									class="label">Github</span></a></li>
-
-
-					</ul>
-					<hr />
-				</div>
-			</div>
-			<footer>
-				<ul id="copyright">
-					<li>&copy; Andrew Njoo (2021)</li>
-				</ul>
-			</footer>
-		</div>
-	</article>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script>
-		const alertFunction = () => {
-			alert('Form submitted.')
-		}
-
-	</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script>
-		let glide = new Glide('.glide', {
-  type: 'carousel',
-  perView: 6,
-  focusAt: 'center',
-  breakpoints: {
-    800: {
-      perView: 2
-    },
-    480: {
-      perView: 1
-    }
-  }
-})
-glide.mount()
-		
-	  </script>
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Form submission function
+      const alertFunction = () => {
+        alert("Form submitted.");
+      };
+    </script>
+    <!-- glide js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
+    <script>
+      let glide = new Glide(".glide", {
+        type: "carousel",
+        perView: 6,
+        focusAt: "center",
+        breakpoints: {
+          800: {
+            perView: 2,
+          },
+          480: {
+            perView: 1,
+          },
+        },
+      });
+      glide.mount();
+    </script>
+  </body>
 </html>
