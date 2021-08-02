@@ -9,9 +9,13 @@
   height:100%;
   width:150px;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1000;
+  opacity:0;
+  transition: all 8s ease;
+}
+#navbar:hover {
+  opacity: 1;
+  transition: all 0.5s ease
 }
 
 body {
@@ -26,7 +30,7 @@ body {
 }
 
 #mycontainer {
-  margin-left: 150px;
+  /* margin-left: 150px; */
   padding-top: 60px;
 }
 
@@ -60,7 +64,7 @@ body {
 
 footer {
   /* padding-left: 50px; */
-  margin-left:150px;
+  /* margin-left:150px; */
   height: 30px;
   background-color: f6f0ed;
   text-align: center;
