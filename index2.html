@@ -15,10 +15,26 @@
 </head>
 
 <body data-bs-spy="scroll">
-  <nav id="navbar" class="navbar navbar-light bg-dark px-3
-  ">
-
-
+  <!-- mobile navbar -->
+  <div class="topnav fixed-top">
+    <a href="#" class="active">adnjoo</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-link" href="http://github.com/adnjoo" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="nav-link" href="https://twitter.com/adnjoo" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="nav-link" href="https://linkedin.com/in/adnjoo" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!-- navbar -->
+  <nav id="navbar" class="navbar navbar-light bg-dark px-3">
     <ul class="nav nav-pills flex-column">
       <li class="nav-item">
         <a class="nav-link" href="#about">About</a>
@@ -194,6 +210,19 @@
       // showCursor: false
     };
     var typed = new Typed('.element', options);
+
+
+
+
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
   </script>
 </body>
 
