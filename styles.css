@@ -32,32 +32,41 @@ nav {
 }
 
 #mycontainer {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   padding-top: 50px;
+}
+
+.projectscontainer {
+  margin:auto;
+  width:80%
 }
 
 #about {
   height: 100%;
   background-color: F6F0ED;
   min-height: 500px;
+  text-align: center;
 }
 
 #experience {
   height: 100%;
   background-color: F4A261;
   min-height: 400px;
+  text-align: center;
 }
 
 #skills {
   height: 100%;
   background-color: 2a9d8f;
   min-height: 500px;
+  text-align: center;
 }
 
 #projects {
   height: 100%;
   background-color: E76F51;
   min-height: 700px;
+  text-align: center;
 }
 
 footer {
@@ -97,7 +106,7 @@ td {
 
 .projectimg {
   width: 100px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 .profilepic {
@@ -113,10 +122,12 @@ p {
 
 .experiencetext {
   padding-right: 50px;
+  padding-left: 50px
 }
 
 .mytable {
   width:80%;
+  margin:auto;
 }
 
 
