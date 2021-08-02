@@ -8,8 +8,9 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position:relative;
 }
-.navbar {
+/* .navbar {
   position: fixed;
   height: 100%;
   width: 150px;
@@ -18,7 +19,7 @@ body {
   z-index: 10000;
   opacity: 1;
   display: flex;
-}
+} */
 
 nav {
   margin: auto;
@@ -28,12 +29,12 @@ nav {
 
 #wrapper {
   position: relative;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 #mycontainer {
   /* margin-left: 50px; */
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .projectscontainer {
