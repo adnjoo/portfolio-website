@@ -4,4 +4,4 @@
 
 ## [Link](https://adnjoo.github.io/portfolio-website)
 
-Technology: tailwind, and typed.js
+Technologies: Bootstrap, typed.js, fontawesome, HTML, CSS, JS
