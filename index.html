@@ -188,7 +188,9 @@
       </header>
       <div class="row">
         <div class="col-12">
-          <form method="post" action="https://mailto:adnjoo@protonmail.com" enctype="text/plain" onsubmit="alertFunction()">
+          <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+          <form method="post" target="dummyframe" action="mailto:adnjoo@protonmail.com" enctype="text/plain"
+            onsubmit="alertFunction(e)">
             <div class="row">
               <div class="col-6 col-12-small">
                 <input type="text" name="name" id="name" placeholder="Name" />
@@ -230,9 +232,9 @@
             <br>
             <h3>Resume:</h3>
             <li>
-              <a href="https://docs.google.com/document/d/1FP8dyISChCaGzRYDxEFewaMmbrfmPNe-3R-RSbH3l-I/edit?usp=sharing" class="icon far fa-file"
-              style='background-color: white;'>
-              <span class="label">Resume</span></a>
+              <a href="https://docs.google.com/document/d/1FP8dyISChCaGzRYDxEFewaMmbrfmPNe-3R-RSbH3l-I/edit?usp=sharing"
+                class="icon far fa-file" style='background-color: white;'>
+                <span class="label">Resume</span></a>
             </li>
           </ul>
           <hr />
@@ -253,19 +255,20 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <!-- typed js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js" ></script>
+  <!-- typewriter js -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script>
     // Form submission function
-    const alertFunction = () => {
+    const alertFunction = (e) => {
+      e.preventDefault();
       alert("Form submitted.");
     };
-    var options = {
-      strings: ["<i>Hi,</i> I'm Andrew."],
-      typeSpeed: 100
-    };
 
-    var typed = new Typed('.element', options); 
+    let typewriter = new Typewriter('.element', {
+      strings: ["Hi, I'm Andrew."],
+      autoStart: true,
+      pauseFor: 100000
+    });
   </script>
   <!-- glide js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
@@ -276,10 +279,10 @@
       focusAt: "center",
       breakpoints: {
         800: {
-          perView: 2,
+          perView: 3,
         },
         480: {
-          perView: 1,
+          perView: 2,
         },
       },
     });
