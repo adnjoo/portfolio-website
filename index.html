@@ -188,8 +188,7 @@
       </header>
       <div class="row">
         <div class="col-12">
-          <form target="_blank" action="https://mailto:adnjoo@protonmail.com" method='post' enctype="application/x-www-form-urlencoded"
-            onsubmit="alertFunction()">
+          <form action="mailto:adnjoo@protonmail.com" method='post'>
             <div class="row">
               <div class="col-6 col-12-small">
                 <input type="text" name="name" id="name" placeholder="Name" />
@@ -257,10 +256,6 @@
   <!-- typewriter js -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script>
-    // Form submission function
-    const alertFunction = () => {
-      alert("Form submitted.");
-    };
 
     let typewriter = new Typewriter('.element', {
       strings: ["Hi, I'm Andrew."],
