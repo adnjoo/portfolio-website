@@ -188,9 +188,8 @@
       </header>
       <div class="row">
         <div class="col-12">
-          <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-          <form method="post" target="dummyframe" action="mailto:adnjoo@protonmail.com" enctype="text/plain"
-            onsubmit="alertFunction(e)">
+          <form method="get" action="mailto:adnjoo@protonmail.com" enctype="text/plain"
+            onsubmit="alertFunction()">
             <div class="row">
               <div class="col-6 col-12-small">
                 <input type="text" name="name" id="name" placeholder="Name" />
@@ -259,8 +258,7 @@
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script>
     // Form submission function
-    const alertFunction = (e) => {
-      e.preventDefault();
+    const alertFunction = () => {
       alert("Form submitted.");
     };
 
@@ -292,5 +290,4 @@
 
 </html>
 
-<!-- notes -->
 <!-- template from https://html5up.net/ -->
