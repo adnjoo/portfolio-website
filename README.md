@@ -1,10 +1,16 @@
 # portfolio-website
 
-> portfolio site
+> Portfolio Site
 
 ## [Link](https://adnjoo.github.io/portfolio-website)
 
-Technologies: html5up, typewriter.js, glide.js, fontawesome, HTML, CSS, JS
+## Technologies: 
+
+* HTML5UP
+* SASS
+* Typewriter.js 
+* Glide.js
+* Fontawesome
 
 ## Compile SASS instructions:
 
