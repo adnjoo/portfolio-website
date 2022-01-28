@@ -1591,5 +1591,7 @@ body > article {
       border-left: 0; }
       #copyright li:first-child {
         margin-top: 0; } }
+.b-radius-20px {
+  border-radius: 20px; }
 
 /*# sourceMappingURL=main.css.map */
