@@ -1032,8 +1032,7 @@ article:last-child {
   display: inline-block;
   position: relative; }
   .image img {
-    display: block;
-    width: 100%; }
+    display: block; }
   .image.fit {
     display: block;
     width: 100%; }
@@ -1593,5 +1592,21 @@ body > article {
         margin-top: 0; } }
 .b-radius-20px {
   border-radius: 20px; }
+
+.project-img {
+  -moz-transition: top .2s ease-in-out;
+  -webkit-transition: top .2s ease-in-out;
+  -ms-transition: top .2s ease-in-out;
+  transition: top .2s ease-in-out;
+  max-height: 240px;
+  object-fit: contain;
+  margin-top: 20px;
+  top: 0px;
+  position: relative;
+  margin: 10px auto;
+  border-radius: 10px; }
+
+.project-img:hover {
+  top: -5px; }
 
 /*# sourceMappingURL=main.css.map */

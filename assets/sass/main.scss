@@ -558,7 +558,7 @@ article:last-child {
 
   img {
     display: block;
-    width: 100%;
+    // width: 100%;
   }
 
   &.fit {
@@ -1337,4 +1337,19 @@ body > article {
 
 .b-radius-20px {
   border-radius: 20px;
+}
+
+.project-img {
+  @include vendor("transition", "top .2s ease-in-out");
+  max-height: 240px;
+  object-fit: contain;
+  margin-top: 20px;
+  top: 0px;
+  position: relative;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.project-img:hover {
+  top: -5px;
 }
