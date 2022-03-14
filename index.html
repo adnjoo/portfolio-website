@@ -52,9 +52,7 @@
               <h1 class="element" style="display: inline"></h1>
             </header>
             <h2>And I'm a Software Builder.</h2>
-            <a
-              href="#skills"
-              class="button large scrolly"
+            <a href="#skills" class="button large scrolly"
               >Learn about what I do</a
             >
           </div>
@@ -286,7 +284,7 @@
           </div>
         </div>
         <footer>
-          <h3 style="color: white">&copy; Andrew Njoo (2021)</h3>
+          <h3 style="color: white" id="footer-text"></h3>
         </footer>
       </div>
     </article>
@@ -327,6 +325,12 @@
         },
       });
       glide.mount();
+    </script>
+    <script>
+      let date = new Date();
+      document.getElementById(
+        "footer-text"
+      ).innerHTML = `&copy; Andrew Njoo (${date.getFullYear()})`;
     </script>
   </body>
 </html>
