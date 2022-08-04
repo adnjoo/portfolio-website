@@ -8,9 +8,10 @@
   <link rel="icon" href="./assets/whale.png" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/extra_styles.css" />
-  <!-- Flickity CSS + JS-->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- Glide JS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+    integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -51,46 +52,68 @@
       <header>
         <h2>Skills</h2>
       </header>
-      <div class="main-carousel">
-        <div class="carousel-cell carousel-cell-margin">
-          <span class="fab fa-react fa-5x" style="color: #5ed2f3"></span>
-          <h3>React</h3>
-        </div>
-        <div class="carousel-cell carousel-cell-margin">
-          <span class="fab fa-js-square fa-5x" style="color: #efd81d"></span>
-          <h3>Javascript</h3>
-        </div>
-        <div class="carousel-cell carousel-cell-margin">
-          <span class="fab fa-node-js fa-5x" style="color: #7fbc02"></span>
-          <h3>Node.js</h3>
-        </div>
-        <div class="carousel-cell carousel-cell-margin">
-          <span class="fab fa-python fa-5x" style="color: #356c9b"></span>
-          <h3>Python</h3>
-        </div>
-        <div class="carousel-cell carousel-cell-margin">
-          <span class="fab fa-html5 fa-5x" style="color: #e96228"></span>
-          <h3>HTML5</h3>
-        </div>
-        <div class="carousel-cell carousel-cell-margin">
-          <span class="fab fa-css3 fa-5x" style="color: #264bdd"></span>
-          <h3>CSS3</h3>
-        </div>
-        <div class="carousel-cell carousel-cell-margin">
-          <span class="fab fa-git fa-5x" style="color: tomato"></span>
-          <h3>Git</h3>
-        </div>
-        <div class="carousel-cell carousel-cell-margin">
-          <span class="fas fa-gem fa-5x" style="color: #c60000"></span>
-          <h3>Ruby</h3>
-        </div>
-        <div class="carousel-cell carousel-cell-margin">
-          <span class="fas fa-road fa-5x" style="color: #8e0d15"></span>
-          <h3>Rails</h3>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide padding-none">
+              <section class="box style1">
+                <span class="fab fa-react fa-5x" style="color: #5ed2f3"></span>
+                <h3>React</h3>
+              </section>
+            </li>
+            <li class="glide__slide padding-none">
+              <section class="box style1">
+                <span class="fab fa-js-square fa-5x" style="color: #efd81d"></span>
+                <h3>Javascript</h3>
+              </section>
+            </li>
+            <li class="glide__slide padding-none">
+              <section class="box style1">
+                <span class="fab fa-node-js fa-5x" style="color: #7fbc02"></span>
+                <h3>Node.js</h3>
+              </section>
+            </li>
+
+            <li class="glide__slide padding-none">
+              <section class="box style1">
+                <span class="fab fa-python fa-5x" style="color: #356c9b"></span>
+                <h3>Python</h3>
+              </section>
+            </li>
+            <li class="glide__slide padding-none">
+              <section class="box style1">
+                <span class="fab fa-html5 fa-5x" style="color: #e96228"></span>
+                <h3>HTML5</h3>
+              </section>
+            </li>
+            <li class="glide__slide padding-none">
+              <section class="box style1">
+                <span class="fab fa-css3 fa-5x" style="color: #264bdd"></span>
+                <h3>CSS3</h3>
+              </section>
+            </li>
+            <li class="glide__slide padding-none">
+              <section class="box style1">
+                <span class="fab fa-git fa-5x" style="color: tomato"></span>
+                <h3>Git</h3>
+              </section>
+            </li>
+            <li class="glide__slide padding-none">
+              <section class="box style1">
+                <span class="fas fa-gem fa-5x" style="color: #c60000"></span>
+                <h3>Ruby</h3>
+              </section>
+            </li>
+            <li class="glide__slide padding-none">
+              <section class="box style1">
+                <span class="fas fa-road fa-5x" style="color: #8e0d15"></span>
+                <h3>Rails</h3>
+              </section>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="row aln-center"></div>
-      <br>
       <footer>
         <a href="#projects" class="button large scrolly">See some of my recent work</a>
       </footer>
@@ -178,7 +201,6 @@
       </footer>
     </div>
   </article>
-
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -195,20 +217,27 @@
       pauseFor: 1000000,
     });
   </script>
-  <!-- flickity js -->
+  <!-- glide js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
   <script>
-    var elem = document.querySelector('.main-carousel');
-    var flkty = new Flickity(elem, {
-      // options
-      cellAlign: 'left',
-      contain: true,
-      freeScroll: true,
-      wrapAround: true,
-      autoPlay: true,
-      prevNextButtons: false,
-      pageDots: false,
-      imagesLoaded: true
+    let glide = new Glide(".glide", {
+      type: "carousel",
+      perView: 6,
+      focusAt: "center",
+      autoplay: 2000,
+      hoverpause: true,
+      keyboard: true,
+      breakpoints: {
+        800: {
+          perView: 3,
+        },
+        480: {
+          perView: 2,
+        },
+      },
+      gap: 0
     });
+    glide.mount();
   </script>
   <script>
     let date = new Date();
@@ -217,7 +246,6 @@
     ).innerHTML = `&copy; Andrew Njoo (${date.getFullYear()})`;
   </script>
 </body>
-
 </html>
 
 <!-- template from https://html5up.net/ -->
