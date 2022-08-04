@@ -1,350 +1,222 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Andrew's Portfolio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="icon" href="./assets/whale.png" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- Glide JS CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
-      integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
 
-  <body class="is-preload">
-    <!-- Nav -->
-    <nav id="nav">
-      <ul class="container">
-        <li><a href="#top">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<head>
+  <title>Andrew's Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="icon" href="./assets/whale.png" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/extra_styles.css" />
+  <!-- Flickity CSS + JS-->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 
-    <!-- Home -->
-    <article id="top" class="wrapper style1">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 col-5-large col-12-medium">
-            <span class="image fit"
-              ><img
-                src="https://avatars.githubusercontent.com/u/22807629?v=4"
-                alt=""
-                style="width: 90%"
-            /></span>
-          </div>
-          <div class="col-8 col-7-large col-12-medium">
-            <header>
-              <h1 class="element" style="display: inline"></h1>
-            </header>
-            <h2>And I'm a Software Builder.</h2>
-            <a href="#skills" class="button large scrolly"
-              >Learn about what I do</a
-            >
-          </div>
+<body class="is-preload">
+  <!-- Nav -->
+  <nav id="nav">
+    <ul class="container">
+      <li><a href="#top">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home -->
+  <article id="top" class="wrapper style1">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-5-large col-12-medium">
+          <span class="image fit"><img src="https://avatars.githubusercontent.com/u/22807629?v=4" alt=""
+              style="width: 90%" /></span>
+        </div>
+        <div class="col-8 col-7-large col-12-medium">
+          <header>
+            <h1 class="element" style="display: inline"></h1>
+          </header>
+          <h2>And I'm a Software Builder.</h2>
+          <a href="#skills" class="button large scrolly">Learn about what I do</a>
         </div>
       </div>
-    </article>
+    </div>
+  </article>
 
-    <!-- Work -->
-    <article id="skills" class="wrapper style2">
-      <div class="container">
-        <header>
-          <h2>Skills</h2>
-        </header>
-        <div class="glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <div class="col-4 col-6-medium col-12-small">
-                  <section class="box style1">
-                    <span
-                      class="fab fa-react fa-5x"
-                      style="color: #5ed2f3"
-                    ></span>
-                    <h3>React</h3>
-                  </section>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="col-4 col-6-medium col-12-small">
-                  <section class="box style1">
-                    <span
-                      class="fab fa-js-square fa-5x"
-                      style="color: #efd81d"
-                    ></span>
-                    <h3>Javascript</h3>
-                  </section>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="col-4 col-6-medium col-12-small">
-                  <section class="box style1">
-                    <span
-                      class="fab fa-node-js fa-5x"
-                      style="color: #7fbc02"
-                    ></span>
-                    <h3>Node.js</h3>
-                  </section>
-                </div>
-              </li>
-
-              <li class="glide__slide">
-                <div class="col-4 col-6-medium col-12-small">
-                  <section class="box style1">
-                    <span
-                      class="fab fa-python fa-5x"
-                      style="color: #356c9b"
-                    ></span>
-                    <h3>Python</h3>
-                  </section>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="col-4 col-6-medium col-12-small">
-                  <section class="box style1">
-                    <span
-                      class="fab fa-html5 fa-5x"
-                      style="color: #e96228"
-                    ></span>
-                    <h3>HTML5</h3>
-                  </section>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="col-4 col-6-medium col-12-small">
-                  <section class="box style1">
-                    <span
-                      class="fab fa-css3 fa-5x"
-                      style="color: #264bdd"
-                    ></span>
-                    <h3>CSS3</h3>
-                  </section>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="col-4 col-6-medium col-12-small">
-                  <section class="box style1">
-                    <span class="fab fa-git fa-5x" style="color: tomato"></span>
-                    <h3>Git</h3>
-                  </section>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="col-4 col-6-medium col-12-small">
-                  <section class="box style1">
-                    <span
-                      class="fas fa-gem fa-5x"
-                      style="color: #c60000"
-                    ></span>
-                    <h3>Ruby</h3>
-                  </section>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="col-4 col-6-medium col-12-small">
-                  <section class="box style1">
-                    <span
-                      class="fas fa-road fa-5x"
-                      style="color: #8e0d15"
-                    ></span>
-                    <h3>Rails</h3>
-                  </section>
-                </div>
-              </li>
-            </ul>
-          </div>
+  <!-- Work -->
+  <article id="skills" class="wrapper style2">
+    <div class="container">
+      <header>
+        <h2>Skills</h2>
+      </header>
+      <div class="main-carousel">
+        <div class="carousel-cell carousel-cell-margin">
+          <span class="fab fa-react fa-5x" style="color: #5ed2f3"></span>
+          <h3>React</h3>
         </div>
-        <div class="row aln-center"></div>
-        <footer>
-          <a href="#projects" class="button large scrolly"
-            >See some of my recent work</a
-          >
-        </footer>
-      </div>
-    </article>
-
-    <!-- Projects -->
-    <article id="projects" class="wrapper style3">
-      <div class="container">
-        <header>
-          <h2>Projects</h2>
-        </header>
-        <div class="row">
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2 b-radius-20px" style="max-height: 400px">
-              <a
-                href="https://andrew-movie-app.netlify.app/"
-                class="image featured"
-                target="_blank"
-                ><img
-                  class="project-img"
-                  src="https://raw.githubusercontent.com/adnjoo/Movie-App/main/scrn11.png"
-                  alt=""
-              /></a>
-              <h3>
-                <a href="https://andrew-movie-app.netlify.app/" target="_blank"
-                  >Movie App</a
-                >
-              </h3>
-              <p>
-                PERN full stack web app that helps you save cool movies | TMDB
-                API
-              </p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2 b-radius-20px" style="max-height: 400px">
-              <a
-                href="https://sonic-azure.vercel.app/"
-                class="image featured"
-                target="_blank"
-                ><img
-                  class="project-img"
-                  src="https://raw.githubusercontent.com/adnjoo/Sonic/main/scrn2.png"
-                  alt=""
-                  target="_blank"
-              /></a>
-              <h3>
-                <a href="https://sonic-azure.vercel.app/" target="_blank"
-                  >Sonic</a
-                >
-              </h3>
-              <p>
-                Spotify clone using Next.js | Spotify API (Spotify Premium
-                required)
-              </p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2 b-radius-20px" style="max-height: 400px">
-              <a
-                href="https://adnjoo.github.io/React-Weather/"
-                class="image featured"
-                target="_blank"
-                ><img
-                  class="project-img"
-                  src="https://raw.githubusercontent.com/adnjoo/React-Weather/master/scrn5.png"
-                  alt=""
-              /></a>
-              <h3>
-                <a
-                  href="https://adnjoo.github.io/React-Weather/"
-                  target="_blank"
-                  >React Weather</a
-                >
-              </h3>
-              <p>Made with React | React-Helmet | Abstract-API | Weather API</p>
-            </article>
-          </div>
+        <div class="carousel-cell carousel-cell-margin">
+          <span class="fab fa-js-square fa-5x" style="color: #efd81d"></span>
+          <h3>Javascript</h3>
+        </div>
+        <div class="carousel-cell carousel-cell-margin">
+          <span class="fab fa-node-js fa-5x" style="color: #7fbc02"></span>
+          <h3>Node.js</h3>
+        </div>
+        <div class="carousel-cell carousel-cell-margin">
+          <span class="fab fa-python fa-5x" style="color: #356c9b"></span>
+          <h3>Python</h3>
+        </div>
+        <div class="carousel-cell carousel-cell-margin">
+          <span class="fab fa-html5 fa-5x" style="color: #e96228"></span>
+          <h3>HTML5</h3>
+        </div>
+        <div class="carousel-cell carousel-cell-margin">
+          <span class="fab fa-css3 fa-5x" style="color: #264bdd"></span>
+          <h3>CSS3</h3>
+        </div>
+        <div class="carousel-cell carousel-cell-margin">
+          <span class="fab fa-git fa-5x" style="color: tomato"></span>
+          <h3>Git</h3>
+        </div>
+        <div class="carousel-cell carousel-cell-margin">
+          <span class="fas fa-gem fa-5x" style="color: #c60000"></span>
+          <h3>Ruby</h3>
+        </div>
+        <div class="carousel-cell carousel-cell-margin">
+          <span class="fas fa-road fa-5x" style="color: #8e0d15"></span>
+          <h3>Rails</h3>
         </div>
       </div>
-    </article>
+      <div class="row aln-center"></div>
+      <br>
+      <footer>
+        <a href="#projects" class="button large scrolly">See some of my recent work</a>
+      </footer>
+    </div>
+  </article>
 
-    <!-- Contact -->
-    <article id="contact" class="wrapper style4">
-      <div class="container medium">
-        <div class="row">
-          <div class="col-12">
-            <hr />
-            <h3>Find me on</h3>
-            <ul class="social">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/adnjoo"
-                  class="icon brands fa-linkedin-in"
-                  target="_blank"
-                  ><span class="label">LinkedIn</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/adnjoo"
-                  class="icon brands fa-github"
-                  target="_blank"
-                  ><span class="label">Github</span></a
-                >
-              </li>
-              <br />
-              <h3>Resume:</h3>
-              <li>
-                <a
-                  href="https://docs.google.com/document/d/1TlYly6E_Ix_casYSKPwpkndvf-s-oqn07y6NuGcKr6o/edit?usp=sharing"
-                  class="icon far fa-file"
-                  style="background-color: white"
-                  target="_blank"
-                >
-                  <span class="label">Resume</span></a
-                >
-              </li>
-            </ul>
-            <hr />
-          </div>
+  <!-- Projects -->
+  <article id="projects" class="wrapper style3">
+    <div class="container">
+      <header>
+        <h2>Projects</h2>
+      </header>
+      <div class="row">
+        <div class="col-4 col-6-medium col-12-small">
+          <article class="box style2 b-radius-20px" style="max-height: 400px">
+            <a href="https://andrew-movie-app.netlify.app/" class="image featured" target="_blank"><img
+                class="project-img" src="https://raw.githubusercontent.com/adnjoo/Movie-App/main/scrn11.png"
+                alt="" /></a>
+            <h3>
+              <a href="https://andrew-movie-app.netlify.app/" target="_blank">Movie App</a>
+            </h3>
+            <p>
+              PERN full stack web app that helps you save cool movies | TMDB
+              API
+            </p>
+          </article>
         </div>
-        <footer>
-          <h3 style="color: white" id="footer-text"></h3>
-        </footer>
+        <div class="col-4 col-6-medium col-12-small">
+          <article class="box style2 b-radius-20px" style="max-height: 400px">
+            <a href="https://sonic-azure.vercel.app/" class="image featured" target="_blank"><img class="project-img"
+                src="https://raw.githubusercontent.com/adnjoo/Sonic/main/scrn2.png" alt="" target="_blank" /></a>
+            <h3>
+              <a href="https://sonic-azure.vercel.app/" target="_blank">Sonic</a>
+            </h3>
+            <p>
+              Spotify clone using Next.js | Spotify API (Spotify Premium
+              required)
+            </p>
+          </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <article class="box style2 b-radius-20px" style="max-height: 400px">
+            <a href="https://adnjoo.github.io/React-Weather/" class="image featured" target="_blank"><img
+                class="project-img" src="https://raw.githubusercontent.com/adnjoo/React-Weather/master/scrn5.png"
+                alt="" /></a>
+            <h3>
+              <a href="https://adnjoo.github.io/React-Weather/" target="_blank">React Weather</a>
+            </h3>
+            <p>Made with React | React-Helmet | Abstract-API | Weather API</p>
+          </article>
+        </div>
       </div>
-    </article>
+    </div>
+  </article>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <!-- typewriter js -->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script>
-      let typewriter = new Typewriter(".element", {
-        strings: ["Hi, I'm Andrew."],
-        autoStart: true,
-        pauseFor: 1000000,
-      });
-    </script>
-    <!-- glide js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
-    <script>
-      let glide = new Glide(".glide", {
-        type: "carousel",
-        perView: 6,
-        focusAt: "center",
-        autoplay: 2000,
-        hoverpause: true,
-        keyboard: true,
-        breakpoints: {
-          800: {
-            perView: 3,
-          },
-          480: {
-            perView: 2,
-          },
-        },
-      });
-      glide.mount();
-    </script>
-    <script>
-      let date = new Date();
-      document.getElementById(
-        "footer-text"
-      ).innerHTML = `&copy; Andrew Njoo (${date.getFullYear()})`;
-    </script>
-  </body>
+  <!-- Contact -->
+  <article id="contact" class="wrapper style4">
+    <div class="container medium">
+      <div class="row">
+        <div class="col-12">
+          <hr />
+          <h3>Find me on</h3>
+          <ul class="social">
+            <li>
+              <a href="https://www.linkedin.com/in/adnjoo" class="icon brands fa-linkedin-in" target="_blank"><span
+                  class="label">LinkedIn</span></a>
+            </li>
+            <li>
+              <a href="https://github.com/adnjoo" class="icon brands fa-github" target="_blank"><span
+                  class="label">Github</span></a>
+            </li>
+            <br />
+            <h3>Resume:</h3>
+            <li>
+              <a href="https://docs.google.com/document/d/1TlYly6E_Ix_casYSKPwpkndvf-s-oqn07y6NuGcKr6o/edit?usp=sharing"
+                class="icon far fa-file" style="background-color: white" target="_blank">
+                <span class="label">Resume</span></a>
+            </li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <footer>
+        <h3 style="color: white" id="footer-text"></h3>
+      </footer>
+    </div>
+  </article>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- typewriter js -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script>
+    let typewriter = new Typewriter(".element", {
+      strings: ["Hi, I'm Andrew."],
+      autoStart: true,
+      pauseFor: 1000000,
+    });
+  </script>
+  <!-- flickity js -->
+  <script>
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity(elem, {
+      // options
+      cellAlign: 'left',
+      contain: true,
+      freeScroll: true,
+      wrapAround: true,
+      autoPlay: true,
+      prevNextButtons: false,
+      pageDots: false
+    });
+  </script>
+  <script>
+    let date = new Date();
+    document.getElementById(
+      "footer-text"
+    ).innerHTML = `&copy; Andrew Njoo (${date.getFullYear()})`;
+  </script>
+</body>
+
 </html>
 
 <!-- template from https://html5up.net/ -->
