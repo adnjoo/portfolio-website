@@ -9,7 +9,7 @@
 * HTML5UP
 * SASS
 * Typewriter.js 
-* Glide.js
+* Flickity.js
 * Fontawesome
 
 ## Compile SASS instructions:
