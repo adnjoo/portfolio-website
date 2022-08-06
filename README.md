@@ -1,5 +1,18 @@
 Deployed using [Netlify](https://adnjoo.com/)
 
+Quick start:
+```
+npm install
+npm run dev
+```
+
+Build commands:
+```
+npm run build
+npm run preview
+```
+
+
 Tech Stack
 
 * Vite 3.x

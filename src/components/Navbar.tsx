@@ -10,7 +10,7 @@ interface IProps {
 
 export default function Navbar({ navLocation, setNavLocation }: IProps) {
   return (
-    <Disclosure as="nav" className="bg-white shadow border fixed w-full">
+    <Disclosure as="nav" className="bg-white shadow border fixed w-full z-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
