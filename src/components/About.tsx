@@ -46,14 +46,14 @@ export default function About() {
                     <div className="space-y-4 text-2xl">
                       {/* P1 */}
                       <div className=" text-gray-500">
-                        I currently work as a Frontend Engineer in{" "}
+                        I currently work in {" "}
                         {
                           <AboutLink
                             href="https://aws.amazon.com/cloudformation/"
-                            text="AWS' "
+                            text="AWS "
                           />
                         }
-                        CloudFormation team. I have a Bachelor's degree in
+                        in the CloudFormation team. I have a BSc. in
                         Accounting &#38; Finance from the{" "}
                         {
                           <AboutLink
@@ -61,7 +61,7 @@ export default function About() {
                             text="LSE, "
                           />
                         }
-                        and also currently studying for a 2nd CS degree
+                        and am also currently studying for a 2nd BSc. in CS
                         (online) at{" "}
                         {
                           <AboutLink
