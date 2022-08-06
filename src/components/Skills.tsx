@@ -24,7 +24,7 @@ export default function Skills() {
             {skills.map((skill) => (
               <>
                 <div
-                  className="mx-3 text-white text-center text-2xl font-bold"
+                  className="mx-3 text-white text-center sm:text-xl md:text-2xl font-bold"
                   key={skill.name}
                   style={{ minWidth: "100px" }}
                 >
