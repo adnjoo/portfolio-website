@@ -1,3 +1,5 @@
+Deployed using [Netlify](https://adnjoo.com/)
+
 Tech Stack
 
 * Vite 3.x
