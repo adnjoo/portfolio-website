@@ -46,27 +46,27 @@ export default function About() {
                     <div className="space-y-4 text-2xl">
                       {/* P1 */}
                       <div className=" text-gray-500">
-                        I currently work in {" "}
+                        I currently work at
                         {
                           <AboutLink
                             href="https://aws.amazon.com/cloudformation/"
-                            text="AWS "
+                            text=" AWS "
                           />
                         }
-                        in the CloudFormation team. I have a BSc. in
-                        Accounting &#38; Finance from the{" "}
+                        in the CloudFormation team, and have a BSc. in
+                        Accounting &#38; Finance from the
                         {
                           <AboutLink
                             href="https://www.lse.ac.uk/"
-                            text="LSE, "
+                            text=" LSE. "
                           />
                         }
-                        and am also currently studying for a 2nd BSc. in CS
+                        I'm also studying for a 2nd BSc. in CS
                         (online) at{" "}
                         {
                           <AboutLink
                             href="https://oregonstate.edu/"
-                            text="Oregon State "
+                            text="Oregon State, "
                           />
                         }
                         in order to learn more about computing in a more structured
