@@ -21,6 +21,7 @@ export default function About() {
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
               About
             </h2>
+            {/* Introduction */}
             <p className="text-2xl text-dark-700 font-bold">{person.intro}</p>
           </div>
           <div className="lg:col-span-2">
@@ -31,6 +32,7 @@ export default function About() {
               <li key={person.name} className="sm:py-8">
                 <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
                   <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                    {/* Profile Pic */}
                     <img
                       className="object-cover shadow-lg rounded-lg"
                       src={person.imageUrl}
@@ -41,7 +43,7 @@ export default function About() {
                   <div className="sm:col-span-2">
                     <div className="space-y-4 text-2xl">
                       {/* P1 */}
-                      <div className="text-2xl text-gray-500">
+                      <div className=" text-gray-500">
                         I currently work as a Frontend Engineer in{" "}
                         {
                           <AboutLink
@@ -67,11 +69,11 @@ export default function About() {
                         online to learn more.
                       </div>
                       {/* P2 */}
-                      <div className="order-3 text-2xl">
+                      <div className="order-3 ">
                         <p className="text-gray-500">In my free time, I enjoy reading 📚 and swimming 🏊‍♀️.</p>
                       </div>
                       {/* P3 */}
-                      <div className="order-1 text-2xl">
+                      <div className="order-1 ">
                         <p className="text-gray-500">Here's a quote I like: 井の中の蛙大海を知らず</p>
                         <p className="text-gray-500">A frog 🐸 in a well doesn't know the great ocean 🌊</p>
                       </div>

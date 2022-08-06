@@ -70,12 +70,12 @@ const navigation = [
             {navigation.map((item) => (
               <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
+                <item.icon className="h-8 w-8" aria-hidden="true" />
               </a>
             ))}
           </div>
           <div className="mt-8 md:mt-0 md:order-1">
-            <p className="text-center text-base text-gray-400">&copy; 2022 Andrew Njoo</p>
+            <p className="text-center text-xl text-gray-400">&copy; 2022 Andrew Njoo</p>
           </div>
         </div>
       </footer>

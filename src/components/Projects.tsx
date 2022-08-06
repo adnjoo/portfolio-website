@@ -24,7 +24,7 @@ export default function Projects() {
                       PERN stack web app that helps you save cool movies (TMDB
                       API)
                     </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-indigo-600">
+                    <dd className="order-1 text-4xl font-extrabold text-indigo-600">
                       MovieApp
                     </dd>
                   </div>
@@ -40,7 +40,7 @@ export default function Projects() {
                       Spotify clone using Next.js | Spotify API (Spotify Premium
                       required)
                     </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-indigo-600">
+                    <dd className="order-1 text-4xl font-extrabold text-indigo-600">
                       Sonic
                     </dd>
                   </div>
@@ -59,7 +59,7 @@ export default function Projects() {
                       Made with React | React-Helmet | Abstract-API | Weather
                       API
                     </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-indigo-600">
+                    <dd className="order-1 text-4xl font-extrabold text-indigo-600">
                       React Weather
                     </dd>
                   </div>
