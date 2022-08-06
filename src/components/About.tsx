@@ -1,10 +1,10 @@
+import Typed from "react-typed";
 import AboutLink from "./AboutLink";
 
 const person = {
   name: "Andrew Njoo",
   role: "Software Builder",
   imageUrl: "./pfp.jpeg",
-  intro: "Hi there, I'm Andrew. Welcome to my page :)",
   githubUrl: "https://github.com/adnjoo",
   twitterUrl: "https://twitter.com/adnjoo",
   linkedinUrl: "https://linkedin.com/in/adnjoo",
@@ -22,7 +22,9 @@ export default function About() {
               About
             </h2>
             {/* Introduction */}
-            <p className="text-2xl text-dark-700 font-bold">{person.intro}</p>
+            <Typed 
+            className="text-3xl"
+            strings={["Hi, I'm Andrew. Welcome to my website"]} typeSpeed={40} />
           </div>
           <div className="lg:col-span-2">
             <ul
@@ -56,38 +58,46 @@ export default function About() {
                         {
                           <AboutLink
                             href="https://www.lse.ac.uk/"
-                            text="London School of Economics "
+                            text="LSE, "
                           />
                         }
-                        and I'm also currently studying for a PostBacc in CS at{" "}
+                        and also currently studying for a 2nd CS degree
+                        (online) at{" "}
                         {
                           <AboutLink
                             href="https://oregonstate.edu/"
                             text="Oregon State "
                           />
                         }
-                        online to learn more.
+                        in order to learn more about computing in a more structured
+                        format.
                       </div>
                       {/* P2 */}
                       <div className="order-3 ">
-                        <p className="text-gray-500">In my free time, I enjoy reading 📚 and swimming 🏊‍♀️.</p>
+                        <p className="text-gray-500">
+                          In my free time, I like to read books 📚 and go swimming 🏊‍♀️.
+                        </p>
                       </div>
                       {/* P3 */}
                       <div className="order-1 ">
-                        <p className="text-gray-500">Here's a quote I like: 井の中の蛙大海を知らず</p>
-                        <p className="text-gray-500">A frog 🐸 in a well doesn't know the great ocean 🌊</p>
+                        <p className="text-gray-500">
+                          Here's a quote I like: 井の中の蛙大海を知らず
+                        </p>
+                        <p className="text-gray-500">
+                          A frog 🐸 in a well doesn't know the great ocean 🌊
+                        </p>
                       </div>
                       {/* Social Links */}
-                      <ul role="list" className="flex space-x-5">
+                      <ul
+                        role="list"
+                        className="flex space-x-5 flex-column"
+                        style={{ minHeight: "100px" }}
+                      >
                         <li>
-                          <a
-                            href={person.githubUrl}
-                            className="text-gray-400 hover:text-gray-500"
-                            target="_blank"
-                          >
+                          <a href={person.githubUrl} target="_blank">
                             <span className="sr-only">Github</span>
                             <svg
-                              className="w-8 h-8"
+                              className="w-8 h-8 hover:w-12 hover:h-12 icon-transition"
                               aria-hidden="true"
                               fill="black"
                               viewBox="0 0 24 24"
@@ -97,14 +107,10 @@ export default function About() {
                           </a>
                         </li>
                         <li>
-                          <a
-                            href={person.twitterUrl}
-                            className="text-gray-400 hover:text-gray-500"
-                            target="_blank"
-                          >
+                          <a href={person.twitterUrl} target="_blank">
                             <span className="sr-only">Twitter</span>
                             <svg
-                              className="w-8 h-8"
+                              className="w-8 h-8 hover:w-12 hover:h-12 icon-transition"
                               aria-hidden="true"
                               fill="#00acee"
                               viewBox="0 0 20 20"
@@ -114,14 +120,10 @@ export default function About() {
                           </a>
                         </li>
                         <li>
-                          <a
-                            href={person.linkedinUrl}
-                            className="text-gray-400 hover:text-gray-500"
-                            target="_blank"
-                          >
+                          <a href={person.linkedinUrl} target="_blank">
                             <span className="sr-only">LinkedIn</span>
                             <svg
-                              className="w-8 h-8"
+                              className="w-8 h-8 hover:w-12 hover:h-12 icon-transition"
                               aria-hidden="true"
                               fill="#0072b1"
                               viewBox="0 0 20 20"

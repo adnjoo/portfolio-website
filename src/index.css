@@ -7,3 +7,7 @@
     @apply scroll-smooth;
   }
 }
+
+.icon-transition {
+  transition: width 0.2s, height 0.2s;
+}

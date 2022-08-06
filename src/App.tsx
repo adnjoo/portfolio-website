@@ -8,7 +8,6 @@ import "./index.css";
 
 function App() {
   const [navLocation, setNavLocation] = useState("");
-  console.log(navLocation)
   return (
     <>
       <Navbar navLocation={navLocation} setNavLocation={setNavLocation} />
