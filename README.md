@@ -1,19 +1,9 @@
-# portfolio-website
+Tech Stack
 
-> Portfolio Site
+* Vite 3.x
 
-## [Link](https://adnjoo.github.io/portfolio-website)
+* TypeScript 4.6
 
-## Technologies: 
+* Tailwind 3.x
 
-* HTML5UP
-* SASS
-* Typewriter.js 
-* Flickity.js
-* Fontawesome
-
-## Compile SASS instructions:
-
-```
-sass ./assets/sass/main.scss ./assets/css/main.css
-```
+* React 18.2
