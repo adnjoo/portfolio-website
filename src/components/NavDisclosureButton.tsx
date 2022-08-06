@@ -5,11 +5,17 @@ const unselected =
 
 import { Disclosure } from "@headlessui/react";
 
+interface IProps {
+  href: string;
+  navLocation: string;
+  setNavLocation: Function;
+}
+
 export default function NavDisclosureButton({
   href,
   navLocation,
   setNavLocation,
-}) {
+}: IProps) {
   return (
     <Disclosure.Button
       as="a"
