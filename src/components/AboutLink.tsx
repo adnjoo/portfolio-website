@@ -1,11 +1,11 @@
 interface IProps {
-    href: string,
-    text: string
+  href: string;
+  text: string;
 }
 
 export default function AboutLink({ href, text }: IProps) {
   return (
-    <a className="text-indigo-700 font-bold" href={href} target="_blank">
+    <a className='text-indigo-700 font-bold' href={href} target='_blank'>
       {text}
     </a>
   );
