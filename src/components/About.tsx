@@ -32,6 +32,26 @@ const daVinciQuotes = [
     translation:
       'He who has time and awaits time, has neither friends nor money',
   },
+  {
+    quote: "L'arte non è mai finita, solo abbandonata",
+    translation:
+      'Art is never finished, only abandoned',
+  },
+  {
+    quote: "Ogni nostra cognizione prencipia da sentimenti",
+    translation:
+      'Our every cognition begins with feelings',
+  },
+  {
+    quote: "Amor ogni cosa vince",
+    translation:
+      'Love conquers all',
+  },
+  {
+    quote: "No' si volta chi a stella è fisso",
+    translation:
+      'He who is fixed to a star does not change his mind',
+  },
 ];
 
 // https://tailwindui.com/components/marketing/sections/team-sections
