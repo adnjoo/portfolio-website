@@ -58,7 +58,7 @@ export default function Contact() {
           ))}
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-center text-xl text-gray-400 inline-block">
+          <p className="text-center text-xl text-gray-400 md:inline-block">
             <a
               href="https://github.com/adnjoo/portfolio-website"
               target="_blank"
