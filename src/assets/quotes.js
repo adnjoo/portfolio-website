@@ -50,6 +50,10 @@ export const quotes = [
     quote: 'La scienza è il capitano, e la pratica sono i soldati',
     translation: 'Science is the captain, and practice is the soldiers',
   },
+  {
+    quote: 'La vita bene spesa lunga è',
+    translation: 'A life well lived is long',
+  },
 ];
 
 export default {
