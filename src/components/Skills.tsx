@@ -19,7 +19,7 @@ export default function Skills() {
     <div className='bg-gradient-to-r from-indigo-700 to-sky-600' id='skills'>
       <div className='max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8'>
         <h2 className='text-3xl font-extrabold text-white'>Skills</h2>
-        <ScrollContainer className='scroll-container'>
+        <ScrollContainer className='scroll-container overflow-auto' >
           <div className='flex flex-row mt-8 lg:mt-10'>
             {skills.map((skill) => (
               <div key={skill.name}>
