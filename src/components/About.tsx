@@ -1,6 +1,8 @@
+import React from 'react';
 import Typed from 'react-typed';
 import AboutLink from './AboutLink';
-
+// @ts-ignore
+import { quotes } from '../assets/quotes';
 const person = {
   name: 'Andrew Njoo',
   role: 'Software Builder',
@@ -10,55 +12,11 @@ const person = {
   linkedinUrl: 'https://linkedin.com/in/adnjoo',
 };
 
-const daVinciQuotes = [
-  {
-    quote: "Il moto è causa d'ogni vita",
-    translation: 'Motion is the cause of all life',
-  },
-  {
-    quote: 'La conoscenza di tutte le cose è possibile',
-    translation: 'The knowledge of all things is possible',
-  },
-  {
-    quote: "La passione dell'animo caccia via la lussuria",
-    translation: 'Passion of the soul chases away lust',
-  },
-  {
-    quote: 'Chi poco pensa molto erra',
-    translation: 'Those who think little, err',
-  },
-  {
-    quote: "Chi tempo ha e tempo aspetta, perde l'amico e danari non ha mai",
-    translation:
-      'He who has time and awaits time, has neither friends nor money',
-  },
-  {
-    quote: "L'arte non è mai finita, solo abbandonata",
-    translation:
-      'Art is never finished, only abandoned',
-  },
-  {
-    quote: "Ogni nostra cognizione prencipia da sentimenti",
-    translation:
-      'Our every cognition begins with feelings',
-  },
-  {
-    quote: "Amor ogni cosa vince",
-    translation:
-      'Love conquers all',
-  },
-  {
-    quote: "No' si volta chi a stella è fisso",
-    translation:
-      'He who is fixed to a star does not change his mind',
-  },
-];
-
 // https://tailwindui.com/components/marketing/sections/team-sections
 // With vertical images
 export default function About() {
-  const randomQuote =
-    daVinciQuotes[Math.floor(Math.random() * daVinciQuotes.length)];
+  const [randomNumber, setRandomNumber] = React.useState(Math.floor(Math.random() * quotes.length));
+  const randomQuote = quotes[randomNumber];
   return (
     <div className='bg-white py-10' id='about'>
       <div className='mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24'>
