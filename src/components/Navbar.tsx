@@ -1,7 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import NavLink from "./NavLink";
-import NavDisclosureButton from "./NavDisclosureButton";
+import NavLink from "./ui_elements/NavLink";
+import NavDisclosureButton from "./ui_elements/NavDisclosureButton";
 
 interface IProps {
   navLocation: string;

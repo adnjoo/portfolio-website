@@ -99,10 +99,11 @@ export default function About() {
                       {/* P3 - Quote */}
                       <div className="order-1">
                         <p className="text-gray-500">
-                          <i>{vinciQuotes[counter].quote}</i> - Leonardo da Vinci
+                          <i>{vinciQuotes[counter].quote}</i> - Leonardo da
+                          Vinci
                         </p>
                         <p className="text-gray-500">
-                          {vinciQuotes[counter].translation}{' '}
+                          {vinciQuotes[counter].translation}{" "}
                           <RefreshButton handleClick={handleClick} />
                         </p>
                       </div>
@@ -157,6 +158,16 @@ export default function About() {
                         </li>
                       </ul>
                     </div>
+                    {/* Soundcloud */}
+                    <p className='text-gray-500 text-xl'>🎶:</p>
+                    <iframe
+                      width="100%"
+                      height="300"
+                      scrolling="no"
+                      frameBorder="no"
+                      allow="autoplay"
+                      src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1480612231&color=%2369c854&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true`}
+                    ></iframe>
                   </div>
                 </div>
               </li>
@@ -165,5 +176,6 @@ export default function About() {
         </div>
       </div>
     </div>
+    // wow that's alot of nested divs lol
   );
 }
