@@ -17,11 +17,11 @@ Tech Stack
 
 * Vite 3.x
 
-* TypeScript 4.6
+* TypeScript 4.x
 
 * Tailwind 3.x
 
-* React 18.2
+* React 18.x
 
 Notes
 
