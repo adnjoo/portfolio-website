@@ -54,6 +54,26 @@ export const quotes = [
     quote: 'La vita bene spesa lunga è',
     translation: 'A life well lived is long',
   },
+  {
+    quote: "L'acqua è la forza motrice della natura",
+    translation: 'Water is the driving force of nature',
+  },
+  {
+    quote: "Sono rimasto colpito dall'urgenza di fare. Conoscere non è abbastanza; dobbiamo applicare. Essere disposti non è abbastanza; dobbiamo fare",
+    translation: 'I was struck by the urgency to do. Knowing is not enough; we must apply. Being willing is not enough; we must do',
+  },
+  {
+    quote: "Sono rimasto colpito dall'urgenza di fare. Conoscere non è abbastanza; dobbiamo applicare. Essere disposti non è abbastanza; dobbiamo fare",
+    translation: 'I was struck by the urgency to do. Knowing is not enough; we must apply. Being willing is not enough; we must do',
+  },
+  {
+    quote: "La semplicità è la sofisticazione suprema",
+    translation: 'Simplicity is the ultimate sophistication',
+  },
+  {
+    quote: "Il tempo rimane abbastanza a lungo per coloro che lo utilizzano",
+    translation: 'Time stays long enough for those who use it',
+  },
 ];
 
 export default {
