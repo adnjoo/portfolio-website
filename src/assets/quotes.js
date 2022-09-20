@@ -63,10 +63,6 @@ export const quotes = [
     translation: 'I was struck by the urgency to do. Knowing is not enough; we must apply. Being willing is not enough; we must do',
   },
   {
-    quote: "Sono rimasto colpito dall'urgenza di fare. Conoscere non è abbastanza; dobbiamo applicare. Essere disposti non è abbastanza; dobbiamo fare",
-    translation: 'I was struck by the urgency to do. Knowing is not enough; we must apply. Being willing is not enough; we must do',
-  },
-  {
     quote: "La semplicità è la sofisticazione suprema",
     translation: 'Simplicity is the ultimate sophistication',
   },
