@@ -93,7 +93,7 @@ export default function About() {
                       <div className="order-3 ">
                         <p className="text-gray-500">
                           In my free time, I like to play guitar 🎸 and go
-                          swimming 🏊‍♀️.
+                          cycling 🚴‍♀️.
                         </p>
                       </div>
                       {/* P3 - Quote */}
