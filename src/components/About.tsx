@@ -72,22 +72,7 @@ export default function About() {
                             text=" AWS "
                           />
                         }
-                        in the CloudFormation team, and have a BSc. in
-                        Accounting &#38; Finance
-                        {
-                          <AboutLink
-                            href="https://www.lse.ac.uk/"
-                            text=" (LSE). "
-                          />
-                        }
-                        I'm also studying for a 2nd BSc. in CS at
-                        {
-                          <AboutLink
-                            href="https://oregonstate.edu/"
-                            text=" Oregon State"
-                          />
-                        }
-                        , in order to learn more about 🖥.
+                        in the CloudFormation console team.
                       </div>
                       {/* P2 */}
                       <div className="order-3 ">
