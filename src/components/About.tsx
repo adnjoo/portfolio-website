@@ -161,6 +161,5 @@ export default function About() {
         </div>
       </div>
     </div>
-    // wow that's alot of nested divs lol
   );
 }
