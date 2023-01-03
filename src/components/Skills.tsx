@@ -2,14 +2,15 @@ import ScrollContainer from 'react-indiana-drag-scroll';
 
 // Source: flaticon.com
 const skills = [
-  { name: 'React', image: 'skill_react.png' },
-  { name: 'JavaScript', image: 'skill_js.png' },
   { name: 'TypeScript', image: 'skill_ts.png' },
+  { name: 'React', image: 'skill_react.png' },
+  { name: 'Redux', image: 'skill_rtk.png', background: 'white' },
+  { name: 'Jest', image: 'skill_jest.png' },
+  { name: 'JavaScript', image: 'skill_js.png' },
   { name: 'NodeJS', image: 'skill_node.png' },
   { name: 'Python', image: 'skill_py.png' },
+  { name: 'Java', image: 'skill_java.png', background: 'white' },
   { name: 'Git', image: 'skill_git.png' },
-  { name: 'Jest', image: 'skill_jest.png' },
-  { name: 'Redux', image: 'skill_rtk.png', background: 'white' },
 ];
 
 // https://tailwindui.com/components/marketing/sections/logo-clouds
