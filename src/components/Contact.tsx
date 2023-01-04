@@ -81,7 +81,7 @@ export default function Contact() {
             </a>
           </p>
           <p className="text-center text-xl text-gray-400">
-            &copy; 2022 Andrew Njoo
+            &copy; {new Date().getFullYear()} Andrew Njoo
           </p>
         </div>
       </div>
