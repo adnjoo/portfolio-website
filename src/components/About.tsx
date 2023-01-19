@@ -12,6 +12,7 @@ const person = {
   githubUrl: "https://github.com/adnjoo",
   twitterUrl: "https://twitter.com/adnjoo",
   linkedinUrl: "https://linkedin.com/in/adnjoo",
+  resume: "https://drive.google.com/file/d/1YIO5gU0npf3bA_3qAPWCAkV9aJlP_jW1/view?usp=sharing",
 };
 
 // https://tailwindui.com/components/marketing/sections/team-sections
@@ -139,6 +140,12 @@ export default function About() {
                                 clipRule="evenodd"
                               />
                             </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href={person.resume} target="_blank">
+                            <span className="sr-only">Resume</span>
+                            <img src='cv.png' className='w-8 h-8 hover:w-12 hover:h-12 icon-transition' />
                           </a>
                         </li>
                       </ul>
