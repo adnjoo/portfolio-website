@@ -8,7 +8,7 @@ import RefreshButton from "./ui_elements/RefreshButton";
 const person = {
   name: "Andrew Njoo",
   role: "Software Builder",
-  imageUrl: "https://i1.sndcdn.com/avatars-000127627772-lsnb1f-t500x500.jpg",
+  imageUrl: "https://pbs.twimg.com/media/FnCuaaMaAAEP3w6?format=jpg&name=medium",
   githubUrl: "https://github.com/adnjoo",
   twitterUrl: "https://twitter.com/adnjoo",
   linkedinUrl: "https://linkedin.com/in/adnjoo",
