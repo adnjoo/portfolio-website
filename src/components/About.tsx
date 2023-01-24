@@ -66,14 +66,7 @@ export default function About() {
                     <div className="space-y-4 text-2xl">
                       {/* P1 */}
                       <div className=" text-gray-500">
-                        I currently work at
-                        {
-                          <AboutLink
-                            href="https://aws.amazon.com/cloudformation/"
-                            text=" AWS "
-                          />
-                        }
-                        in the CloudFormation console team.
+                        I am a software engineer based in Fremont, CA.
                       </div>
                       {/* P2 */}
                       <div className="order-3 ">
