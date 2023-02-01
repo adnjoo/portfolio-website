@@ -6,9 +6,10 @@ import About from '../components/portfolio/About';
 import Skills from '../components/portfolio/Skills';
 import Projects from '../components/portfolio/Projects';
 
-export default function Portfolio (): React.ReactElement {
+export default function Portfolio ({ data, location }: any): any {
+  const siteTitle = data.site.siteMetadata?.title || 'Title';
   return (
-    <Layout location={location}>
+    <Layout location={location} title={siteTitle}>
       <About />
       <Skills />
       <Projects />
