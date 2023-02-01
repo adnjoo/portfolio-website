@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import About from '../components/portfolio/About';
@@ -14,3 +15,13 @@ export default function Portfolio (): React.ReactElement {
     </Layout>
   );
 };
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
