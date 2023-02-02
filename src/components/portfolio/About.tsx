@@ -15,7 +15,7 @@ const person = {
   githubUrl: 'https://github.com/adnjoo',
   twitterUrl: 'https://twitter.com/adnjoo',
   linkedinUrl: 'https://linkedin.com/in/adnjoo',
-  resume: 'https://drive.google.com/file/d/1YIO5gU0npf3bA_3qAPWCAkV9aJlP_jW1/view?usp=sharing'
+  resume: 'https://drive.google.com/file/d/1A8r_rYM3RYDzvHSYbB7gZd_MN0IpVwt0/view?usp=sharing'
 };
 
 // https://tailwindui.com/components/marketing/sections/team-sections
