@@ -26,7 +26,7 @@ export default function Projects (): any {
                         API)
                       </dt>
                       <dd className='order-1 text-4xl font-extrabold text-indigo-600'>
-                        MovieApp
+                        Movie App
                       </dd>
                     </div>
                   </a>
