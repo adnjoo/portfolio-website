@@ -1,8 +1,14 @@
 import React from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll';
 
+interface Skill {
+    name: string;
+    image: string;
+    background?: string;
+}
+
 // Source: flaticon.com
-const skills = [
+const skills: Skill[] = [
   { name: 'TypeScript', image: '/skill_ts.png' },
   { name: 'React', image: '/skill_react.png' },
   { name: 'Redux', image: '/skill_rtk.png', background: 'white' },

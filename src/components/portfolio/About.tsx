@@ -22,7 +22,6 @@ const person = {
 // With vertical images
 export default function About (): any {
   const [vinciQuotes, setVinciQuotes] = React.useState(quotes);
-
   const [counter, setCounter] = React.useState(0);
 
   React.useEffect(() => {
@@ -142,8 +141,6 @@ export default function About (): any {
                     <iframe
                       width="100%"
                       height="300"
-                      scrolling="no"
-                      frameBorder="no"
                       allow="autoplay"
                       src={'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1480612231&color=%2369c854&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'}
                     ></iframe>

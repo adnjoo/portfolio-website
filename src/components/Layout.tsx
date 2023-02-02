@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 const Layout = ({ location, title, children }: any): any => {
+  // @ts-ignore
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location?.pathname === rootPath;
 

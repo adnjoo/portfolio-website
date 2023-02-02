@@ -2,11 +2,6 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { BsTwitter, BsLinkedin } from 'react-icons/bs';
 
-const person = {
-  name: 'Andrew Njoo',
-  role: 'Sotware Engineer'
-};
-
 export default function Biography (): any {
   const data = useStaticQuery(graphql`
     query BioQuery {

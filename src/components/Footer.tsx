@@ -2,16 +2,22 @@ import React from 'react';
 import { BsInstagram } from 'react-icons/bs';
 import { FaGoodreadsG } from 'react-icons/fa';
 
-const navigation = [
+interface NavigationItem {
+  name: string;
+  href: string;
+  icon: () => any;
+}
+
+const navigation: NavigationItem[] = [
   {
     name: 'Instagram',
     href: 'https://www.instagram.com/adnjoo/',
-    icon: () => (<BsInstagram size={24} />)
+    icon: () => (<BsInstagram size={28} />)
   },
   {
     name: 'Goodreads',
     href: 'https://goodreads.com/user/show/60491331-andrew-njoo',
-    icon: () => (<FaGoodreadsG size={24} />)
+    icon: () => (<FaGoodreadsG size={28} />)
   }
 ];
 
@@ -28,7 +34,7 @@ export default function Footer (): any {
                 target="_blank" rel="noreferrer"
               >
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-8 w-8" aria-hidden="true" />
+                <item.icon />
               </a>
             ))}
           </div>
