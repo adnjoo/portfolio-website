@@ -27,7 +27,7 @@ const BlogPostTemplate = ({
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
-            className='mx-auto mb-24 text-md prose'
+            className='mx-auto px-4 mb-24 text-md prose items-center'
           />
         </div>
         <hr />

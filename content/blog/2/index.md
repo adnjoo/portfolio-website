@@ -4,6 +4,9 @@ date: "2023-02-02T06:16:48.787Z"
 description: "Mowgli in 2200"
 ---
 
+<img src='./mowgli.png'>
+
+image generated with [dall-e](https://openai.com/dall-e-2/)
 
 Once upon a time, in the dense jungles of the Indian wilderness, there lived a young boy named Mowgli. Mowgli had grown up among the animals, learning their ways and surviving on his own.
 
