@@ -30,7 +30,8 @@ const Seo = ({ description, title, children }: any): any => {
 
   return (
     <>
-      <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      {/* TODO: fix this so Blog is not hardcoded in the final part of ternary statement */}
+      <title>{title === 'Portfolio' || title === 'Blog' ? title : `Blog | ${title}`}</title>
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
