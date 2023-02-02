@@ -24,10 +24,10 @@ export default function Biography (): any {
 
   return (
     <div className='text-center flex flex-col items-center'>
-      <h2 className="text-3xl font-bold my-3">
+      {/* <h2 className="text-3xl font-bold my-3">
         {data.site.siteMetadata?.title || 'Title'}
-      </h2>
-      <p className="text-xl text-gray-500 mx-6 my-3">
+      </h2> */}
+      <p className="text-xl text-gray-500 mx-6 mt-12 mb-6">
         This is <strong>{`${author.name}'s`}</strong> {author?.summary || null}
       </p>
       <img src='/pfp.jpg' className='rounded-xl' style={{ width: '100px' }} />
