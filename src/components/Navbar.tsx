@@ -4,8 +4,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from 'gatsby';
 
 const navigation = [
-  { name: 'Blog', href: '' },
-  { name: 'Portfolio', href: 'portfolio' }
+  { name: 'Portfolio', href: '' },
+  { name: 'Blog', href: 'blog' }
 ];
 
 function classNames (...classes: any[]): any {

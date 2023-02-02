@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsInstagram } from 'react-icons/bs';
+import { BsInstagram, BsWordpress } from 'react-icons/bs';
 import { FaGoodreadsG } from 'react-icons/fa';
 
 interface NavigationItem {
@@ -18,6 +18,11 @@ const navigation: NavigationItem[] = [
     name: 'Goodreads',
     href: 'https://goodreads.com/user/show/60491331-andrew-njoo',
     icon: () => (<FaGoodreadsG size={28} />)
+  },
+  {
+    name: 'Wordpress',
+    href: 'https://adnjoo.wordpress.com/',
+    icon: () => (<BsWordpress size={28} />)
   }
 ];
 
