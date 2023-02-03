@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from '@heroicons/react/20/solid';
 
-import Biography from '../components/Biography';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
@@ -23,7 +22,13 @@ const BlogPostTemplate = ({
           <h1 itemProp="headline" className='block text-center text-xl font-semibold text-indigo-600 mt-12'>{post.frontmatter.title}</h1>
           <p className='block text-center text-lg text-slate-700 my-6'>{post.frontmatter.date}</p>
         </header>
-        <div className='flex'>
+        <div className=''>
+          {/* TODO: refactor this */}
+          {post.frontmatter.title === 'A tale by ChatGPT, narrated by 11L, w. art by dall-e' &&
+            <div className='flex justify-center my-6'>
+              <iframe allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1438693000&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </div>
+          }
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
