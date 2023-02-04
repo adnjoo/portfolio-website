@@ -47,11 +47,13 @@ export default function About(): any {
                     src='./pfp.jpg'
                   />
                   <div className="sm:col-span-2">
-                    <div className="space-y-4 text-xl">
+                    <div 
+                    className="space-y-4"
+                    >
                       {/* P1 */}
-                      <div className=" text-gray-500 flex justify-center sm:justify-start">
-                        I am a software engineer based in Fremont, CA.
-                      </div>
+                      <h2 className="text-gray-500 text-xl flex justify-center items-center text-center sm:justify-start">
+                        I am a software engineer based in Fremont, CA
+                      </h2>
                       {/* Social Links */}
                       <ul
                         role="list"
