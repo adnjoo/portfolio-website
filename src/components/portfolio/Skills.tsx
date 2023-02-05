@@ -17,7 +17,8 @@ const skills: Skill[] = [
   { name: 'NodeJS', image: '/skill_node.png' },
   { name: 'Python', image: '/skill_py.png' },
   { name: 'Java', image: '/skill_java.png', background: 'white' },
-  { name: 'Git', image: '/skill_git.png' }
+  { name: 'Git', image: '/skill_git.png' },
+  { name: 'Agile', image: '/skill_agile.png' },
 ];
 
 // https://tailwindui.com/components/marketing/sections/logo-clouds
