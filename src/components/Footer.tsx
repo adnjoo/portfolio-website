@@ -16,7 +16,7 @@ const navigation: NavigationItem[] = [
   },
   {
     name: 'Goodreads',
-    href: 'https://goodreads.com/user/show/60491331-andrew-njoo',
+    href: 'https://goodreads.com/adnjoo',
     icon: () => (<FaGoodreadsG size={28} />)
   },
   {
