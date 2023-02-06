@@ -7,7 +7,7 @@ import Seo from '../components/Seo';
 
 export default function BlogIndex({ data, location }: any): any {
   const siteTitle = data.site.siteMetadata?.title || 'Title';
-  const posts = data.allMarkdownRemark.nodes;
+  const posts = data.allMdx.nodes;
 
   if (posts.length === 0) {
     return (
@@ -23,7 +23,6 @@ export default function BlogIndex({ data, location }: any): any {
   return (
     <>
       <Layout location={location} title={siteTitle}>
-        {/* <Biography /> */}
         <div className='text-center flex flex-col items-center my-6'>
           <h2 className="text-3xl font-bold my-3 text-slate-600">
             {data.site.siteMetadata?.title || 'Title'}
@@ -31,10 +30,10 @@ export default function BlogIndex({ data, location }: any): any {
         </div>
         <ol className='flex flex-col justify-center mt-8 mb-24'>
           {posts.map((post: any) => {
-            const title = post.frontmatter.title || post.fields.slug;
+            const title = post.frontmatter.title || post.frontmatter.slug;
 
             return (
-              <li key={post.fields.slug} className='mx-6 my-6'>
+              <li key={post.frontmatter.slug} className='mx-6 my-6'>
                 <article
                   className="post-list-item"
                   itemScope
@@ -42,7 +41,7 @@ export default function BlogIndex({ data, location }: any): any {
                 >
                   <header>
                     <h2 className='block text-center text-xl font-semibold text-indigo-600'>
-                      <Link to={`/blog${post.fields.slug}`} itemProp="url">
+                      <Link to={`../${post.frontmatter.slug}`} itemProp="url">
                         <span itemProp="headline">{title}</span>
                       </Link>
                     </h2>
@@ -81,16 +80,14 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    allMdx(sort: { frontmatter: { date: DESC } }) {
       nodes {
         excerpt
-        fields {
-          slug
-        }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          slug
         }
       }
     }

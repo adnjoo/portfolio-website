@@ -1,29 +1,22 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
- */
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
+const postTemplate = path.resolve("./src/templates/posts.tsx");
 
-// Define the template for blog post
-const blogPost = path.resolve('./src/templates/blog-post.tsx');
-
-/**
- * @type {import('gatsby').GatsbyNode['createPages']}
- */
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(`
-    {
-      allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
+    query {
+      allMdx(sort: { frontmatter: { date: ASC } }, limit: 1000) {
         nodes {
           id
-          fields {
+          frontmatter {
             slug
+          }
+          internal {
+            contentFilePath
           }
         }
       }
@@ -32,57 +25,30 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   if (result.errors) {
     reporter.panicOnBuild(
-      'There was an error loading your blog posts',
+      "There was an error loading your blog posts",
       result.errors
     );
     return;
   }
 
-  const posts = result.data.allMarkdownRemark.nodes;
+  const posts = result.data.allMdx.nodes;
 
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
-  // `context` is available in the template as a prop and as a variable in GraphQL
+  posts.forEach((node, index) => {
+    const previousPostId = index === 0 ? null : posts[index - 1].id;
+    const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
 
-  if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      console.log(post.fields.slug);
-      const previousPostId = index === 0 ? null : posts[index - 1].id;
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
-
-      createPage({
-        path: `blog${post.fields.slug}`,
-        component: blogPost,
-        context: {
-          id: post.id,
-          previousPostId,
-          nextPostId
-        }
-      });
+    createPage({
+      path: node.frontmatter.slug,
+      component: `${postTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
+      context: {
+        id: node.id,
+        previousPostId,
+        nextPostId,
+      },
     });
-  }
+  });
 };
 
-/**
- * @type {import('gatsby').GatsbyNode['onCreateNode']}
- */
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === 'MarkdownRemark') {
-    const value = createFilePath({ node, getNode });
-
-    createNodeField({
-      name: 'slug',
-      node,
-      value
-    });
-  }
-};
-
-/**
- * @type {import('gatsby').GatsbyNode['createSchemaCustomization']}
- */
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
