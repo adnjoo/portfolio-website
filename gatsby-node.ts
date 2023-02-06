@@ -1,9 +1,9 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
-const postTemplate = path.resolve("./src/templates/posts.tsx");
+const postTemplate = path.resolve("./src/templates/blog-post.tsx");
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+exports.createPages = async ({ graphql, actions, reporter }: { graphql: any, actions: any, reporter: any }) => {
   const { createPage } = actions;
 
   // Get all markdown blog posts sorted by date
@@ -33,7 +33,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const posts = result.data.allMdx.nodes;
 
-  posts.forEach((node, index) => {
+  posts.forEach((node: any, index: number) => {
     const previousPostId = index === 0 ? null : posts[index - 1].id;
     const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
 
@@ -49,7 +49,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   });
 };
 
-exports.createSchemaCustomization = ({ actions }) => {
+exports.createSchemaCustomization = ({ actions }: { actions: any }) => {
   const { createTypes } = actions;
 
   // Explicitly define the siteMetadata {} object

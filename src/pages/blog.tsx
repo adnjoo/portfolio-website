@@ -1,18 +1,22 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
-import Biography from '../components/Biography';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
 export default function BlogIndex({ data, location }: any): any {
-  const siteTitle = data.site.siteMetadata?.title || 'Title';
+  const siteTitle = data.site.siteMetadata?.subtitle;
   const posts = data.allMdx.nodes;
 
   if (posts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
-        {/* <Biography /> */}
+      <Layout location={location}>
+        <Helmet>
+          <title>
+            'No blog posts found'
+          </title>
+        </Helmet>
         <p>
           No blog posts found.
         </p>
@@ -23,6 +27,11 @@ export default function BlogIndex({ data, location }: any): any {
   return (
     <>
       <Layout location={location} title={siteTitle}>
+        <Helmet>
+          <title>
+            {siteTitle}
+          </title>
+        </Helmet>
         <div className='text-center flex flex-col items-center my-6'>
           <h2 className="text-3xl font-bold my-3 text-slate-600">
             {data.site.siteMetadata?.title || 'Title'}
@@ -66,18 +75,13 @@ export default function BlogIndex({ data, location }: any): any {
   );
 };
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = (): any => <Seo title="Blog" />;
 
 export const pageQuery = graphql`
   {
     site {
       siteMetadata {
-        title
+        subtitle
       }
     }
     allMdx(sort: { frontmatter: { date: DESC } }) {

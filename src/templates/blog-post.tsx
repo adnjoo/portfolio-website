@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 import { MDXProvider } from "@mdx-js/react";
 import { Link } from "gatsby";
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from '@heroicons/react/20/solid';
@@ -10,10 +11,17 @@ const shortcodes = { Link };
 
 export default function PageTemplate({ data, children, location }: { data: any, children: any, location: any }) {
   const { previous, next, site, mdx } = data;
-  const siteTitle = site.siteMetadata?.title || 'Title';
+  const siteTitle = `${site.siteMetadata?.subtitle} | ${mdx.frontmatter.title}`;
+
+  console.log({data})
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
+      <Helmet>
+        <title>
+          {siteTitle}
+        </title>
+      </Helmet>
       <article
         className="blog-post min-h-screen"
         itemScope
@@ -25,13 +33,13 @@ export default function PageTemplate({ data, children, location }: { data: any, 
         </header>
         <section itemProp="articleBody" className="mx-auto px-4 mb-24 text-md prose items-center">
 
-        <MDXProvider components={shortcodes}>{children}</MDXProvider>
+          <MDXProvider components={shortcodes}>{children}</MDXProvider>
         </section>
         <hr />
       </article>
       <nav className="blog-post-nav">
         <ul
-        className='flex justify-between mx-6'
+          className='flex justify-between mx-6'
         >
           <li className='justify-start'>
             {previous && (
@@ -67,7 +75,7 @@ export const query = graphql`
   ) {
     site {
       siteMetadata {
-        title
+        subtitle
       }
     }
     mdx(id: { eq: $id }) {

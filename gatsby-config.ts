@@ -1,27 +1,23 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-module.exports = {
-  siteMetadata: {
-    title: 'Blog',
-    author: {
-      name: 'Andrew Njoo',
-      summary: 'blog about building things.'
-    },
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbystarterblogsource.gatsbyjs.io/',
-    social: {
-      twitter: 'https://twitter.com/adnjoo',
-      linkedin: 'https://linkedin.com/adnjoo'
-    }
+const siteMetadata = {
+  title: 'Portfolio',
+  subtitle: 'Blog',
+  author: {
+    name: 'Andrew Njoo',
+    summary: 'blog about building things.'
   },
+  description: 'A starter blog demonstrating what Gatsby can do.',
+  siteUrl: 'https://adnjoo.com',
+  social: {
+    twitter: 'https://twitter.com/adnjoo',
+    linkedin: 'https://linkedin.com/adnjoo'
+  }
+};
+
+
+module.exports = {
+  siteMetadata,
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-mdx`,
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',

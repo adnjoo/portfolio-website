@@ -3,7 +3,7 @@ import * as React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-const Layout = ({ location, title, children }: any): any => {
+const Layout = ({ location, children }: any): any => {
   // @ts-ignore
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location?.pathname === rootPath;
