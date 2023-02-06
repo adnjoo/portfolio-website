@@ -12,7 +12,7 @@ export default function Portfolio ({ data, location }: any): any {
   return (
     <Layout location={location}>
        <Helmet>
-        <title>{data.site.siteMetadata?.title}</title>
+        <title>{data.site.siteMetadata.title}</title>
        </Helmet>
       <About />
       <Skills />

@@ -1,7 +1,19 @@
 const path = require("path");
+const readingTime = require("reading-time");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 const postTemplate = path.resolve("./src/templates/blog-post.tsx");
+
+exports.onCreateNode = ({ node, actions }: { node: any, actions: any}) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === `Mdx`) {
+    createNodeField({
+      node,
+      name: `readingTime`,
+      value: readingTime(node.body)
+    });
+  }
+};
 
 exports.createPages = async ({ graphql, actions, reporter }: { graphql: any, actions: any, reporter: any }) => {
   const { createPage } = actions;
