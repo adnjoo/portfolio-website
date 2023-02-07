@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
 import { MDXProvider } from "@mdx-js/react";
 import { Link } from "gatsby";
 import {
@@ -22,13 +21,9 @@ export default function PageTemplate({
   location: any;
 }) {
   const { previous, next, site, mdx } = data;
-  const siteTitle = `${site.siteMetadata?.subtitle} | ${mdx.frontmatter.title}`;
 
   return (
     <Layout location={location}>
-      <Helmet>
-        <title>{siteTitle}</title>
-      </Helmet>
       <article
         className="blog-post min-h-screen"
         itemScope
@@ -98,11 +93,6 @@ export const query = graphql`
     $previousPostId: String
     $nextPostId: String
   ) {
-    site {
-      siteMetadata {
-        subtitle
-      }
-    }
     mdx(id: { eq: $id }) {
       frontmatter {
         title

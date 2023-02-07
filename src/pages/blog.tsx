@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
@@ -12,11 +11,6 @@ export default function BlogIndex({ data, location }: any): any {
   if (posts.length === 0) {
     return (
       <Layout location={location}>
-        <Helmet>
-          <title>
-            'No blog posts found'
-          </title>
-        </Helmet>
         <p>
           No blog posts found.
         </p>
@@ -27,11 +21,6 @@ export default function BlogIndex({ data, location }: any): any {
   return (
     <>
       <Layout location={location} title={siteTitle}>
-        <Helmet>
-          <title>
-            {siteTitle}
-          </title>
-        </Helmet>
         <div className='text-center flex flex-col items-center my-6'>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight my-3">
             {siteTitle || 'Title'}
