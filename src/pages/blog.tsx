@@ -33,8 +33,8 @@ export default function BlogIndex({ data, location }: any): any {
           </title>
         </Helmet>
         <div className='text-center flex flex-col items-center my-6'>
-          <h2 className="text-3xl font-bold my-3 text-slate-600">
-            {data.site.siteMetadata?.title || 'Title'}
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight my-3">
+            {siteTitle || 'Title'}
           </h2>
         </div>
         <ol className='flex flex-col justify-center mt-8 mb-24'>
