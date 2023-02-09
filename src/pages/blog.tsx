@@ -20,7 +20,7 @@ export default function BlogIndex({ data, location }: any): any {
 
   return (
     <>
-      <Layout location={location} title={siteTitle}>
+      {/* <Layout location={location} title={siteTitle}> */}
         <div className='text-center flex flex-col items-center my-6'>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight my-3">
             Blog
@@ -59,7 +59,7 @@ export default function BlogIndex({ data, location }: any): any {
             );
           })}
         </ol>
-      </Layout>
+      {/* </Layout> */}
     </>
   );
 };
