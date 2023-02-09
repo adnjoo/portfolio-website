@@ -1,105 +1,111 @@
 html {
-    display: flex;
-    justify-content: center;
-    font-family: sans-serif;
-    font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 1.1em;
 }
 
 a {
-    text-decoration: none;
-    color: #595959;
-    transition: 0.3s;
+  text-decoration: none;
+  color: #595959;
+  transition: 0.3s;
 }
 
 a:hover {
-    color: #000;
-    box-shadow: 0 0 5px #000;
+  color: #000;
+  box-shadow: 0 0 5px #000;
 }
 
 section {
-    margin: 20px;
+  margin: 20px;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 ul {
-    overflow: auto;
-    white-space: nowrap;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 li {
-    list-style: circle;
-    padding: 10px;
+  list-style: circle;
+  padding: 10px;
 }
 
 .list-skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skill-icon {
-    max-width: 30px;
-    transition: 0.3s;
-    margin-top: 5px;
+  max-width: 30px;
+  transition: 0.3s;
+  margin-top: 5px;
 }
 
 .skill-icon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: row;
 }
 
 .dark-mode-btn {
-    position: fixed;
-    top: 1vw;
-    right: 1vw;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #292929;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 0 5px #000;
-    transition: 0.3s;
+  position: fixed;
+  top: 1vw;
+  right: 1vw;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #292929;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px #000;
+  transition: 0.3s;
 }
 
 .dark-mode-btn:hover {
-    background-color: #000;
+  background-color: #000;
 }
 
 #vinci {
-    position: fixed;
-    bottom: 1vw;
-    right: 1vw;
-    transition: 0.3s;
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  transition: 0.3s;
 }
 
 #vinci #quote {
-    display: none;
+  display: none;
+  color: #595959;
 }
 
 #vinci:hover {
-    transform: scale(1.05);  
+  transform: scale(1.05);
+  transform-origin: bottom right;
 }
 
 #vinci:hover #quote {
-    display: block;
+  display: block;
 }
 
 #vinci_image {
-    float:right;
+  float: right;
+}
+
+#footer {
+  margin-bottom: 80px;
 }
