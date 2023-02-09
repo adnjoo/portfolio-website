@@ -14,3 +14,8 @@ html {
 a {
     color: #fff;
 }
+
+a:hover {
+    color: #fff;
+    box-shadow: 0 0 5px #fff;
+}
