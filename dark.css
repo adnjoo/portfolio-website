@@ -1,0 +1,16 @@
+html {
+    background-color: #292929;
+    color: #DDDDDD;
+}
+
+.dark-mode-btn {
+    background-color: #DDDDDD;
+}
+
+.dark-mode-btn:hover {
+    background-color: #fff;
+}
+
+a {
+    color: #fff;
+}

@@ -26,8 +26,7 @@ ul {
 }
 
 li {
-    list-style: none;
-    float: left;
+    list-style: circle;
     padding: 10px;
 }
 
@@ -45,4 +44,21 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
+}
+
+.dark-mode-btn {
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #292929;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 5px #000;
+    transition: 0.3s;
+}
+
+.dark-mode-btn:hover {
+    background-color: #000;
 }
