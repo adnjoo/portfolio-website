@@ -62,3 +62,26 @@ li {
 .dark-mode-btn:hover {
     background-color: #000;
 }
+
+#vinci {
+    position: fixed;
+    bottom: 1vw;
+    right: 1vw;
+    transition: 0.3s;
+}
+
+#vinci #quote {
+    display: none;
+}
+
+#vinci:hover {
+    transform: scale(1.05);  
+}
+
+#vinci:hover #quote {
+    display: block;
+}
+
+#vinci_image {
+    float:right;
+}
