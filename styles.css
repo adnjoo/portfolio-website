@@ -1,8 +1,48 @@
 html {
     display: flex;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 section {
     margin: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+li {
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+
+.list-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-icon {
+    max-width: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
 }

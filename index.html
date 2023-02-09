@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>drew's simple site</title>
+    <title>drew's site</title>
+    <link rel="icon" type="image/x-icon" href="/assets/ramen.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"/>
 </head>
+
 <body>
-    <section>
-        <h1>Hi I'm Andrew</h1>
+    <section class="header">
+        <h1 class="header-text">Hi I'm Andrew</h1>
         <p>I am a software developer</p>
         <img src="./pfp.jpg" alt="pfp" height="150" style="border-radius: 30%">
     </section>
@@ -16,32 +19,58 @@
         <h1>Portfolio Links</h1>
         <ul>
             <li><a href="https://github.com/adnjoo" target="_blank">
-                GitHub <i class="bi bi-github"></i>
-            </a></li>
+                    GitHub <i class="bi bi-github"></i>
+                </a></li>
             <li><a href="https://twitter.com/adnjoo" target="_blank">
-                Twitter <i class="bi bi-twitter"></i>
-            </a></li>
+                    Twitter <i class="bi bi-twitter"></i>
+                </a></li>
             <li><a href="https://linkedin.com/in/adnjoo" target="_blank">
-                LinkedIn <i class="bi bi-linkedin"></i>
-            </a></li>
+                    LinkedIn <i class="bi bi-linkedin"></i>
+                </a></li>
             <li><a href="https://drive.google.com/file/d/1A8r_rYM3RYDzvHSYbB7gZd_MN0IpVwt0/view" target="_blank">
-                Resume <i class="bi bi-file-pdf"></i>
-            </a></li>
+                    Resume <i class="bi bi-file-pdf"></i>
+                </a></li>
         </ul>
     </section>
     <section>
         <h1>Skills</h1>
-        <ul>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Jest</li>
-            <li>JavaScript</li>
-            <li>Node</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Git</li>
-            <li>Agile</li>
+        <div class="grid-container">
+            <li class="list-skill">
+                TypeScript
+                <img class="skill-icon" src="./assets/skill_ts.png" />
+            </li>
+            <li class="list-skill">
+                React
+                <img class="skill-icon" src="./assets/skill_react.png" />
+            </li>
+            <li class="list-skill">
+                Redux
+                <img class="skill-icon" src="./assets/skill_redux.png" />
+            </li>
+            <li class="list-skill">
+                Jest
+                <img class="skill-icon" src="./assets/skill_jest.png" />
+            </li>
+            <li class="list-skill">
+                JavaScript
+                <img class="skill-icon" src="./assets/skill_js.png" />
+            </li>
+            <li class="list-skill">
+                Node
+                <img class="skill-icon" src="./assets/skill_node.png" />
+            </li>
+            <li class="list-skill">
+                Python
+                <img class="skill-icon" src="./assets/skill_python.png" />
+            </li>
+            <li class="list-skill">
+                Git
+                <img class="skill-icon" src="./assets/skill_git.png" />
+            </li>
+            <li class="list-skill">
+                Agile
+                <img class="skill-icon" src="./assets/skill_agile.png" />
+            </li>
         </ul>
     </section>
     <section>
@@ -55,16 +84,18 @@
     <section>
         <h1>Social Links</h1>
         <ul>
-            <li><a href="https://instagram.com/adnjoo" target="_blank">Instagram 
-                <i class="bi bi-instagram"></i>
-            </a></li>
+            <li><a href="https://instagram.com/adnjoo" target="_blank">Instagram
+                    <i class="bi bi-instagram"></i>
+                </a></li>
             <li><a href="https://goodreads.com/adnjoo" target="_blank">Goodreads
-                <i class="bi bi-book"></i>
-            </a></li>
+                    <i class="bi bi-book"></i>
+                </a></li>
             <li><a href="https://adnjoo.wordpress.com" target="_blank">Wordpress
-                <i class="bi bi-wordpress"></i>
-            </a></li>
+                    <i class="bi bi-wordpress"></i>
+                </a></li>
         </ul>
     </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
