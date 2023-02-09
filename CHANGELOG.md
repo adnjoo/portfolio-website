@@ -1,11 +1,5 @@
-02-05-2023
+02-09-23
 
-- add mdx blog posts
+had some weird flickering on Gatsby so I wanted to try something simple; HTML + CSS.
 
-02-01-2023
-
-- change from Vite to Gatsby (for blogging)
-
-08-06-2022
-
-- change from HTML to Vite
+I might research a SSG like 11ty but I would like to keep the portfolio page simple and maybe run a lighthouse audit on it so I can run analytics.
