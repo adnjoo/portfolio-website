@@ -1,21 +1,5 @@
-Portfolio (React) x Blog (Gatsby) website
+Simple portfolio site
 
-Tech 🖥️:
-- React 18.x
-- Gatsby 5.x
-- TypeScript 4.x
-- GraphQL
-- Tailwind 3.x
-- ESLint
+[lighthouse report](https://drive.google.com/file/d/1jF2HJj2hnO-1RbELZh-9LPXILSUhBg8d/view?usp=sharing)
 
-Deployed on [Vercel](https://vercel.com/)
-
-Quickstart:
-```
-git clone https://github.com/adnjoo/portfolio-website
-cd portfolio-website
-npm install
-gatsby develop
-```
-
-Site should be running locally on port 8000
+Deployed on [Vercel](https://www.adnjoo.com/)
