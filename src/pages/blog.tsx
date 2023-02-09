@@ -23,7 +23,7 @@ export default function BlogIndex({ data, location }: any): any {
       <Layout location={location} title={siteTitle}>
         <div className='text-center flex flex-col items-center my-6'>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight my-3">
-            {siteTitle || 'Title'}
+            Blog
           </h2>
         </div>
         <ol className='flex flex-col justify-center mt-8 mb-24'>
