@@ -1,9 +1,12 @@
+const darkModeStyle = document.getElementById('dark-mode')
+const darkModeBtn = document.getElementsByClassName('dark-mode-btn')[0]
+
 const darkMode = () => {
-    if (document.getElementById('dark-mode').getAttribute('href') == '') {
-        document.getElementById('dark-mode').setAttribute('href', 'dark.css')
-        document.getElementsByClassName('dark-mode-btn')[0].innerHTML = '🌞'
+    if (darkModeStyle.getAttribute('href') == '') {
+        darkModeStyle.setAttribute('href', 'dark.css')
+        darkModeBtn.innerHTML = '🌞'
     } else {
-        document.getElementById('dark-mode').setAttribute('href', '')
-        document.getElementsByClassName('dark-mode-btn')[0].innerHTML = '🌔'
+        darkModeStyle.setAttribute('href', '')
+        darkModeBtn.innerHTML = '🌔'
     }
 }
