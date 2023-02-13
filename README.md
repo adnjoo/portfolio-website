@@ -1,3 +1,6 @@
-Portfolio site
+Quickstart:
 
-Deployed on [Vercel](https://www.adnjoo.com/)
+```
+npm install
+npm run dev
+```
