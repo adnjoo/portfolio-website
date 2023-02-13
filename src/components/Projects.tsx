@@ -20,15 +20,7 @@ const projects = [
 
 export default function Projects(): any {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: '1rem',
-      }}
-    >
+    <Box className='section-container'>
       <h1>Projects</h1>
       <Grid container>
         {projects.map((project) => (

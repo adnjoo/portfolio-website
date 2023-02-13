@@ -91,15 +91,7 @@ const skills = [
 
 export default function Skills(): any {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: '1rem',
-      }}
-    >
+    <Box className='section-container'>
       <h1>Skills</h1>
       <Grid container>
         {skills.map((skill) => (

@@ -37,7 +37,7 @@ export default function About(): any {
           alignItems: 'center',
         }}
       >
-        <h1>Hi I&lsquo;m Andrew</h1>
+        <h1>Hi I&rsquo;m Andrew</h1>
         <p>I am a software developer</p>
         <Box
           sx={{
