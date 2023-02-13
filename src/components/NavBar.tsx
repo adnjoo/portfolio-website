@@ -1,28 +1,42 @@
 import * as React from 'react';
-import { AppBar, Box, Button, Container, IconButton, Link, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  IconButton,
+  Link,
+  Menu,
+  MenuItem,
+  Toolbar,
+  Typography,
+} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { BsCodeSquare } from 'react-icons/bs';
 
-const sitePages = [{
-  name: 'Portfolio',
-  href: '/',
-},
-{
-  name: 'Blog',
-  href: '/blog',
-},
+const sitePages = [
+  {
+    name: 'Portfolio',
+    href: '/',
+  },
+  {
+    name: 'Blog',
+    href: '/blog',
+  },
 ];
 const siteTitle = "andrew njoo's site";
 const siteLogo = (): any => (
-  <Box sx={{
-    mr: 2,
-    display: { xs: 'none', md: 'flex' },
-  }}>
+  <Box
+    sx={{
+      mr: 2,
+      display: { xs: 'none', md: 'flex' },
+    }}
+  >
     <BsCodeSquare size={36} />
   </Box>
 );
 
-export default function ResponsiveAppBar (): any {
+export default function ResponsiveAppBar(): any {
   const [anchorElNav, setAnchorElNav] = React.useState<any>(false);
 
   const handleOpenNavMenu = (event: any): any => {
@@ -30,15 +44,15 @@ export default function ResponsiveAppBar (): any {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position='static'>
+      <Container maxWidth='xl'>
         <Toolbar disableGutters>
           {/* Desktop view */}
           <Typography
-            variant="h6"
+            variant='h6'
             noWrap
-            component="a"
-            href="/"
+            component='a'
+            href='/'
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -57,27 +71,29 @@ export default function ResponsiveAppBar (): any {
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 <Typography
-                  component="a"
+                  component='a'
                   href={page.href}
                   sx={{
                     color: 'inherit',
                     textDecoration: 'none',
                   }}
-                >{page.name}</Typography>
+                >
+                  {page.name}
+                </Typography>
               </Button>
             ))}
           </Box>
           {/* Mobile view */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
-              size="large"
+              size='large'
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color='inherit'
             >
               <MenuIcon />
             </IconButton>
             <Menu
-              id="menu-appbar"
+              id='menu-appbar'
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
@@ -95,10 +111,11 @@ export default function ResponsiveAppBar (): any {
               }}
             >
               {sitePages.map((page) => (
-                <MenuItem key={page.name}
-                  onClick={handleOpenNavMenu}
-                >
-                  <Link href={page.href} sx={{ color: 'inherit', textDecoration: 'none' }}>
+                <MenuItem key={page.name} onClick={handleOpenNavMenu}>
+                  <Link
+                    href={page.href}
+                    sx={{ color: 'inherit', textDecoration: 'none' }}
+                  >
                     <Typography>{page.name}</Typography>
                   </Link>
                 </MenuItem>
@@ -107,10 +124,10 @@ export default function ResponsiveAppBar (): any {
           </Box>
           {/* Mobile View Title Text */}
           <Typography
-            variant="h5"
+            variant='h5'
             noWrap
-            component="a"
-            href=""
+            component='a'
+            href=''
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

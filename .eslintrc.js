@@ -23,7 +23,9 @@ module.exports = {
     'comma-dangle': 'off',
     '@typescript-eslint/comma-dangle': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
-    'max-len': ['error', { code: 80 }],
+    'max-len': ['error', { code: 90 }],
     '@typescript-eslint/space-before-function-paren': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/triple-slash-reference': 'off',
   }
 };

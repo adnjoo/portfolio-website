@@ -28,7 +28,7 @@
     "remark-html": "^15.0.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
     "eslint": "^8.34.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
     "eslint-plugin-import": "^2.27.5",
