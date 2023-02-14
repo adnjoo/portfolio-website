@@ -129,6 +129,7 @@ export default function ResponsiveAppBar(): any {
             component='a'
             href=''
             sx={{
+              ml: -4,
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
