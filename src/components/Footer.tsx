@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Button } from '@mui/material';
-import Grid from '@mui/material/Grid';
 import { IconContext } from 'react-icons';
 import { SiInstagram, SiGoodreads, SiWordpress } from 'react-icons/si';
 import { BiCodeAlt } from 'react-icons/bi';
