@@ -78,6 +78,15 @@ export default function Footer(): any {
           </Button>
         ))}
       </Box>
+      {/* Copyright */}
+      <Box
+        sx={{
+          color: 'primary.contrastText',
+          margin: '1rem 1rem 2rem 1rem',
+        }}
+      >
+        © {new Date().getFullYear()} Andrew Njoo
+      </Box>
     </Box>
   );
 }
