@@ -1,7 +1,9 @@
 import React from 'react';
 import { Box, Button } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import { IconContext } from 'react-icons';
 import { SiInstagram, SiGoodreads, SiWordpress } from 'react-icons/si';
+import { BiCodeAlt } from 'react-icons/bi';
 
 const navigation = {
   main: [
@@ -37,6 +39,15 @@ const socialLinks = [
       </IconContext.Provider>
     ),
   },
+  {
+    name: 'SiteCode',
+    url: 'https://github.com/adnjoo/portfolio-website',
+    icon: (
+      <IconContext.Provider value={{ color: 'white' }}>
+        <BiCodeAlt size={20} />
+      </IconContext.Provider>
+    ),
+  }
 ];
 export default function Footer(): any {
   return (
@@ -70,6 +81,7 @@ export default function Footer(): any {
           <Button
             key={link.name}
             href={link.url}
+            target='_blank'
             sx={{
               textDecoration: 'none',
             }}
@@ -82,11 +94,11 @@ export default function Footer(): any {
       <Box
         sx={{
           color: 'primary.contrastText',
-          margin: '1rem 1rem 2rem 1rem',
+          margin: '1rem',
         }}
       >
         © {new Date().getFullYear()} Andrew Njoo
       </Box>
-    </Box>
+    </Box >
   );
 }
