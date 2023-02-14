@@ -9,6 +9,7 @@ export default function Layout({ children }: { children: any }): any {
     <>
       <Head>
         <meta name='viewport' content='initial-scale=1, width=device-width' />
+        <title>drew&rsquo;s site</title>
       </Head>
       <div className='main-container'>
         <NavBar />
