@@ -1,8 +1,8 @@
-## Description:
+### Description:
 
 Portfolio/blog site built with Next.js and Material UI located at [adnjoo.com](https://adnjoo.com).
 
-## Tech:
+### Tech:
 
 - Next.js 13.x
 - Material UI 5.x
