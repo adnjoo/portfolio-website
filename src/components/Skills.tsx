@@ -88,6 +88,7 @@ const skills = [
     ),
   },
 ];
+
 const skillsText = {
   title: 'Skills',
 };

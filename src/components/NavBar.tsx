@@ -24,7 +24,9 @@ const sitePages = [
     href: '/blog',
   },
 ];
+
 const siteTitle = "andrew njoo's site";
+
 const siteLogo = (): any => (
   <Box
     sx={{

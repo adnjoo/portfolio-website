@@ -10,6 +10,7 @@ const navigation = {
     { name: 'Blog', href: '/blog' },
   ],
 };
+
 const socialLinks = [
   {
     name: 'Instagram',
@@ -46,8 +47,9 @@ const socialLinks = [
         <BiCodeAlt size={20} />
       </IconContext.Provider>
     ),
-  }
+  },
 ];
+
 const footerText = {
   copyright: '©',
   name: 'Andrew Njoo',
@@ -101,8 +103,9 @@ export default function Footer(): any {
           margin: '1rem',
         }}
       >
-        {`${footerText.copyright} ${new Date().getFullYear()} ${footerText.name}`}
+        {`${footerText.copyright} ${new Date().getFullYear()} ${footerText.name
+          }`}
       </Box>
-    </Box >
+    </Box>
   );
 }

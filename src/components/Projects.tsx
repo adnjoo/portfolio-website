@@ -17,6 +17,7 @@ const projects = [
     link: 'https://adnjoo.github.io/React-Weather/',
   },
 ];
+
 const projectsText = {
   title: 'Projects',
 };

@@ -51,15 +51,22 @@ export default function About(): any {
             overflow: 'hidden',
           }}
         >
-          <Image src="/images/profile.jpg" width={200} height={200} unoptimized alt="pfp"
+          <Image
+            src='/images/profile.jpg'
+            width={200}
+            height={200}
+            unoptimized
+            alt='pfp'
           />
         </Box>
       </Box>
-      <Box sx={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}>
+      <Box
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
         <h1>{aboutText.portfolioLinks}</h1>
       </Box>
       <Box
@@ -71,7 +78,10 @@ export default function About(): any {
         }}
       >
         {portfolioLinks.map((link) => (
-          <Link href={link.href} target="_blank" rel="noreferrer"
+          <Link
+            href={link.href}
+            target='_blank'
+            rel='noreferrer'
             key={link.name}
             sx={{
               textDecoration: 'none',
