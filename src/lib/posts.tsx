@@ -33,13 +33,15 @@ export function getSortedPostsData(): any {
   const countSortedPosts = sortedPostsData.length;
   for (let i = 0; i < countSortedPosts; i++) {
     const currentPost: any = sortedPostsData[i];
-    const nextPost = sortedPostsData[i + 1];
-    const previousPost = sortedPostsData[i - 1];
+    const nextPost = sortedPostsData[i - 1];
+    const previousPost = sortedPostsData[i + 1];
 
-    currentPost.nextPostId = nextPost ? nextPost.id : sortedPostsData[0].id;
+    currentPost.nextPostId = nextPost
+      ? nextPost.id
+      : sortedPostsData[countSortedPosts - 1].id;
     currentPost.previousPostId = previousPost
       ? previousPost.id
-      : sortedPostsData[countSortedPosts - 1].id;
+      : sortedPostsData[0].id;
   }
 
   return sortedPostsData;
