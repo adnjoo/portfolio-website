@@ -3,7 +3,7 @@ title: '📔 Review of Atomic Habits by James Clear'
 date: '2023-01-14'
 ---
 
-• Introduction
+- Introduction
 
 Atomic habits is a book by James Clear about making small changes to get habits that can improve your life. This 📕 emphasizes the importance of focusing on the process of habit formation rather than the end result, and offers practical strategies for building habits that will help individuals achieve their goals. Clear draws on his personal experience, as well as research from the fields of psychology and neuroscience, to provide insights on how habits are formed and how they can be changed.
 
@@ -11,7 +11,7 @@ The book is divided into 6 parts including a why section, 4 laws (make it obviou
 
 ---
 
-• Fundamentals
+- Fundamentals
 
 Fundamentals is made of 3 chapters.
 
@@ -32,7 +32,7 @@ Chapter 3 also talks about 4 laws of behavior change and their inversions:
 
 ---
 
-• 1st Law - make it obvious
+- 1st Law - make it obvious
 
 The first law is make it obvious and starts with Chapter 4. An important point made in this chapter is the idea of pointing and calling which is used in Tokyo train stations to literally point and call out certain actions before a train moves along; this helped reduce train accidents.
 
@@ -46,7 +46,7 @@ This practice is the reverse of make it obvious, as you make it invisible.
 
 ---
 
-• 2nd Law - make it attractive
+- 2nd Law - make it attractive
 
 Chapter 8 talks about dopamine. Whenever
 you predict that an opportunity will be rewarding, your levels of dopamine spike in anticipation. Temptation bundling can be combined with habit stacking to build up new habits
@@ -60,7 +60,7 @@ Chapter 10 is about creating a motivation ritual by doing something you enjoy im
 
 ---
 
-• 3rd law - make it easy
+- 3rd law - make it easy
 
 Chapter 11 says that the amount of time you have been performing a habit is not as important as the number of times you have performed it.
 
@@ -83,12 +83,14 @@ satisfying
 
 ---
 
-• Advanced tactics
+- Advanced tactics
 
 18 is about Michael Phelps. 19 is about Goldilocks rule. 20 says to have a small flexible identity
 
-• Conclusion
+---
+
+- Conclusion
 
 The conclusion is that small atomic habits can make a big difference over time.
 
-• My summary - overall I liked this book. To be honest I skimmed some parts of it (like the stories/anecdotes in the beginning of each chapter), but some of the concepts like habit stacking, small flexible identity, and the notion of cues/environments that help form good/bad habits are useful to me in everyday life. I think the book is a good read for anyone who wants to improve their habits.
+- My summary - overall I liked this book. To be honest I skimmed some parts of it (like the stories/anecdotes in the beginning of each chapter), but some of the concepts like habit stacking, small flexible identity, and the notion of cues/environments that help form good/bad habits are useful to me in everyday life. I think the book is a good read for anyone who wants to improve their habits.
