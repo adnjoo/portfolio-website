@@ -1,5 +1,5 @@
 ---
-title: '📕 Review of DOET'
+title: '📕 Review of The Design of Everyday Things by Don Norman'
 date: '2023-02-15'
 ---
 
