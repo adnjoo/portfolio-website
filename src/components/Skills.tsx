@@ -88,11 +88,14 @@ const skills = [
     ),
   },
 ];
+const skillsText = {
+  title: 'Skills',
+};
 
 export default function Skills(): any {
   return (
     <Box className='section-container'>
-      <h1>Skills</h1>
+      <h1>{skillsText.title}</h1>
       <Grid container>
         {skills.map((skill) => (
           <Grid

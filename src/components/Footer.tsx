@@ -48,6 +48,11 @@ const socialLinks = [
     ),
   }
 ];
+const footerText = {
+  copyright: '©',
+  name: 'Andrew Njoo',
+};
+
 export default function Footer(): any {
   return (
     <Box
@@ -96,7 +101,7 @@ export default function Footer(): any {
           margin: '1rem',
         }}
       >
-        © {new Date().getFullYear()} Andrew Njoo
+        {`${footerText.copyright} ${new Date().getFullYear()} ${footerText.name}`}
       </Box>
     </Box >
   );

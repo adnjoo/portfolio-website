@@ -17,11 +17,14 @@ const projects = [
     link: 'https://adnjoo.github.io/React-Weather/',
   },
 ];
+const projectsText = {
+  title: 'Projects',
+};
 
 export default function Projects(): any {
   return (
     <Box className='section-container'>
-      <h1>Projects</h1>
+      <h1>{projectsText.title}</h1>
       <Grid container>
         {projects.map((project) => (
           <Grid

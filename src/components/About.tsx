@@ -26,6 +26,12 @@ const portfolioLinks = [
   },
 ];
 
+const aboutText = {
+  title: "Hi I'm Andrew",
+  subtitle: 'I am a software developer',
+  portfolioLinks: 'Portfolio Links',
+};
+
 export default function About(): any {
   return (
     <>
@@ -37,8 +43,8 @@ export default function About(): any {
           alignItems: 'center',
         }}
       >
-        <h1>Hi I&rsquo;m Andrew</h1>
-        <p>I am a software developer</p>
+        <h1>{aboutText.title}</h1>
+        <p>{aboutText.subtitle}</p>
         <Box
           sx={{
             borderRadius: '10%',
@@ -54,7 +60,7 @@ export default function About(): any {
         alignItems: 'center',
         justifyContent: 'center',
       }}>
-        <h1>Portfolio Links</h1>
+        <h1>{aboutText.portfolioLinks}</h1>
       </Box>
       <Box
         sx={{
