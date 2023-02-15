@@ -2,15 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import { parseISO, format } from 'date-fns';
 
 import Layout from '../../components/Layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
-
-export function Date({ dateString }: { dateString: any }): any {
-  const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>;
-}
+import DateConversion from '../../utils/DateConversion';
 
 export default function Post({ postData }: { postData: any }): any {
   return (
@@ -32,7 +27,7 @@ export default function Post({ postData }: { postData: any }): any {
             {postData.title}
           </h1>
           <h3>
-            <Date dateString={postData.date} />
+            <DateConversion dateString={postData.date} />
           </h3>
           <Box
             sx={{
