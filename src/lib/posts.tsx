@@ -7,51 +7,47 @@ import html from 'remark-html';
 const postsDirectory = path.join(process.cwd(), 'posts');
 
 export function getSortedPostsData(): any {
-  // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '');
 
-    // Read markdown file as string
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-    // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
-    // Combine the data with the id
     return {
       id,
       ...matterResult.data,
     };
   });
-  // Sort posts by date
-  return allPostsData.sort((a: any, b: any) => {
+
+  const sortedPostsData = allPostsData.sort((a: any, b: any) => {
     if (a.date < b.date) {
       return 1;
     } else {
       return -1;
     }
   });
+
+  const countSortedPosts = sortedPostsData.length;
+  for (let i = 0; i < countSortedPosts; i++) {
+    const currentPost: any = sortedPostsData[i];
+    const nextPost = sortedPostsData[i + 1];
+    const previousPost = sortedPostsData[i - 1];
+
+    currentPost.nextPostId = nextPost ? nextPost.id : sortedPostsData[0].id;
+    currentPost.previousPostId = previousPost
+      ? previousPost.id
+      : sortedPostsData[countSortedPosts - 1].id;
+  }
+
+  return sortedPostsData;
 }
 
 export function getAllPostIds(): any {
   const fileNames = fs.readdirSync(postsDirectory);
 
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
   return fileNames.map((fileName) => {
     return {
       params: {
@@ -65,19 +61,32 @@ export async function getPostData(id: any): Promise<any> {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-  // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  // Use remark to convert markdown into HTML string
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
-  // Combine the data with the id and contentHtml
   return {
     id,
     contentHtml,
     ...matterResult.data,
   };
+}
+
+export function getNextPostId(id: any): any {
+  const allPostsData = getSortedPostsData();
+  const nextPostId = allPostsData.find(
+    (post: any) => post.id === id
+  ).nextPostId;
+  return nextPostId;
+}
+
+export function getPreviousPostId(id: any): any {
+  const allPostsData = getSortedPostsData();
+  const previousPostId = allPostsData.find(
+    (post: any) => post.id === id
+  ).previousPostId;
+  return previousPostId;
 }
