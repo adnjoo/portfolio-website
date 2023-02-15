@@ -5,9 +5,7 @@ import {
   Button,
   Container,
   IconButton,
-  Link,
   Menu,
-  MenuItem,
   Toolbar,
   Typography,
 } from '@mui/material';
@@ -70,18 +68,10 @@ export default function ResponsiveAppBar(): any {
             {sitePages.map((page) => (
               <Button
                 key={page.name}
+                href={page.href}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <Typography
-                  component='a'
-                  href={page.href}
-                  sx={{
-                    color: 'inherit',
-                    textDecoration: 'none',
-                  }}
-                >
-                  {page.name}
-                </Typography>
+                {page.name}
               </Button>
             ))}
           </Box>
@@ -113,14 +103,13 @@ export default function ResponsiveAppBar(): any {
               }}
             >
               {sitePages.map((page) => (
-                <MenuItem key={page.name} onClick={handleOpenNavMenu}>
-                  <Link
-                    href={page.href}
-                    sx={{ color: 'inherit', textDecoration: 'none' }}
-                  >
-                    <Typography>{page.name}</Typography>
-                  </Link>
-                </MenuItem>
+                <Button
+                  key={page.name}
+                  href={page.href}
+                  sx={{ display: 'block' }}
+                >
+                  {page.name}
+                </Button>
               ))}
             </Menu>
           </Box>
@@ -129,10 +118,9 @@ export default function ResponsiveAppBar(): any {
             variant='h5'
             noWrap
             component='a'
-            href=''
+            href='/'
             sx={{
-              ml: -4,
-              mr: 2,
+              ml: -6,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               color: 'inherit',
