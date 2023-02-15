@@ -85,4 +85,6 @@ USER-CENTERED DESIGN
 - Use constraints so that the user feels there is only one thing to do
 - Standardize and you simplify lives e.g. cars and clocks
 
-*can also be found on [goodreads](https://www.goodreads.com/adnjoo)
+CONCLUSION
+
+Overall, "The Design of Everyday Things" provides valuable insights for anyone involved in the design of products or systems, as well as for anyone who wants to better understand the impact of design on their daily lives. I can recommend it for anyone interested in the intersection of design, psychology, and technology.
