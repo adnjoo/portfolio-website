@@ -38,6 +38,12 @@ export default function Post({ postData }: { postData: any }): any {
             sx={{
               fontSize: '1.1rem',
               margin: '1rem',
+              width: '100%',
+              code: {
+                fontSize: '1.1rem',
+                color: 'primary.contrastText',
+                backgroundColor: 'primary.main',
+              },
             }}
           >
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
