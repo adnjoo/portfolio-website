@@ -40,10 +40,13 @@ export default function Post({ postData }: { postData: any }): any {
               margin: '1rem',
               width: '100%',
               code: {
-                fontSize: '1.1rem',
+                fontSize: '1rem',
                 color: 'primary.contrastText',
                 backgroundColor: 'primary.main',
               },
+              pre: {
+                overflow: 'auto',
+              }
             }}
           >
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
