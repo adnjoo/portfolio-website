@@ -22,7 +22,7 @@ const portfolioLinks = [
   },
   {
     name: 'Resume',
-    href: 'https://drive.google.com/file/d/1A8r_rYM3RYDzvHSYbB7gZd_MN0IpVwt0/view',
+    href: './assets/Andrew Njoo Resume 2023.pdf',
   },
 ];
 
