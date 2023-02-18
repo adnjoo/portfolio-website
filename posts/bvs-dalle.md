@@ -1,5 +1,5 @@
 ---
-title: 'Batman vs Superman with Dall-E'
+title: '🎨 Batman vs Superman with Dall-E'
 date: '2021-01-01'
 ---
 

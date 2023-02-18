@@ -1,5 +1,5 @@
 ---
-title: 'Why tea 🍵 is good for devs'
+title: '🍵 Why tea is good for devs'
 date: '2022-10-01'
 ---
 

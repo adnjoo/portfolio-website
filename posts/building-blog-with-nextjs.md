@@ -1,5 +1,5 @@
 ---
-title: 'Building a blog with Next.js'
+title: '🖥️ Building a blog with Next.js'
 date: '2023-02-13'
 ---
 
