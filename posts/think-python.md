@@ -1,5 +1,5 @@
 ---
-title: '🐍 Think Python 2e by Allen Downey'
+title: '📔 [review] Think Python 2e by Allen Downey'
 date: '2023-02-17'
 ---
 

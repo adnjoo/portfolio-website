@@ -1,5 +1,5 @@
 ---
-title: '📔 Review of Atomic Habits by James Clear'
+title: '📔 [review] Atomic Habits by James Clear'
 date: '2023-01-14'
 ---
 

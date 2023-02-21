@@ -1,0 +1,20 @@
+---
+title: '⛰️ My experience at DevMountain'
+date: '2021-09-20'
+---
+
+![dev](/images/coding-fjord.png)
+
+I recently completed a full stack JavaScript bootcamp at [DevMountain](https://devmountain.com/), and it was an intense and rewarding experience. Over the course of the program, I learned a lot about software development and gained practical skills that I can apply in real-world scenarios.
+
+One of the most valuable skills I learned was how to use [Figma](https://www.figma.com/), a powerful design tool that is widely used in the industry. Through the bootcamp, I learned how to create wireframes, mockups, and prototypes that can be used to guide the development of web and mobile applications.
+
+Another key concept I learned was the software development life cycle (SDLC), which is a framework that outlines the steps involved in building software. By understanding the SDLC, I gained a deeper appreciation for the importance of planning, testing, and quality assurance in the development process.
+
+I also learned about continuous integration (CI) through [CircleCI](https://circleci.com/), which is a process that automates the testing and deployment of code changes. By using CircleCI, I was able to streamline the development process and ensure that my code was always working as expected.
+
+In addition to these tools and concepts, I also gained valuable experience in test-driven development using [Jest](https://jestjs.io/) testing, which is a framework for writing automated tests in JavaScript. Through pair programming, I was able to collaborate with other developers and learn from their experiences.
+
+Finally, I completed the [100 Days of Code challenge](https://adnjoo.github.io/100d/) twice, which involved committing to coding every day for 100 days. This challenge helped me develop a daily coding habit and gave me the opportunity to practice and apply the skills I had learned throughout the bootcamp.
+
+Overall, my experience at DevMountain was incredibly valuable and I feel much more confident in my ability to build and deploy full stack JavaScript applications. I would highly recommend this bootcamp to anyone looking to take their coding skills to the next level.
