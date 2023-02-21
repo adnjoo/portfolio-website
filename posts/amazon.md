@@ -3,7 +3,7 @@ title: 'My time at Amazon 🌲'
 date: '2023-02-20'
 ---
 
-Hi everyone 👋 I wanted to share my experience working at Amazon Web Services (AWS) as a front-end engineer in the CloudFormation team. I joined AWS in July 2022 and worked there until February 2023.
+Hi everyone 👋 I wanted to share my experience working at Amazon Web Services (AWS) as a front-end engineer in the CloudFormation team. I joined AWS in July 2022 and worked there until January 2023.
 
 During my time at AWS, I had the opportunity to work on some exciting projects. One project that I am particularly proud of is the Feature Spotlight, which helps users learn how to use CloudFormation. I championed this project and worked closely with the product team to build out its specs and requirements.
 
