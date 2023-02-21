@@ -31,3 +31,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
 }
+
+.markdown-body p a {
+    color: #0070f3;
+    text-decoration: none;
+}
