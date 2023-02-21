@@ -50,10 +50,10 @@ export default function Post({ postData }: { postData: any }): any {
             }}
           >
             <div
+            className='markdown-body'
               style={{
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center',
               }}
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
