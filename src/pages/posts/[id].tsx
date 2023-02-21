@@ -46,10 +46,17 @@ export default function Post({ postData }: { postData: any }): any {
               },
               pre: {
                 overflow: 'auto',
-              }
+              },
             }}
           >
-            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+              dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+            />
           </Box>
         </Box>
         <Box
