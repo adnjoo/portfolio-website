@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 const projects = [
   {
     name: 'Movie App 🎥',
-    link: 'https://andrew-movie-app.netlify.app/',
+    link: 'https://movie-app-adnjoo.vercel.app/',
   },
   {
     name: 'Sonic | Spotify Clone 🎵',
