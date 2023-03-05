@@ -14,6 +14,10 @@ import {
 import { SlRefresh } from 'react-icons/sl';
 import { IconContext } from 'react-icons';
 
+const spinStyle = {
+  animation: 'spin 30s infinite linear',
+};
+
 const skills = [
   {
     name: 'TypeScript',
@@ -26,7 +30,7 @@ const skills = [
   {
     name: 'React',
     icon: (
-      <IconContext.Provider value={{ color: '#61dafb' }}>
+      <IconContext.Provider value={{ color: '#61dafb', style: spinStyle }}>
         <SiReact size={40} />
       </IconContext.Provider>
     ),
