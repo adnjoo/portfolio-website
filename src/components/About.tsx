@@ -1,11 +1,11 @@
-import React from 'react';
-import Box from '@mui/material/Box';
-import Image from 'next/image';
-import Link from '@mui/material/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import { Box, Link } from '@mui/material';
+import Image from 'next/image';
+import React from 'react';
+import FlipCard from 'react-card-flip';
 
 const portfolioLinks = [
   {
@@ -33,6 +33,12 @@ const aboutText = {
 };
 
 export default function About(): any {
+  const [isFlipped, setIsFlipped] = React.useState(false);
+
+  const handleClick = (): void => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
     <>
       <Box
@@ -51,13 +57,24 @@ export default function About(): any {
             overflow: 'hidden',
           }}
         >
-          <Image
-            src='/images/profile.jpg'
-            width={200}
-            height={200}
-            unoptimized
-            alt='pfp'
-          />
+          <FlipCard isFlipped={isFlipped} flipDirection='horizontal'>
+            <Image
+              src={'/images/dysto_punk.gif'}
+              width={200}
+              height={200}
+              unoptimized
+              alt='pfp'
+              onClick={handleClick}
+            />
+            <Image
+              src={'/images/profile.jpg'}
+              width={200}
+              height={200}
+              unoptimized
+              alt='pfp'
+              onClick={handleClick}
+            />
+          </FlipCard>
         </Box>
       </Box>
       <Box
