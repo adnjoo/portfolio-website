@@ -65,6 +65,7 @@ export default function About(): any {
               unoptimized
               alt='pfp'
               onClick={handleClick}
+              className='rounded-md'
             />
             <Image
               src={'/images/profile.jpg'}
@@ -73,6 +74,7 @@ export default function About(): any {
               unoptimized
               alt='pfp'
               onClick={handleClick}
+              className='rounded-md'
             />
           </FlipCard>
         </Box>
