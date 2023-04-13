@@ -57,26 +57,15 @@ export default function About(): any {
             overflow: 'hidden',
           }}
         >
-          <FlipCard isFlipped={isFlipped} flipDirection='horizontal'>
-            <Image
-              src={'/images/dysto_punk.gif'}
-              width={200}
-              height={200}
-              unoptimized
-              alt='pfp'
-              onClick={handleClick}
-              className='rounded-md'
-            />
-            <Image
-              src={'/images/profile.jpg'}
-              width={200}
-              height={200}
-              unoptimized
-              alt='pfp'
-              onClick={handleClick}
-              className='rounded-md'
-            />
-          </FlipCard>
+          <Image
+            src={'/images/profile.jpg'}
+            width={200}
+            height={200}
+            unoptimized
+            alt='pfp'
+            onClick={handleClick}
+            className='rounded-md'
+          />
         </Box>
       </Box>
       <Box
