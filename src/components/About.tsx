@@ -5,7 +5,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { Box, Link } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
-import FlipCard from 'react-card-flip';
 
 const portfolioLinks = [
   {
