@@ -10,7 +10,7 @@ const projects = [
   },
   {
     name: 'Sonic | Spotify Clone 🎵',
-    link: 'https://sonic-eosin.vercel.app/',
+    link: 'https://sonic-adnjoo.vercel.app/',
   },
   {
     name: 'Weather App ☀️',
