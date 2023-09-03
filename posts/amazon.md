@@ -5,7 +5,7 @@ date: "2023-02-20"
 
 Hi everyone 👋 I wanted to share my experience working at Amazon Web Services (AWS) as a front-end engineer in the CloudFormation team. I joined AWS in July 2022 and worked there until January 2023.
 
-During my time at AWS, I had the opportunity to work on an exiciting project which was the Feature Spotlight, which helps users learn how to use CloudFormation. I championed this project and worked closely with the product team to build out its specs and requirements.
+During my time at AWS, I had the opportunity to work on an exciting project which was the Feature Spotlight, which helps users learn how to use CloudFormation. I championed this project and worked closely with the product team to build out its specs and requirements.
 
 Working at AWS was my first experience at a FAANG company, and it was an incredible opportunity to learn and grow as a front-end engineer. I also got to use TypeScript in a production environment for the first time, which was a great learning experience e.g. using generics to create reusable components.
 
