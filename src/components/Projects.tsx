@@ -13,8 +13,8 @@ const projects = [
     link: 'https://sonic-adnjoo.vercel.app/',
   },
   {
-    name: 'Weather App ☀️',
-    link: 'https://adnjoo.github.io/React-Weather/',
+    name: 'Bookkss 📚',
+    link: 'https://bookkss.com',
   },
 ];
 
