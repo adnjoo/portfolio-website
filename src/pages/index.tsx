@@ -17,7 +17,7 @@ export default function Home(): any {
         style={{
           width: '400px',
           flexDirection: 'column',
-          paddingTop: '40px', 
+          paddingTop: '40px',
           margin: 'auto',
         }}
       >
