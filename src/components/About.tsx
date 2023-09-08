@@ -2,11 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import { Box, Link } from '@mui/material';
 import { GitHub, LinkedIn, PictureAsPdf } from '@mui/icons-material';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const portfolioLinks = [
   {
     name: 'GitHub',
     href: 'https://github.com/adnjoo',
+  },
+  {
+    name: 'Twitter',
+    href: 'https://x.com/adnjoo',
   },
   {
     name: 'LinkedIn',
@@ -96,6 +101,7 @@ export default function About(): any {
           >
             {link.name}&nbsp;
             {link.name === 'GitHub' ? <GitHub /> : null}
+            {link.name === 'Twitter' ? <FaXTwitter size={24} /> : null}
             {link.name === 'LinkedIn' ? <LinkedIn /> : null}
             {link.name === 'Resume' ? <PictureAsPdf /> : null}
           </Link>

@@ -13,11 +13,11 @@ export default function Home(): any {
       <Skills />
       <Projects />
       <div
+        className='twitter-timeline-container'
         style={{
           width: '400px',
-          display: 'flex',
           flexDirection: 'column',
-          paddingTop: '40px',
+          paddingTop: '40px', 
           margin: 'auto',
         }}
       >
