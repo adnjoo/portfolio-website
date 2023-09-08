@@ -1,19 +1,12 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import { Box, Link } from '@mui/material';
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
+import { Box, Link } from '@mui/material';
+import { GitHub, LinkedIn, PictureAsPdf } from '@mui/icons-material';
 
 const portfolioLinks = [
   {
     name: 'GitHub',
     href: 'https://github.com/adnjoo',
-  },
-  {
-    name: 'Twitter',
-    href: 'https://twitter.com/adnjoo',
   },
   {
     name: 'LinkedIn',
@@ -102,10 +95,9 @@ export default function About(): any {
             }}
           >
             {link.name}&nbsp;
-            {link.name === 'GitHub' ? <GitHubIcon /> : null}
-            {link.name === 'Twitter' ? <TwitterIcon /> : null}
-            {link.name === 'LinkedIn' ? <LinkedInIcon /> : null}
-            {link.name === 'Resume' ? <PictureAsPdfIcon /> : null}
+            {link.name === 'GitHub' ? <GitHub /> : null}
+            {link.name === 'LinkedIn' ? <LinkedIn /> : null}
+            {link.name === 'Resume' ? <PictureAsPdf /> : null}
           </Link>
         ))}
       </Box>
