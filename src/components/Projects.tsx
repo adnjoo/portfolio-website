@@ -9,8 +9,8 @@ const projects = [
     link: 'https://movie-app-adnjoo.vercel.app/',
   },
   {
-    name: 'Sonic | Spotify Clone 🎵',
-    link: 'https://sonic-adnjoo.vercel.app/',
+    name: 'HelloRemote 👋',
+    link: 'https://helloremote.dev/',
   },
   {
     name: 'Bookkss 📚',
