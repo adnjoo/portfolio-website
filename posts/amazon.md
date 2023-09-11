@@ -7,7 +7,7 @@ Hi everyone 👋 I wanted to share my experience working at Amazon Web Services 
 
 During my time at AWS, I had the opportunity to work on an exciting project which was the Feature Spotlight, which helps users learn how to use CloudFormation. I championed this project and worked closely with the product team to build out its specs and requirements.
 
-Working at AWS was my first experience at a FAANG company, and it was an incredible opportunity to learn and grow as a front-end engineer. I also got to use TypeScript in a production environment for the first time, which was a great learning experience e.g. using generics to create reusable components.
+Working at AWS was my first experience at a FAANG company, and it was an incredible opportunity to learn and grow as a front-end engineer. At Amazon I used the unique systems to build and deploy full stack applications including [brazil build](https://gist.github.com/terabyte/15a2d3d407285b8b5a0a7964dd6283b0), 🚰 [Pipelines](https://blog.pragmaticengineer.com/amazon-notable-systems/), CR (code review - Amazon lingo for PR) and much more.
 
 Unfortunately, I was laid off in late January, which was tough to deal with. However, I am still grateful for the experience and the skills that I gained during my time at AWS. As a front-end engineer, I feel that my skills have improved, and I am now better equipped to tackle new challenges in my career.
 
