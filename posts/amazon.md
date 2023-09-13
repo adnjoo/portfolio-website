@@ -20,4 +20,5 @@ Looking back, I am reminded that setbacks are a part of life, and they can help 
 Additional sources/links
 
 The Everything Store - Brad Stone [1](https://www.amazon.com/Everything-Store-Jeff-Bezos-Amazon-ebook/dp/B00BWQW73E)
+
 Invent and Wander - Jeff Bezos [2](https://www.amazon.com/Invent-Wander-Collected-Writings-Introduction-ebook/dp/B08BCCT6MW)
