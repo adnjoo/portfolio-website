@@ -14,3 +14,10 @@ Some other interesting pieces of Amazon culture include the concept of the [flyw
 Unfortunately, I was laid off in late January, which was tough to deal with. However, I am still grateful for the experience and the skills that I gained during my time at AWS. As a front-end engineer, I feel that my skills have improved, and I am now better equipped to tackle new challenges in my career.
 
 Looking back, I am reminded that setbacks are a part of life, and they can help us grow and become better. I am excited to see what new opportunities await in the future.
+
+---
+
+Additional sources/links
+
+The Everything Store - Brad Stone [1](https://www.amazon.com/Everything-Store-Jeff-Bezos-Amazon-ebook/dp/B00BWQW73E)
+Invent and Wander - Jeff Bezos [2](https://www.amazon.com/Invent-Wander-Collected-Writings-Introduction-ebook/dp/B08BCCT6MW)
