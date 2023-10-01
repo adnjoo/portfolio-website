@@ -42,7 +42,7 @@ export default function About(): any {
             height={200}
             unoptimized
             alt='pfp'
-            className='rounded-md w-52'
+            className='rounded-md'
           />
         </Box>
       </Box>
