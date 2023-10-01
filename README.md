@@ -23,3 +23,7 @@ npm run dev
 ```
 npm run test
 ```
+
+### SLOC
+
+SLOC: 861
