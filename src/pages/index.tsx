@@ -5,10 +5,12 @@ import Layout from '@/components/Layout';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
+import { Bokeh } from '@/components/Bokeh';
 
 export default function Home(): any {
   return (
     <Layout>
+      <Bokeh />
       <About />
       <Skills />
       <Projects />
