@@ -66,7 +66,7 @@ const skillsText = {
 
 export default function Skills() {
   return (
-    <div className='bg-gray-100 py-10'>
+    <div className='mx-16 py-10 md:mx-32'>
       <h1 className='mb-6 text-center text-3xl font-semibold'>
         {skillsText.title}
       </h1>
@@ -74,7 +74,7 @@ export default function Skills() {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className='place-self-center flex w-24 h-24 flex-col justify-center items-center rounded-lg bg-white p-4 text-center shadow-lg transition-transform duration-200 ease-in-out hover:scale-110'
+            className='flex h-24 w-24 flex-col items-center justify-center place-self-center rounded-lg border-2 bg-white p-4 text-center shadow-lg transition-transform duration-200 ease-in-out hover:scale-110'
           >
             {skill.icon}
             <h3 className='mt-2'>{skill.name}</h3>

@@ -22,7 +22,7 @@ const projectsText = {
 
 export default function Projects() {
   return (
-    <div className='bg-gray-100 py-10'>
+    <div className='mx-16 py-10 md:mx-32'>
       <h1 className='mb-6 text-center text-3xl font-semibold'>
         {projectsText.title}
       </h1>
@@ -30,9 +30,14 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.name}
-            className='rounded-lg bg-white p-4 text-center shadow-lg'
+            className='rounded-lg border-2 bg-white p-4 text-center shadow-lg'
           >
-            <Link href={project.link} target='_blank' rel='noopener noreferrer'>
+            <Link
+              href={project.link}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='transition duration-200 ease-in-out hover:text-blue-400'
+            >
               {project.name}
             </Link>
           </div>
