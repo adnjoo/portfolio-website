@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-container {
@@ -52,4 +56,9 @@ body {
   .twitter-timeline-container {
     display: none;
   }
+}
+
+hr {
+  width: 100%;
+  border: 1px solid black;
 }
