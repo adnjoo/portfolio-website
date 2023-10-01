@@ -14,7 +14,7 @@ export default function Home(): any {
       <About />
       <Skills />
       <Projects />
-      <div className='twitter-timeline-container mx-auto flex w-[400px] flex-col pt-10'>
+      <div className='twitter-timeline-container mx-auto mb-12 mt-6 flex w-[400px] flex-col pt-10'>
         <h1 className='mb-6 text-center text-3xl font-semibold'>X Timeline</h1>
         <TwitterTimelineEmbed
           sourceType='profile'

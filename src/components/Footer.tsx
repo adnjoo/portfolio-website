@@ -57,25 +57,14 @@ const footerText = {
 
 export default function Footer(): any {
   return (
-    <Box
-      sx={{
-        backgroundColor: 'primary.main',
-        minHeight: '10vh',
-        marginTop: '5vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
+    <Box className='flex flex-col items-center justify-center bg-sky-600 text-white'>
       {/* Main Navigation */}
       <Box>
         {navigation.main.map((item) => (
           <Button
+            className='text-white no-underline'
             key={item.name}
             href={item.href}
-            color='inherit'
-            sx={{ color: 'primary.contrastText', textDecoration: 'none' }}
           >
             {item.name}
           </Button>
@@ -85,26 +74,20 @@ export default function Footer(): any {
       <Box>
         {socialLinks.map((link) => (
           <Button
+            className='no-underline'
             key={link.name}
             href={link.url}
             target='_blank'
-            sx={{
-              textDecoration: 'none',
-            }}
           >
             {link.icon}
           </Button>
         ))}
       </Box>
       {/* Copyright */}
-      <Box
-        sx={{
-          color: 'primary.contrastText',
-          margin: '1rem',
-        }}
-      >
-        {`${footerText.copyright} ${new Date().getFullYear()} ${footerText.name
-          }`}
+      <Box className='m-2 text-white'>
+        {`${footerText.copyright} ${new Date().getFullYear()} ${
+          footerText.name
+        }`}
       </Box>
     </Box>
   );

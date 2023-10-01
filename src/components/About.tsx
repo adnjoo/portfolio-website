@@ -60,7 +60,7 @@ export default function About() {
             href={link.href}
             target='_blank'
             rel='noreferrer'
-            className='mb-6 flex items-center text-slate-700 no-underline hover:text-blue-400 transition duration-200 ease-in-out'
+            className='mb-6 flex items-center text-slate-700 no-underline transition duration-200 ease-in-out hover:text-blue-400'
           >
             {link.icon}
             <span className='ml-2'>{link.name}</span>

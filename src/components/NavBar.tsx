@@ -6,6 +6,7 @@ import {
   Container,
   IconButton,
   Menu,
+  MenuItem,
   Toolbar,
   Typography,
 } from '@mui/material';
@@ -44,7 +45,7 @@ export default function ResponsiveAppBar(): any {
   };
 
   return (
-    <AppBar position='static'>
+    <AppBar position='static' className='bg-sky-600'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           {/* Desktop view */}
@@ -53,30 +54,25 @@ export default function ResponsiveAppBar(): any {
             noWrap
             component='a'
             href='/'
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
+            className='mr-2 hidden md:flex'
           >
             {siteLogo()}
             {siteTitle}
           </Typography>
           {/* Desktop View Nav Buttons */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box className='hidden md:flex'>
             {sitePages.map((page) => (
               <Button
+                className='my-2 text-white'
                 key={page.name}
                 href={page.href}
-                sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page.name}
               </Button>
             ))}
           </Box>
           {/* Mobile view */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box className='flex md:hidden'>
             <IconButton
               size='large'
               onClick={handleOpenNavMenu}
@@ -98,34 +94,29 @@ export default function ResponsiveAppBar(): any {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleOpenNavMenu}
+              className='flex flex-col md:hidden'
               sx={{
-                display: { xs: 'block', md: 'none' },
+                flexDirection: 'column',
               }}
             >
               {sitePages.map((page) => (
-                <Button
+                <MenuItem
+                  className='my-2 text-sky-600 transition duration-200 ease-in-out hover:text-sky-400'
                   key={page.name}
                   href={page.href}
-                  sx={{ display: 'block' }}
                 >
                   {page.name}
-                </Button>
+                </MenuItem>
               ))}
             </Menu>
           </Box>
           {/* Mobile View Title Text */}
           <Typography
+            className='ml-[-50px] flex flex-grow justify-center md:hidden'
             variant='h5'
             noWrap
             component='a'
             href='/'
-            sx={{
-              ml: -6,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
           >
             {siteTitle}
           </Typography>
