@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Link } from '@mui/material';
+import Link from 'next/link';
 import { GitHub, LinkedIn, PictureAsPdf } from '@mui/icons-material';
 import { FaTwitter } from 'react-icons/fa6';
 
