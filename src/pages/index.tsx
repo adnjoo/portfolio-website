@@ -14,15 +14,8 @@ export default function Home(): any {
       <About />
       <Skills />
       <Projects />
-      <div
-        className='twitter-timeline-container'
-        style={{
-          width: '400px',
-          flexDirection: 'column',
-          paddingTop: '40px',
-          margin: 'auto',
-        }}
-      >
+      <div className='twitter-timeline-container mx-auto flex w-[400px] flex-col pt-10'>
+        <h1 className='mb-6 text-center text-3xl font-semibold'>X Timeline</h1>
         <TwitterTimelineEmbed
           sourceType='profile'
           screenName='adnjoo'

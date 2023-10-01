@@ -27,6 +27,10 @@ body {
   }
 }
 
+.markdown-body p {
+  margin: 1rem 0rem;
+}
+
 .markdown-body p img {
   display: block;
   margin: auto;
@@ -61,4 +65,5 @@ body {
 hr {
   width: 100%;
   border: 1px solid black;
+  margin: 40px 0px;
 }
