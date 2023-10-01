@@ -30,74 +30,33 @@ const aboutText = {
 };
 
 export default function About(): any {
-  const [isFlipped, setIsFlipped] = React.useState(false);
-
-  const handleClick = (): void => {
-    setIsFlipped(!isFlipped);
-  };
-
   return (
     <>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
+      <Box className='mb-6 mt-12 flex flex-col items-center justify-center'>
         <h1>{aboutText.title}</h1>
         <p>{aboutText.subtitle}</p>
-        <Box
-          sx={{
-            borderRadius: '10%',
-            overflow: 'hidden',
-          }}
-        >
+        <Box className='overflow-hidden rounded-3xl'>
           <Image
             src={'/images/profile.jpg'}
             width={200}
             height={200}
             unoptimized
             alt='pfp'
-            onClick={handleClick}
-            className='rounded-md'
+            className='rounded-md w-52'
           />
         </Box>
       </Box>
-      <Box
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
+      <Box className='my-4 flex flex-col items-center justify-center'>
         <h1>{aboutText.portfolioLinks}</h1>
       </Box>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
+      <Box className='flex flex-col items-center justify-center'>
         {portfolioLinks.map((link) => (
           <Link
+            className='mb-6 flex items-center text-slate-700 no-underline hover:text-blue-400'
             href={link.href}
             target='_blank'
             rel='noreferrer'
             key={link.name}
-            sx={{
-              textDecoration: 'none',
-              color: '#595959',
-              display: 'flex',
-              alignItems: 'center',
-              marginBottom: '1rem',
-              '&:hover': {
-                color: '#000',
-              },
-            }}
           >
             {link.name}&nbsp;
             {link.name === 'GitHub' ? <GitHub /> : null}
