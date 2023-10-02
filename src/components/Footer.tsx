@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Box, Button } from '@mui/material';
 import { IconContext } from 'react-icons';
 import { SiInstagram, SiGoodreads, SiWordpress } from 'react-icons/si';
@@ -59,15 +60,23 @@ export default function Footer(): any {
   return (
     <Box className='flex flex-col items-center justify-center bg-sky-600 text-white'>
       {/* Main Navigation */}
-      <Box>
+      <Box className='my-4 flex gap-6'>
         {navigation.main.map((item) => (
-          <Button
-            className='!text-white no-underline'
-            key={item.name}
+          // <Link
+          //   className='!text-white no-underline transition duration-200 ease-in-out hover:text-blue-400'
+          //   key={item.name}
+          //   href={item.href}
+          // >
+          //   {item.name}
+          // </Link>
+          <Link
             href={item.href}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition duration-200 ease-in-out hover:text-blue-400'
           >
             {item.name}
-          </Button>
+          </Link>
         ))}
       </Box>
       {/* Social Links */}
@@ -84,7 +93,7 @@ export default function Footer(): any {
         ))}
       </Box>
       {/* Copyright */}
-      <Box className='m-2 text-white'>
+      <Box className='my-4 text-white'>
         {`${footerText.copyright} ${new Date().getFullYear()} ${
           footerText.name
         }`}
