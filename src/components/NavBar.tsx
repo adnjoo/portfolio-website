@@ -26,17 +26,6 @@ const sitePages = [
 
 const siteTitle = "andrew njoo's site";
 
-const siteLogo = (): any => (
-  <Box
-    sx={{
-      mr: 2,
-      display: { xs: 'none', md: 'flex' },
-    }}
-  >
-    <BsCodeSquare size={36} />
-  </Box>
-);
-
 export default function ResponsiveAppBar(): any {
   const [anchorElNav, setAnchorElNav] = React.useState<any>(false);
 
@@ -56,7 +45,9 @@ export default function ResponsiveAppBar(): any {
             href='/'
             className='mr-2 hidden md:flex'
           >
-            {siteLogo()}
+            <Box className='mr-2 hidden md:flex'>
+              <BsCodeSquare size={36} />
+            </Box>
             {siteTitle}
           </Typography>
           {/* Desktop View Nav Buttons */}
@@ -73,7 +64,7 @@ export default function ResponsiveAppBar(): any {
             ))}
           </Box>
           {/* Mobile view */}
-          <Box className='flex md:hidden'>
+          <Box className='absolute top-1 z-10 flex md:hidden'>
             <IconButton
               size='large'
               onClick={handleOpenNavMenu}
@@ -114,7 +105,7 @@ export default function ResponsiveAppBar(): any {
           </Box>
           {/* Mobile View Title Text */}
           <Typography
-            className='ml-[-50px] flex flex-grow justify-center md:hidden'
+            className='flex flex-grow justify-center md:hidden'
             variant='h5'
             noWrap
             component='a'
