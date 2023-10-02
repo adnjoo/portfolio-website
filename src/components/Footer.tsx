@@ -62,7 +62,7 @@ export default function Footer(): any {
       <Box>
         {navigation.main.map((item) => (
           <Button
-            className='text-white no-underline'
+            className='!text-white no-underline'
             key={item.name}
             href={item.href}
           >

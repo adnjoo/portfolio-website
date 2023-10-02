@@ -2,9 +2,9 @@ import * as React from 'react';
 import {
   AppBar,
   Box,
-  Button,
   Container,
   IconButton,
+  Link,
   Menu,
   MenuItem,
   Toolbar,
@@ -62,13 +62,14 @@ export default function ResponsiveAppBar(): any {
           {/* Desktop View Nav Buttons */}
           <Box className='hidden md:flex'>
             {sitePages.map((page) => (
-              <Button
+              <MenuItem
                 className='my-2 text-white'
+                component={Link}
                 key={page.name}
                 href={page.href}
               >
                 {page.name}
-              </Button>
+              </MenuItem>
             ))}
           </Box>
           {/* Mobile view */}
@@ -102,6 +103,7 @@ export default function ResponsiveAppBar(): any {
               {sitePages.map((page) => (
                 <MenuItem
                   className='my-2 text-sky-600 transition duration-200 ease-in-out hover:text-sky-400'
+                  component={Link}
                   key={page.name}
                   href={page.href}
                 >
