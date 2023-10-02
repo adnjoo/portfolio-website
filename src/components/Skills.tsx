@@ -66,7 +66,7 @@ const skillsText = {
 
 export default function Skills() {
   return (
-    <div className='mx-16 py-10 md:mx-32'>
+    <div className='mx-16 py-10 md:mx-32 lg:mx-48 xl:mx-64'>
       <h1 className='mb-6 text-center text-3xl font-semibold'>
         {skillsText.title}
       </h1>
