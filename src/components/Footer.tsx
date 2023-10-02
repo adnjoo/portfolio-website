@@ -62,15 +62,9 @@ export default function Footer(): any {
       {/* Main Navigation */}
       <Box className='my-4 flex gap-6'>
         {navigation.main.map((item) => (
-          // <Link
-          //   className='!text-white no-underline transition duration-200 ease-in-out hover:text-blue-400'
-          //   key={item.name}
-          //   href={item.href}
-          // >
-          //   {item.name}
-          // </Link>
           <Link
             href={item.href}
+            key={item.name}
             target='_blank'
             rel='noopener noreferrer'
             className='transition duration-200 ease-in-out hover:text-blue-400'
