@@ -22,3 +22,11 @@ Additional sources/links
 The Everything Store - Brad Stone [1](https://www.amazon.com/Everything-Store-Jeff-Bezos-Amazon-ebook/dp/B00BWQW73E)
 
 Invent and Wander - Jeff Bezos [2](https://www.amazon.com/Invent-Wander-Collected-Writings-Introduction-ebook/dp/B08BCCT6MW)
+
+---
+
+Disclaimer:
+
+This blog post is a personal account of my experience working at Amazon Web Services (AWS) as a front-end engineer in the CloudFormation team. The views and opinions expressed in this post are solely mine and do not represent the views, opinions, or official stance of Amazon, Amazon Web Services (AWS), or any of its affiliates.
+
+I have included links to external sources and books for reference purposes, but I do not endorse or guarantee the content or accuracy of these sources. Readers are encouraged to conduct their own research and due diligence when accessing external links or references.
