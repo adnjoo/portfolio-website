@@ -65,8 +65,6 @@ export default function Footer(): any {
           <Link
             href={item.href}
             key={item.name}
-            target='_blank'
-            rel='noopener noreferrer'
             className='transition duration-200 ease-in-out hover:text-blue-400'
           >
             {item.name}
@@ -81,6 +79,7 @@ export default function Footer(): any {
             key={link.name}
             href={link.url}
             target='_blank'
+            rel='noopener noreferrer'
           >
             {link.icon}
           </Button>
