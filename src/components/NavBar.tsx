@@ -58,6 +58,7 @@ export default function ResponsiveAppBar(): any {
                 component={Link}
                 key={page.name}
                 href={page.href}
+                tabIndex={0}
               >
                 {page.name}
               </MenuItem>
