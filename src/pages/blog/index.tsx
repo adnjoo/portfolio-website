@@ -2,9 +2,9 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 
-import Layout from '../components/Layout';
-import { getSortedPostsData } from '../lib/posts';
-import DateConversion from '../utils/DateConversion';
+import Layout from '@/components/Layout';
+import { getSortedPostsData } from '@/lib/posts';
+import DateConversion from '@/utils/DateConversion';
 
 export async function getStaticProps(): Promise<any> {
   const allPostsData = getSortedPostsData();
@@ -22,7 +22,7 @@ export default function Blog({ allPostsData }: { allPostsData: any }): any {
         ({ id, date, title }: { id: any; date: any; title: any }) => (
           <Box key={id} sx={{ m: 5 }}>
             <Link
-              href={`/posts/${id}`}
+              href={`/blog/posts/${id}`}
               className='md:text-lg no-underline hover:text-blue-700'
             >
               {title}

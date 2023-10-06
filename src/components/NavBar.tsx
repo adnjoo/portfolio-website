@@ -1,4 +1,6 @@
-import * as React from 'react';
+import React from 'react';
+import { useTheme } from 'next-themes';
+import { usePathname } from 'next/navigation';
 import {
   AppBar,
   Box,
@@ -12,9 +14,13 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { BsCodeSquare, BsFillSunFill, BsMoonFill } from 'react-icons/bs';
-import { useTheme } from 'next-themes';
 
-const sitePages = [
+interface PageLocation {
+  name: string;
+  href: string;
+}
+
+const sitePages: PageLocation[] = [
   {
     name: 'Portfolio',
     href: '/',
@@ -30,6 +36,8 @@ const siteTitle = "andrew njoo's site";
 export default function ResponsiveAppBar(): any {
   const [anchorElNav, setAnchorElNav] = React.useState<any>(false);
   const { theme, setTheme } = useTheme();
+  const pathname = usePathname();
+  console.log(pathname);
 
   const handleOpenNavMenu = (event: any): any => {
     setAnchorElNav(anchorElNav ? false : event.currentTarget);
@@ -54,9 +62,14 @@ export default function ResponsiveAppBar(): any {
           </Typography>
           {/* Desktop View Nav Buttons */}
           <Box className='hidden md:flex'>
-            {sitePages.map((page) => (
+            {sitePages.map((page: PageLocation) => (
               <MenuItem
-                className='my-2 text-white'
+                className={`my-2 text-white ${
+                  (pathname?.includes(page.href) && page.href === '/blog') ??
+                  pathname === page.href
+                    ? 'text-slate-300'
+                    : ''
+                }`}
                 component={Link}
                 key={page.name}
                 href={page.href}

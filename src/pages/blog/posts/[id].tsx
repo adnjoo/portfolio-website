@@ -4,14 +4,14 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 
-import Layout from '../../components/Layout';
+import Layout from '@/components/Layout';
 import {
   getAllPostIds,
   getPostData,
   getNextPostId,
   getPreviousPostId,
-} from '../../lib/posts';
-import DateConversion from '../../utils/DateConversion';
+} from '@/lib/posts';
+import DateConversion from '@/utils/DateConversion';
 
 export default function Post({ postData }: { postData: any }): any {
   return (
