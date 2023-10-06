@@ -38,14 +38,13 @@ export default function About() {
     <div className='mb-6 mt-12 flex flex-col items-center justify-center'>
       <h1 className='text-3xl font-semibold'>{aboutText.title}</h1>
       <p className='mt-2 text-lg'>{aboutText.subtitle}</p>
-      <div className='mt-4 h-40 w-40 overflow-hidden rounded-full'>
+      <div className='mt-4 h-40 w-40 overflow-hidden rounded-full shadow-lg shadow-green-500/50'>
         <Image
           src={'/images/profile.jpg'}
           width={200}
           height={200}
           unoptimized
           alt='pfp'
-          className='rounded-md'
         />
       </div>
 
