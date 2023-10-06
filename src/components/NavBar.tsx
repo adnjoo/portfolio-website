@@ -65,23 +65,26 @@ export default function ResponsiveAppBar(): any {
                 {page.name}
               </MenuItem>
             ))}
-
           </Box>
           {theme === 'dark' ? (
-              <MenuItem
-                className='my-2 text-sky-200 transition duration-200 ease-in-out hover:text-sky-400 md:flex md:relative absolute right-0'
-                onClick={() => setTheme('light')}
-              >
-                <BsFillSunFill size={24} />
-              </MenuItem>
-            ) : (
-              <MenuItem
-                className='my-2 text-sky-200 transition duration-200 ease-in-out hover:text-sky-400 md:flex md:relative absolute right-0'
-                onClick={() => setTheme('dark')}
-              >
-                <BsMoonFill size={24} />
-              </MenuItem>
-            )}
+            <MenuItem
+              className='absolute right-0 my-2 text-sky-200 transition duration-200 ease-in-out hover:text-sky-400 md:relative md:flex'
+              onClick={() => {
+                setTheme('light');
+              }}
+            >
+              <BsFillSunFill size={24} />
+            </MenuItem>
+          ) : (
+            <MenuItem
+              className='absolute right-0 my-2 text-sky-200 transition duration-200 ease-in-out hover:text-sky-400 md:relative md:flex'
+              onClick={() => {
+                setTheme('dark');
+              }}
+            >
+              <BsMoonFill size={24} />
+            </MenuItem>
+          )}
           {/* Mobile view */}
           <Box className='absolute top-1 z-10 flex md:hidden'>
             <IconButton

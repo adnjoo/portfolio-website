@@ -21,7 +21,10 @@ export default function Blog({ allPostsData }: { allPostsData: any }): any {
       {allPostsData.map(
         ({ id, date, title }: { id: any; date: any; title: any }) => (
           <Box key={id} sx={{ m: 5 }}>
-            <Link href={`/posts/${id}`} className='hover:text-blue-700 no-underline'>
+            <Link
+              href={`/posts/${id}`}
+              className='no-underline hover:text-blue-700'
+            >
               <h3>{title}</h3>
             </Link>
             <Box>
