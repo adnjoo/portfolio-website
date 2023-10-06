@@ -42,7 +42,7 @@ export default function Post({ postData }: { postData: any }): any {
             />
           </Box>
         </Box>
-        <Box className='mt-12 flex min-h-screen flex-row items-center justify-between'>
+        <Box className='mt-12 flex min-h-[20vh] flex-row items-center justify-between'>
           {postData.previousPostId && (
             <Link
               href={`/blog/${postData.previousPostId}`}
