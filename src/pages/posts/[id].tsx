@@ -20,27 +20,14 @@ export default function Post({ postData }: { postData: any }): any {
         <title>{postData.title}</title>
       </Head>
       <Container>
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            marginTop: '1rem',
-            minHeight: '50vh',
-          }}
-        >
-          <h1>{postData.title}</h1>
-          <h3>
-            <DateConversion dateString={postData.date} />
-          </h3>
+        <Box className='mt-12 flex min-h-screen flex-col items-center justify-center md:mt-16'>
+          <h1 className='mb-6 text-2xl font-semibold'>{postData.title}</h1>
+          <DateConversion dateString={postData.date} />
           <Box
+            className='mt-4'
             sx={{
-              fontSize: '1.1rem',
-              margin: '1rem',
               width: '100%',
               code: {
-                fontSize: '1rem',
                 color: 'primary.contrastText',
                 backgroundColor: 'primary.main',
               },
@@ -50,24 +37,12 @@ export default function Post({ postData }: { postData: any }): any {
             }}
           >
             <div
-            className='markdown-body'
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-              }}
+              className='markdown-body flex flex-col'
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
           </Box>
         </Box>
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginTop: '10rem',
-          }}
-        >
+        <Box className='mt-12 flex min-h-screen flex-row items-center justify-between'>
           {postData.previousPostId && (
             <Link
               href={`/posts/${postData.previousPostId}`}
@@ -107,7 +82,7 @@ export async function getStaticPaths(): Promise<any> {
 export async function getStaticProps({
   params,
 }: {
-  params: any
+  params: any;
 }): Promise<any> {
   const postData = await getPostData(params.id);
   const nextPostId = getNextPostId(params.id);
