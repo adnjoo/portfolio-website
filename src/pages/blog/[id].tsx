@@ -45,7 +45,7 @@ export default function Post({ postData }: { postData: any }): any {
         <Box className='mt-12 flex min-h-screen flex-row items-center justify-between'>
           {postData.previousPostId && (
             <Link
-              href={`/posts/${postData.previousPostId}`}
+              href={`/blog/${postData.previousPostId}`}
               sx={{
                 textDecoration: 'none',
               }}
@@ -55,7 +55,7 @@ export default function Post({ postData }: { postData: any }): any {
           )}
           {postData.nextPostId && (
             <Link
-              href={`/posts/${postData.nextPostId}`}
+              href={`/blog/${postData.nextPostId}`}
               sx={{
                 textDecoration: 'none',
               }}

@@ -23,7 +23,7 @@ export default function Blog({ allPostsData }: { allPostsData: any }): any {
           <Box key={id} sx={{ m: 5 }}>
             <Link
               href={`/blog/${id}`}
-              className='md:text-lg no-underline hover:text-blue-700'
+              className='md:text-lg !no-underline hover:text-blue-700'
             >
               {title}
             </Link>

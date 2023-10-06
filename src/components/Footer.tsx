@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { Box, Button } from '@mui/material';
-import { IconContext } from 'react-icons';
 import { SiInstagram, SiGoodreads, SiWordpress } from 'react-icons/si';
 import { BiCodeAlt } from 'react-icons/bi';
 
@@ -17,36 +16,40 @@ const socialLinks = [
     name: 'Instagram',
     url: 'https://instagram.com/adnjoo',
     icon: (
-      <IconContext.Provider value={{ color: 'white' }}>
-        <SiInstagram size={20} />
-      </IconContext.Provider>
+      <SiInstagram
+        className='text-white transition duration-200 ease-in-out hover:text-slate-400'
+        size={20}
+      />
     ),
   },
   {
     name: 'Goodreads',
     url: 'https://goodreads.com/adnjoo',
     icon: (
-      <IconContext.Provider value={{ color: 'white' }}>
-        <SiGoodreads size={20} />
-      </IconContext.Provider>
+      <SiGoodreads
+        className='text-white transition duration-200 ease-in-out hover:text-slate-400'
+        size={20}
+      />
     ),
   },
   {
     name: 'WordPress',
     url: 'https://adnjoo.wordpress.com/',
     icon: (
-      <IconContext.Provider value={{ color: 'white' }}>
-        <SiWordpress size={20} />
-      </IconContext.Provider>
+      <SiWordpress
+        className='text-white transition duration-200 ease-in-out hover:text-slate-400'
+        size={20}
+      />
     ),
   },
   {
     name: 'SiteCode',
     url: 'https://github.com/adnjoo/portfolio-website',
     icon: (
-      <IconContext.Provider value={{ color: 'white' }}>
-        <BiCodeAlt size={20} />
-      </IconContext.Provider>
+      <BiCodeAlt
+        className='text-white transition duration-200 ease-in-out hover:text-slate-400'
+        size={20}
+      />
     ),
   },
 ];
