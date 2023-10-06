@@ -30,13 +30,13 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.name}
-            className='rounded-lg border-2 bg-white p-4 text-center shadow-lg'
+            className='rounded-lg border-2 p-4 text-center shadow-lg'
           >
             <Link
               href={project.link}
               target='_blank'
               rel='noopener noreferrer'
-              className='transition duration-200 ease-in-out hover:text-blue-400'
+              className='transition duration-200 ease-in-out hover:text-slate-600'
             >
               {project.name}
             </Link>

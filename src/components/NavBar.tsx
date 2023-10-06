@@ -11,7 +11,8 @@ import {
   Typography,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { BsCodeSquare } from 'react-icons/bs';
+import { BsCodeSquare, BsFillSunFill, BsMoonFill } from 'react-icons/bs';
+import { useTheme } from 'next-themes';
 
 const sitePages = [
   {
@@ -28,13 +29,14 @@ const siteTitle = "andrew njoo's site";
 
 export default function ResponsiveAppBar(): any {
   const [anchorElNav, setAnchorElNav] = React.useState<any>(false);
+  const { theme, setTheme } = useTheme();
 
   const handleOpenNavMenu = (event: any): any => {
     setAnchorElNav(anchorElNav ? false : event.currentTarget);
   };
 
   return (
-    <AppBar position='static' className='!bg-sky-600'>
+    <AppBar position='static' className='bg-teal-600 dark:bg-teal-800'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           {/* Desktop view */}
@@ -64,6 +66,25 @@ export default function ResponsiveAppBar(): any {
               </MenuItem>
             ))}
           </Box>
+          {theme === 'dark' ? (
+            <MenuItem
+              className='absolute right-0 my-2 text-sky-200 transition duration-200 ease-in-out hover:text-sky-400 md:relative md:flex'
+              onClick={() => {
+                setTheme('light');
+              }}
+            >
+              <BsFillSunFill size={24} />
+            </MenuItem>
+          ) : (
+            <MenuItem
+              className='absolute right-0 my-2 text-sky-200 transition duration-200 ease-in-out hover:text-sky-400 md:relative md:flex'
+              onClick={() => {
+                setTheme('dark');
+              }}
+            >
+              <BsMoonFill size={24} />
+            </MenuItem>
+          )}
           {/* Mobile view */}
           <Box className='absolute top-1 z-10 flex md:hidden'>
             <IconButton

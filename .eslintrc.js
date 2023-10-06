@@ -19,13 +19,15 @@ module.exports = {
   ],
   rules: {
     semi: ['error', 'always'],
-    '@typescript-eslint/semi': 'off',
     'comma-dangle': 'off',
+    'multiline-ternary': 'off',
+    '@typescript-eslint/semi': 'off',
     '@typescript-eslint/comma-dangle': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/space-before-function-paren': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/member-delimiter-style': 'off',
   }
 };

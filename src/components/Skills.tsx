@@ -74,7 +74,7 @@ export default function Skills() {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className='flex h-24 w-24 flex-col items-center justify-center place-self-center rounded-lg border-2 bg-white p-4 text-center shadow-lg transition-transform duration-200 ease-in-out hover:scale-110'
+            className='flex h-24 w-24 flex-col items-center justify-center place-self-center rounded-lg border-2 p-4 text-center shadow-lg transition-transform duration-200 ease-in-out hover:scale-110'
           >
             {skill.icon}
             <h3 className='mt-2'>{skill.name}</h3>
