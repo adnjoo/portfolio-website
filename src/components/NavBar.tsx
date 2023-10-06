@@ -37,7 +37,6 @@ export default function ResponsiveAppBar(): any {
   const [anchorElNav, setAnchorElNav] = React.useState<any>(false);
   const { theme, setTheme } = useTheme();
   const pathname = usePathname();
-  console.log(pathname);
 
   const handleOpenNavMenu = (event: any): any => {
     setAnchorElNav(anchorElNav ? false : event.currentTarget);
@@ -81,7 +80,7 @@ export default function ResponsiveAppBar(): any {
           </Box>
           {theme === 'dark' ? (
             <MenuItem
-              className='absolute right-0 my-2 text-sky-200 transition duration-200 ease-in-out hover:text-sky-400 md:relative md:flex'
+              className='my-2 hidden text-slate-200 transition duration-200 ease-in-out hover:text-slate-400 md:relative md:flex'
               onClick={() => {
                 setTheme('light');
               }}
@@ -90,7 +89,7 @@ export default function ResponsiveAppBar(): any {
             </MenuItem>
           ) : (
             <MenuItem
-              className='absolute right-0 my-2 text-sky-200 transition duration-200 ease-in-out hover:text-sky-400 md:relative md:flex'
+              className='my-2 hidden text-slate-200 transition duration-200 ease-in-out hover:text-slate-400 md:relative md:flex'
               onClick={() => {
                 setTheme('dark');
               }}
@@ -136,6 +135,19 @@ export default function ResponsiveAppBar(): any {
                   {page.name}
                 </MenuItem>
               ))}
+              <MenuItem
+                className='my-2 text-sky-600 transition duration-200 ease-in-out hover:text-sky-400'
+                onClick={() => {
+                  setTheme(theme === 'dark' ? 'light' : 'dark');
+                }}
+              >
+                {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+                {theme === 'dark' ? (
+                  <BsFillSunFill className='ml-1' size={24} />
+                ) : (
+                  <BsMoonFill className='ml-1' size={24} />
+                )}
+              </MenuItem>
             </Menu>
           </Box>
           {/* Mobile View Title Text */}
