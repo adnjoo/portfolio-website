@@ -38,6 +38,14 @@ export default function ResponsiveAppBar(): any {
   const { theme, setTheme } = useTheme();
   const pathname = usePathname();
 
+  React.useEffect(() => {
+    const checkLocalStorage = localStorage.getItem('theme');
+    if (!checkLocalStorage) {
+      const checkDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
+      setTheme(checkDarkTheme ? 'dark' : 'light');
+    }
+  }, []);
+
   const handleOpenNavMenu = (event: any): any => {
     setAnchorElNav(anchorElNav ? false : event.currentTarget);
   };
