@@ -10,7 +10,7 @@ import { Bokeh } from '@/components/Bokeh';
 export default function Home(): any {
   return (
     <Layout>
-      <Bokeh />
+      {/* <Bokeh /> */}
       <About />
       <Skills />
       <Projects />
