@@ -7,8 +7,8 @@ const projects = [
     link: 'https://movie-app-adnjoo.vercel.app/',
   },
   {
-    name: 'HelloRemote 👋',
-    link: 'https://helloremote.dev/',
+    name: 'XpenseTrackr 🧾',
+    link: 'https://xpensetrackr.com/',
   },
   {
     name: 'Bookkss 📚',

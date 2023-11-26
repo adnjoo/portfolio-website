@@ -51,7 +51,7 @@ export default function ResponsiveAppBar(): any {
   };
 
   return (
-    <AppBar position='static' className='!bg-teal-600'>
+    <AppBar position='static' className='!bg-sky-600'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           {/* Desktop view */}
