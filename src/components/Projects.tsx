@@ -4,7 +4,7 @@ import Link from 'next/link';
 const projects = [
   {
     name: 'Movie App 🎥',
-    link: 'https://movie-app-adnjoo.vercel.app/',
+    link: 'https://movie-app-code-182.vercel.app/',
   },
   {
     name: 'XpenseTrackr 🧾',
