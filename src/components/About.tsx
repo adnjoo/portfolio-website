@@ -2,20 +2,21 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GitHub, LinkedIn, PictureAsPdf } from '@mui/icons-material';
-import { FaTwitter } from 'react-icons/fa6';
+import { FaXTwitter } from 'react-icons/fa6';
 import { Underline } from './Underline';
 
 const portfolioLinks = [
+  {
+    name: '',
+    href: 'https://x.com/adnjoo',
+    icon: <FaXTwitter size={24} />,
+  },
   {
     name: 'GitHub',
     href: 'https://github.com/adnjoo',
     icon: <GitHub />,
   },
-  {
-    name: 'Twitter',
-    href: 'https://x.com/adnjoo',
-    icon: <FaTwitter size={24} />,
-  },
+
   {
     name: 'LinkedIn',
     href: 'https://linkedin.com/in/adnjoo',
