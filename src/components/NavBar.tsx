@@ -51,7 +51,7 @@ export default function ResponsiveAppBar(): any {
   };
 
   return (
-    <AppBar position='static' className='!bg-sky-600'>
+    <AppBar position='static' className='!bg-gray-800'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           {/* Desktop view */}
@@ -135,7 +135,7 @@ export default function ResponsiveAppBar(): any {
             >
               {sitePages.map((page) => (
                 <MenuItem
-                  className='my-2 text-sky-600 transition duration-200 ease-in-out hover:text-sky-400'
+                  className='my-2 text-gray-600 transition duration-200 ease-in-out hover:text-gray-400'
                   component={Link}
                   key={page.name}
                   href={page.href}

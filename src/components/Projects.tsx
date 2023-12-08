@@ -7,8 +7,8 @@ const projects = [
     link: 'https://movie-app-code-182.vercel.app/',
   },
   {
-    name: 'XpenseTrackr 🧾',
-    link: 'https://xpensetrackr.com/',
+    name: 'SubsTrackr 🧾',
+    link: 'https://substrackr.com/',
   },
   {
     name: 'Bookkss 📚',

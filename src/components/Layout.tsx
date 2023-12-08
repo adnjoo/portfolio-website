@@ -10,16 +10,16 @@ const layoutText = {
 
 export default function Layout({ children }: { children: any }): any {
   return (
-    <>
+    <div className='main-container bg-gradient-to-br from-gray-600 to-gray-800'>
       <Head>
         <meta name='viewport' content='initial-scale=1, width=device-width' />
         <title>{layoutText.siteTitle}</title>
       </Head>
-      <div className='main-container'>
+      <div >
         <NavBar />
         <main>{children}</main>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
