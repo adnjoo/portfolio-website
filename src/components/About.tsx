@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GitHub, LinkedIn, PictureAsPdf } from '@mui/icons-material';
 import { FaXTwitter } from 'react-icons/fa6';
-import { Underline } from './Underline';
 
 const portfolioLinks = [
   {
@@ -40,7 +39,6 @@ export default function About() {
     <div className='mb-6 mt-12 flex flex-col items-center justify-center'>
       <h1 className='text-3xl font-semibold'>{aboutText.title}</h1>
       <p className='mt-2 text-lg'>{aboutText.subtitle}</p>
-      <Underline />
       <div className='mt-4 h-40 w-40 overflow-hidden rounded-full shadow-lg shadow-green-500/50'>
         <Image
           src={'/images/profile.jpg'}

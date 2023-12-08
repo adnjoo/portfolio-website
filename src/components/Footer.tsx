@@ -61,7 +61,7 @@ const footerText = {
 
 export default function Footer(): any {
   return (
-    <Box className='flex flex-col items-center justify-center bg-sky-600 text-white'>
+    <Box className='flex flex-col items-center justify-center bg-grey-800 text-white border-t'>
       {/* Main Navigation */}
       <Box className='my-4 flex gap-6'>
         {navigation.main.map((item) => (
