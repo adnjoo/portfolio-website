@@ -26,13 +26,7 @@ fear of failure
 
 S1: bookkss
 
-The first startup is [bookkss](https://bookkss.com) (July 2023 - September 2023)
-
-It's challenging to get a good value proposition for a B2C app like bookkss (as an indie founder, 1 man orchestra) [1](https://twitter.com/levelsio/status/1451455052623745033) 
-
-For example, if we examine https://goodreads.com (a competitor), it is not easy to say how the website generates revenue (ads, partnerships, payments)[2](https://www.thepassivevoice.com/how-does-goodreads-make-money/). Amazon bought this website for $150 million in 2013 [3](https://www.washingtonpost.com/technology/2023/07/01/amazon-goodreads-elizabeth-gilbert/).
-
-Imo, Amazon is buying sites like goodreads and IMDB in order to have a beach-head on where data and interest is flowing in literature and film media (respectively).
+The first startup was [bookkss](https://bookkss.com) (July 2023 - September 2023).
 
 What went well was
 1. the relatively fast iteration speed using vite (next time we'll use next)
@@ -46,13 +40,23 @@ What I learned from this startup is to
 5. practice marketing i.e. any kind of activity aligned to growth, that does not involve building features [5](https://www.bannerbear.com/blog/one-year-of-marketing-a-saas-from-10k-to-20k-mrr/)
 
 
-On to the next one! Which will be a B2B startup - https://helloremote.dev
+🪦 December 2023 (ish)
 
 ---
 
 S2 is [HelloRemote](https://helloremote.dev) @ helloremote.dev
 
 HelloRemote (HR) is a job board for remote jobs.
+
+🪦 December 2023 (ish)
+
+---
+
+S3 and S4 are [XpenseTrackr.com](https://xpensetrackr.com) and [SubsTrackr](https://substrackr.com). They help users track expenses and subscriptions, respectively.
+
+The first one is deployed onto railway.app.
+
+The second one uses t3 stack (nextjs, ts, tRPC, prisma, nextauth) and is deployed on Vercel.
 
 ---
 
