@@ -15,10 +15,11 @@ export default function Layout({ children }: { children: any }): any {
         <meta name='viewport' content='initial-scale=1, width=device-width' />
         <title>{layoutText.siteTitle}</title>
       </Head>
-      <div >
-        <NavBar />
-        <main>{children}</main>
-      </div>
+
+      <NavBar />
+
+      <main className='min-h-[80vh]'>{children}</main>
+
       <Footer />
     </div>
   );

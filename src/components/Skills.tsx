@@ -66,11 +66,11 @@ const skillsText = {
 
 export default function Skills() {
   return (
-    <div className='mx-16 py-10 md:mx-32 lg:mx-48 xl:mx-64'>
+    <div className='mx-auto flex max-w-6xl flex-col items-center justify-center py-10'>
       <h1 className='mb-6 text-center text-3xl font-semibold'>
         {skillsText.title}
       </h1>
-      <div className='grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
+      <div className='grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:gap-12'>
         {skills.map((skill) => (
           <div
             key={skill.name}
