@@ -1,6 +1,9 @@
+'use client';
+
 import { IoMenu } from 'react-icons/io5';
 import { ThemeChanger } from '@/components/ThemeChanger';
-import { metadata } from '@/app/layout';
+import { ProfilePicture } from '@/app/page';
+import { usePathname } from 'next/navigation';
 
 const sitePages = [
   {
@@ -14,6 +17,7 @@ const sitePages = [
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <div className='navbar bg-base-100'>
       <div className='navbar-start ml-4'>
@@ -32,8 +36,8 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <a className='btn btn-ghost text-xl' href='/'>
-          {metadata.title as string}
+        <a className='' href='/'>
+          {pathname !== '/' ? <ProfilePicture className='h-12 w-12' /> : null}
         </a>
       </div>
       <div className='navbar-center hidden lg:flex'>
