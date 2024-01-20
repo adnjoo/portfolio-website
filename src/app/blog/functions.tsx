@@ -1,9 +1,10 @@
 import matter from 'gray-matter';
 import fs from 'fs/promises';
+import path from 'path';
 import { cache } from 'react';
 
 export const getPosts = cache(async () => {
-  const posts = await fs.readdir('./posts');
+  const posts = await fs.readdir(path.join(process.cwd(), 'posts'));
 
   const postPromises = posts.map(async (post) => {
     const postContent = await fs.readFile(`./posts/${post}`, 'utf-8');
