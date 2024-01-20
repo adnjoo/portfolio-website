@@ -2,28 +2,26 @@ import matter from 'gray-matter';
 import fs from 'fs/promises';
 import { cache } from 'react';
 
-type Post = {
-  id: string;
-  title: string;
-  date: string;
-};
-
 export const getPosts = cache(async () => {
   const posts = await fs.readdir('./posts');
 
-  return Promise.all(
-    posts.map(async (post) => {
-      const postContent = await fs.readFile(`./posts/${post}`, 'utf-8');
-      const { data, content } = matter(postContent);
-      const id = post.replace(/\.mdx$/, '');
+  const postPromises = posts.map(async (post) => {
+    const postContent = await fs.readFile(`./posts/${post}`, 'utf-8');
+    const { data, content } = matter(postContent);
+    const id = post.replace(/\.mdx$/, '');
 
-      return {
-        ...data,
-        id,
-        body: content,
-      };
-    })
-  );
+    return {
+      ...data,
+      id,
+      body: content,
+    };
+  });
+
+  const sortedPosts = (await Promise.all(postPromises)).sort((a, b) => {
+    return b.date.localeCompare(a.date);
+  });
+
+  return sortedPosts;
 });
 
 export async function getPost(slug: string) {
@@ -40,8 +38,15 @@ export default async function Blog() {
       <h1 className='mb-12 text-3xl sm:text-5xl'>Blog</h1>
       <ul className='flex flex-col gap-4'>
         {posts.map((post) => (
-          <li key={post.id}>
-            <a href={`/blog/${post.id}`}>{post.title}</a>
+          <li key={post.id} className='flex flex-col'>
+            <span>
+              {new Date(post.date).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+              })}
+            </span>
+            <a href={`/blog/${post.id}`} className='link'>{post.title} </a>
           </li>
         ))}
       </ul>
