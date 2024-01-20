@@ -1,6 +1,6 @@
 import { IoMenu } from 'react-icons/io5';
-
-const siteTitle = "drew's site";
+import { ThemeChanger } from '@/components/ThemeChanger';
+import { metadata } from '@/app/layout';
 
 const sitePages = [
   {
@@ -16,7 +16,7 @@ const sitePages = [
 const Navbar = () => {
   return (
     <div className='navbar bg-base-100'>
-      <div className='navbar-start'>
+      <div className='navbar-start ml-4'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
             <IoMenu size={24} />
@@ -32,7 +32,9 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <a className='btn btn-ghost text-xl' href='/'>{siteTitle}</a>
+        <a className='btn btn-ghost text-xl' href='/'>
+          {metadata.title as string}
+        </a>
       </div>
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>
@@ -43,8 +45,8 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <div className='navbar-end'>
-        <a className='btn'>Button</a>
+      <div className='navbar-end mr-4'>
+        <ThemeChanger />
       </div>
     </div>
   );
