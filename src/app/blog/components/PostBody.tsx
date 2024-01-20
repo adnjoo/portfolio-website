@@ -5,7 +5,7 @@ import { Code } from 'bright';
 export const mdxComponents = {
   pre: Code,
   h2: (props: any) => <h2 className='text-2xl font-semibold' {...props} />,
-  h3: (props: any) => <h3 className='text-xl font-semibold' {...props} />,
+  h3: (props: any) => <h3 className='my-4 text-xl font-semibold' {...props} />,
   p: (props: any) => <p className='my-4' {...props} />,
   a: (props: any) => (
     <a
