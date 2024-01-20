@@ -10,10 +10,10 @@ export const ThemeChanger = () => {
   useEffect(() => setHasMounted(true), []);
 
   const toggleTheme = () => {
-    if (theme === 'light') {
+    if (theme === 'cupcake') {
       setTheme('dark');
     } else {
-      setTheme('light');
+      setTheme('cupcake');
     }
   }
 
@@ -21,7 +21,7 @@ export const ThemeChanger = () => {
   if (!hasMounted) return null;
 
   return (
-    <button onClick={toggleTheme}>
+    <button onClick={toggleTheme} className='p-2'>
         {theme === 'light' ? '🌞' : '🌚'}
     </button>
   );
