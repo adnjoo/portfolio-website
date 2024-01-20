@@ -25,6 +25,7 @@ const socials = {
 };
 
 export default function Home() {
+  const tech = ['TypeScript 🪄✨', 'React ⚛️', 'React Native 📱', 'Next.js ➡️', 'Tailwind CSS 🎨', 'Git 📦', 'AI 🤖'];
   return (
     <main className='mx-6 mt-8 max-w-4xl lg:mx-auto lg:mt-28'>
       {/* Hero */}
@@ -33,7 +34,7 @@ export default function Home() {
         Software designer, founder, and maker.
       </h1>
       <p className='mt-6 text-base '>
-        I&apos;m Andrew, a software designer and entrepreneur based in the SF
+        Hi 👋, I&apos;m Andrew, a software designer and entrepreneur based in the SF
         Bay Area. I&apos;m the co-founder and CEO of{' '}
         <a href='https://bamboostud.io' target='_blank' className='link-primary'>
           bamboostud.io
@@ -59,6 +60,16 @@ export default function Home() {
       {/* Pics? */}
 
       {/* Latest 3 blog posts */}
+
+      {/* Tech */}
+      <div className='mt-12'>
+        My favorite technologies to use in 2024 include: 
+        <ul className='list-inside list-disc '>
+          {tech.map((tech) => (
+            <li key={tech} className='mt-1'>{tech}</li>
+          ))}
+        </ul>
+      </div>
 
       {/* Work experience */}
     </main>

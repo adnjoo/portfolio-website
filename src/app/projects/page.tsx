@@ -25,7 +25,7 @@ const projects = [
 const Project = ({ name, description, href, icon, userCount }: any) => {
   return (
     <div className='mt-8'>
-      <div className='flex items-center no-underline transition duration-200 ease-in-out hover:text-slate-600'>
+      <div className='flex items-center'>
         <div className='flex items-center gap-4'>
           <img src={icon} className='h-6 w-6' />
           <div className='flex flex-col'>

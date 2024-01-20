@@ -22,7 +22,7 @@ export const getPosts = cache(async () => {
     return b.date.localeCompare(a.date);
   });
 
-  return sortedPosts;
+  return sortedPosts.filter((post) => !post.archive);
 });
 
 export async function getPost(slug: string) {
