@@ -22,7 +22,7 @@ export const ThemeChanger = () => {
 
   return (
     <button onClick={toggleTheme} className='p-2'>
-        {theme === 'light' ? '🌞' : '🌚'}
+        {theme === 'cupcake' ? '🌞' : '🌚'}
     </button>
   );
 };
