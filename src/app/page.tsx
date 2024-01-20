@@ -35,7 +35,7 @@ export default function Home() {
       <p className='mt-6 text-base '>
         I&apos;m Andrew, a software designer and entrepreneur based in the SF
         Bay Area. I&apos;m the co-founder and CEO of{' '}
-        <a href='https://bamboostud.io' about='_blank' className='link-primary'>
+        <a href='https://bamboostud.io' target='_blank' className='link-primary'>
           bamboostud.io
         </a>
         🎋, where we develop technologies that empower companies and people to

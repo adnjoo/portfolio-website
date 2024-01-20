@@ -7,8 +7,12 @@ import { usePathname } from 'next/navigation';
 
 export const sitePages = [
   {
-    name: 'Portfolio',
+    name: 'About',
     href: '/',
+  },
+  {
+    name: 'Projects',
+    href: '/projects',
   },
   {
     name: 'Blog',
