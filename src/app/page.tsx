@@ -62,7 +62,7 @@ export default function Home() {
 
       {/* Pics? */}
 
-      {/* Latest blog posts */}
+      {/* Latest 3 blog posts */}
 
       {/* Work experience */}
     </main>

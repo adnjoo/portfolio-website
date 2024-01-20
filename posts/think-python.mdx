@@ -3,14 +3,14 @@ title: 'Think Python 2e by Allen Downey 📔'
 date: '2023-02-17'
 ---
 
-Intro
+## Intro
 
 This a review of Think Python 2e by Allen Downey.
 
 This book is divided into 21 chapters and is about 257 pages long
 
 
-1 - Way of the program 🥋
+### 1 - Way of the program 🥋
 
 - most important skill for computer scientist is problem solving
 - a program is a sequence of instructions that specifies how to perform a computation
@@ -19,14 +19,14 @@ This book is divided into 21 chapters and is about 257 pages long
 
  
 
-2 - variables, expressions and statements ⚽
+### 2 - variables, expressions and statements ⚽
 
 - a variable is a name that refers to a value
 - an assignment creates new variables and gives them values e.g. `x = 2`
 - an expression is a combination of values, variables and operators e.g. `x + y`
 - a statement is a unit of code that the python interpreter can execute e.g. `print('hello world')`
 
-3 - functions ➡️
+### 3 - functions
 
 - the expression in parentheses is called the argument of the function
 - a module is a file that contains a collection of related functions
@@ -38,7 +38,7 @@ This book is divided into 21 chapters and is about 257 pages long
     - if an error occurs, a list of functions is printed which is called a traceback
 - fruitful 🍇 functions return something; void 🌌 functions don’t
 
-4 - interface design
+### 4 - interface design
 
 - turtle 🐢 module
 - wrapping a piece of code in a function is called encapsulation 💊
@@ -50,20 +50,20 @@ This book is divided into 21 chapters and is about 257 pages long
     ```
     
 
-5 - conditionals and recursion 🔁
+### 5 - conditionals and recursion 🔁
 
 - floor division operator `//` divides two numbers and rounds down to an integer; an alternative is the modulus operator `%` which divides two numbers and returns the remainder
 - 3 logical operators: `and`, `or`, and `not`
 - the bottom of a recursive function stack is called the base case as there are no more frames to call
 
-6 - fruitful functions 🍓
+### 6 - fruitful functions 🍓
 
 - code that’s never reached is called dead code 😵
 - to deal with increasingly complex programs, you can try incremental development. This is when you add and test a small amount of code each time.
 - Scaffolding 🚧  is when you have code that is helpful for building the program, but not part of the final product
 - Following the flow of execution is one way to read a program; the other way is to do the ‘leap of faith’, which is when you assume the function works correctly.
 
-7 - iteration 🔂
+### 7 - iteration 🔂
 
 - reassignment is when you make an existing variable refer to a new value; equality is a symmetric relationship, and assignment is not
 
@@ -101,7 +101,7 @@ print (math.pi)
 print (estimate_pi() - math.pi)
 ```
 
-8 - strings 🧵
+### 8 - strings 🧵
 
 - a string is a sequence of characters
 - traversal is when you visit and perform computation on each character
@@ -109,11 +109,11 @@ print (estimate_pi() - math.pi)
 - Python 🐍 strings are immutable
 - a method call is called an invocation
 
-9 - word play
+### 9 - word play
 
 - if you see that `uses_all` was an instance of a previously solved problem, you are practicing a program development plan called reduction to a previously solved problem.
 
-10 - lists
+### 10 - lists
 
 - list is a sequence of values; you can have nested lists
 - lists are mutable
@@ -141,7 +141,7 @@ def add_all(t):
 - the association of a variable within an object is called a **reference**
 - an object with >1 reference has more than one name, and we can say that the object is **aliased**
 
-11 - dictionaries 📚
+### 11 - dictionaries 📚
 
 - a dictionary is like a list but more general. A dictionary represents a mapping from keys to values.
 - hashtable explanation on page 251
@@ -169,7 +169,7 @@ def fibonacci(n):
 - variables in `__main__` are sometimes called global as they can be accessed from any function
 - It’s common to use global variables as **flags**
 
-12 - tuples 👨‍👨‍👧‍👧
+### 12 - tuples 👨‍👨‍👧‍👧
 
 - a tuple is a sequence of values; tuples are immutable
 
@@ -220,13 +220,13 @@ def printall(*args):
 - dictionaries 📚 have a method called `items` that returns a sequence of tuples, where each tuple is a k:v pair
 - compound **data structures** are useful but prone to **‘shape errors’**
 
-13 - DS selection
+### 13 - DS selection
 
 - prefixes - strings, list of strings, tuple of strings
 - suffixes - list / histogram (dictionary)
 - mapping from prefix to suffix - dictionary
 
-14 - files 📂
+### 14 - files 📂
 
 - persistence is when some data is kept in permanent storage
 - `os` module has functions for working with files and directories e.g. `os.cwd` gets the name of the current directory
@@ -234,7 +234,7 @@ def printall(*args):
 - a database is a file that’s organized for storing data; python has a module called **dbm**
 - `pickle` module can translate any type of object into a string suitable for storage in a database
 
-15 - classes and objects
+### 15 - classes and objects
 
 - OOP uses programmer-defined types to organize both code and data
 - a programmer-defined type is also called a **class**
@@ -242,7 +242,7 @@ def printall(*args):
 - an object that’s an attribute of another object is **embedded**
 - **shallow copy** copies the object and any references it contains, but not embedded objects
 
-16 - classes and functions
+### 16 - classes and functions
 
 - **prototype and patch** is a type of development plan that deals with complex problems by starting with a simple prototype and increasingly deals with complications
 - pure functions don’t have side effects
@@ -251,7 +251,7 @@ def printall(*args):
 - an alternative style to prototype and patch is **designed development**, where high-level insight into the problem can make programming easier
 - invariants are conditions that should always be true
 
-17 - classes and methods
+### 17 - classes and methods
 
 - a **method** is a function that’s associated with a particular class.
     - there are 2 syntactic differences: 1) they’re defined inside a class definition in order to make the r/s b/w the class and method explicit
@@ -270,7 +270,7 @@ sketch(parrot, cage, dead=True)
 - 17.9 Functions that work with several types are called **polymorphic**. Polymorphism 🐑 can facilitate code reuse.
 - 17.11 a design principle that helps make software more maintainable is to keep the interface separate from implementation
 
-18 - inheritance
+### 18 - inheritance
 
 - **inheritance** is the ability to define a new class that’s a modified version of an existing class
 - a veneer is a thin method that uses another method without doing much work
@@ -281,7 +281,7 @@ sketch(parrot, cage, dead=True)
 - these relationships can be shown in a **************************class diagram**************************
 - **data encapsulation** (aka data hiding) is the mechanism where implementation details of a class are hidden from a user
 
-19 - the goodies
+### 19 - the goodies
 
 - conditional expressions
 
@@ -338,12 +338,12 @@ def is_anagram(w1, w2):
 - `defaultdict` is like a dictionary but if you’re trying to access a key that doesn’t exist, it will create one on the fly
 - a function used to create objects is sometimes called a **factory**
 
-20 - debugging
+### 20 - debugging
 
 - infinite recursion can cause a ‘Maximum recursion depth exceeded’ error
 - if you’re stuck on a bug, maybe go for a walk
 
-21 - algorithm analysis
+### 21 - algorithm analysis
 
 - analysis of algorithms is a branch of CS that studies the performance of algorithms, especially their runtime and space requirements
 - relative performance might depend on details of the dataset; one way to avoid this is to analyze the worst-case scenario.
@@ -357,6 +357,6 @@ def is_anagram(w1, w2):
 
 ---
 
-Conclusion
+## Conclusion
 
 Overall I liked this book and recommend it to anyone who is interested in the Python programming language. It is written in an easy to read style, and the examples are quite manageable.
