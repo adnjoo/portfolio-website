@@ -1,5 +1,5 @@
 import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
-import { classNames } from '@/lib/utils';
+import ProfilePicture from '@/components/ProfilePicture';
 
 const socials = {
   X: {
@@ -24,19 +24,9 @@ const socials = {
   },
 };
 
-export const ProfilePicture = ({ className = '' }: { className?: string }) => {
-  return (
-    <img
-      className={classNames('my-4 h-16 w-16 rounded-full', className)}
-      src='https://avatars.githubusercontent.com/u/22807629?v=4'
-      alt='pfp'
-    />
-  );
-};
-
 export default function Home() {
   return (
-    <main className='mx-6 mt-8 max-w-5xl lg:mx-auto lg:mt-28'>
+    <main className='mx-6 mt-8 max-w-4xl lg:mx-auto lg:mt-28'>
       {/* Hero */}
       <ProfilePicture />
       <h1 className='text-3xl sm:text-5xl'>

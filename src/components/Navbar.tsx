@@ -2,10 +2,10 @@
 
 import { IoMenu } from 'react-icons/io5';
 import { ThemeChanger } from '@/components/ThemeChanger';
-import { ProfilePicture } from '@/app/page';
+import ProfilePicture from '@/components/ProfilePicture';
 import { usePathname } from 'next/navigation';
 
-const sitePages = [
+export const sitePages = [
   {
     name: 'Portfolio',
     href: '/',
@@ -37,7 +37,9 @@ const Navbar = () => {
           </ul>
         </div>
         <a className='' href='/'>
-          {pathname !== '/' ? <ProfilePicture className='h-12 w-12' /> : null}
+          {pathname !== '/' ? (
+            <ProfilePicture className='!my-0 ml-2 !h-8 !w-8' />
+          ) : null}
         </a>
       </div>
       <div className='navbar-center hidden lg:flex'>
