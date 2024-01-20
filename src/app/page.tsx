@@ -25,7 +25,7 @@ const socials = {
 
 export default function Home() {
   return (
-    <main className='mx-6 max-w-5xl lg:mx-auto mt-8 lg:mt-28'>
+    <main className='mx-6 mt-8 max-w-5xl lg:mx-auto lg:mt-28'>
       <img
         className='my-4 h-16 w-16 rounded-full'
         src='https://avatars.githubusercontent.com/u/22807629?v=4'
