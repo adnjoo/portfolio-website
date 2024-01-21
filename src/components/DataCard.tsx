@@ -17,28 +17,28 @@ export const DataCard = () => {
 
     fetchData();
   }, []);
-
-  if (!data) {
-    return <div className='mt-12 md:mt-24'>Loading...</div>;
-  }
-
   return (
-    <div className='card mt-12 max-h-[400px] w-96 overflow-auto bg-base-100 p-4 shadow-xl md:mt-24'>
+    <div className='card mt-12 w-96 bg-base-100 p-4 shadow-xl md:mt-24'>
       <h1 className='text-md card-title mb-4'>
         Trending
         <BsGithub className='inline' />
         Repos
       </h1>
 
-      {data &&
-        data?.map((d: TrendingRepos) => (
-          <div key={d.url} className='mb-4'>
-            <a href={d.url} target='_blank' className='link hover:underline'>
-              {d.name}
-            </a>{' '}
-            <div className='text-sm'>{d.description}</div>
-          </div>
-        ))}
+      <div className='max-h-[400px] overflow-auto'>
+        {data ? (
+          data?.map((d: TrendingRepos) => (
+            <div key={d.url} className='mb-4'>
+              <a href={d.url} target='_blank' className='link hover:underline'>
+                {d.name}
+              </a>{' '}
+              <div className='text-sm'>{d.description}</div>
+            </div>
+          ))
+        ) : (
+          <div>Loading...</div>
+        )}
+      </div>
     </div>
   );
 };
