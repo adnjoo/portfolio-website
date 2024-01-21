@@ -1,4 +1,4 @@
-import puppeteer, { PuppeteerLaunchOptions } from 'puppeteer-core';
+import puppeteer, { PuppeteerLaunchOptions } from 'puppeteer';
 import chromium from '@sparticuz/chromium';
 
 export type TrendingRepos = {
