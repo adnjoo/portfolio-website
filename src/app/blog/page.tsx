@@ -15,6 +15,7 @@ export default async function Blog() {
                 year: 'numeric',
                 month: 'short',
                 day: 'numeric',
+                timeZone: 'UTC',
               })}
             </span>
             <a href={`/blog/${post.id}`} className='link'>{post.title} </a>
