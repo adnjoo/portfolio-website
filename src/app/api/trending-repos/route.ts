@@ -12,7 +12,7 @@ export async function GET(request: Request) {
   await page.goto('https://github.com/trending');
 
   const trendingRepos = await page.evaluate(() => {
-    const repos = [];
+    const repos: any = [];
     const repoElements = document.querySelectorAll('.Box-row');
 
     repoElements.forEach((repoElement) => {

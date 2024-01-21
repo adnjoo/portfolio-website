@@ -4,14 +4,14 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { BsGithub } from 'react-icons/bs';
 
+import { TrendingRepos } from '@/app/api/trending-repos/route';
+
 export const DataCard = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState<TrendingRepos[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(
-        '/api/trending-repos'
-      );
+      const response = await axios.get('/api/trending-repos');
       setData(response.data);
     };
 
@@ -23,26 +23,22 @@ export const DataCard = () => {
   }
 
   return (
-    <div className='card mt-12 w-96 bg-base-100 shadow-xl md:mt-24 p-4 max-h-[400px] overflow-auto'>
-        <h1 className='card-title mb-4 text-md'>
-          Trending 
-          <BsGithub className='inline' />
-          Repos
-        </h1>
+    <div className='card mt-12 max-h-[400px] w-96 overflow-auto bg-base-100 p-4 shadow-xl md:mt-24'>
+      <h1 className='text-md card-title mb-4'>
+        Trending
+        <BsGithub className='inline' />
+        Repos
+      </h1>
 
-        {data &&
-          data?.map((d: any) => (
-            <div key={d.id} className='mb-4'>
-              <a
-                href={d.url}
-                target='_blank'
-                className='link hover:underline'
-              >
-                {d.name}
-              </a>{' '}
-              <div className='text-sm'>{d.description}</div>
-            </div>
-          ))}
+      {data &&
+        data?.map((d: TrendingRepos) => (
+          <div key={d.url} className='mb-4'>
+            <a href={d.url} target='_blank' className='link hover:underline'>
+              {d.name}
+            </a>{' '}
+            <div className='text-sm'>{d.description}</div>
+          </div>
+        ))}
     </div>
   );
 };
