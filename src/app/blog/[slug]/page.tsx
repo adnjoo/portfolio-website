@@ -6,7 +6,7 @@ export default async function PostPage({
 }: {
   params: { slug: string };
 }) {
-  const post:any = await getPost(params.slug);
+  const post:any = await getPost(params.slug, true);
 
   //   console.log(post);
   return (

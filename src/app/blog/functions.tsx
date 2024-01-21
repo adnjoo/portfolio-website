@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { cache } from 'react';
 
-export const getPosts = cache(async () => {
+export const getPosts = cache(async (returnArchive = false) => {
   const posts = await fs.readdir(path.join(process.cwd(), 'posts'));
 
   const postPromises = posts.map(async (post) => {
@@ -22,10 +22,14 @@ export const getPosts = cache(async () => {
     return b.date.localeCompare(a.date);
   });
 
-  return sortedPosts.filter((post) => !post.archive);
+  if (returnArchive) {
+    return sortedPosts;
+  } else {
+    return sortedPosts.filter((post) => !post.archive);
+  }
 });
 
-export async function getPost(slug: string) {
-  const posts = await getPosts();
+export async function getPost(slug: string, returnArchive = false) {
+  const posts = await getPosts(returnArchive);
   return posts.find((post) => post.id === slug);
 }
