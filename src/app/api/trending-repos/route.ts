@@ -1,14 +1,27 @@
-import puppeteer from 'puppeteer';
+import puppeteer, { PuppeteerLaunchOptions } from 'puppeteer-core';
+import chromium from '@sparticuz/chromium';
 
 export type TrendingRepos = {
-    name: string;
-    description: string;
-    url: string;
+  name: string;
+  description: string;
+  url: string;
 };
 
 export async function GET(request: Request) {
-  // should allow Puppeteer to run without the sandbox in a more permissive mode.
-  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+  const options: PuppeteerLaunchOptions = {
+    args: [...chromium.args, '--hide-scrollbars', '--disable-web-security'],
+    defaultViewport: chromium.defaultViewport,
+    executablePath: await chromium.executablePath(
+      `https://github.com/Sparticuz/chromium/releases/download/v116.0.0/chromium-v116.0.0-pack.tar`
+    ),
+    headless: chromium.headless,
+    ignoreHTTPSErrors: true,
+  };
+
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox'],
+  });
 
   const page = await browser.newPage();
   await page.goto('https://github.com/trending');

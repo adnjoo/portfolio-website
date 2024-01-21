@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sparticuz/chromium": "^106.0.2",
     "axios": "^1.6.5",
     "bright": "^0.8.4",
     "gray-matter": "^4.0.3",
@@ -16,6 +17,7 @@
     "next-mdx-remote": "^4.4.1",
     "next-themes": "^0.2.1",
     "puppeteer": "^21.7.0",
+    "puppeteer-core": "^21.7.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
