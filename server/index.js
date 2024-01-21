@@ -1,8 +1,11 @@
 import express from 'express';
 import puppeteer from 'puppeteer';
+import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 4001;
+
+app.use(cors());
 
 app.get('/', async (req, res) => {
   try {

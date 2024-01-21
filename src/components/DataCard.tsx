@@ -4,14 +4,12 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { BsGithub } from 'react-icons/bs';
 
-import { TrendingRepos } from '@/app/api/trending-repos/route';
-
 export const DataCard = () => {
-  const [data, setData] = useState<TrendingRepos[]>([]);
+  const [data, setData] = useState<any>([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get('/api/trending-repos');
+      const response = await axios.get(process.env.NEXT_PUBLIC_API_URL as string);
       setData(response.data);
     };
 
@@ -27,7 +25,7 @@ export const DataCard = () => {
 
       <div className='max-h-[400px] overflow-auto'>
         {data ? (
-          data?.map((d: TrendingRepos) => (
+          data?.map((d: any) => (
             <div key={d.url} className='mb-4'>
               <a href={d.url} target='_blank' className='link hover:underline'>
                 {d.name}
