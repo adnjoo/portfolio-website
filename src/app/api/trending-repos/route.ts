@@ -8,7 +8,7 @@ export type TrendingRepos = {
 
 export async function GET(request: Request) {
   // should allow Puppeteer to run without the sandbox in a more permissive mode.
-  const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
 
   const page = await browser.newPage();
   await page.goto('https://github.com/trending');
