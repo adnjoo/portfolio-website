@@ -1,5 +1,7 @@
 import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
+
 import ProfilePicture from '@/components/ProfilePicture';
+import { DataCard } from '@/components/DataCard';
 
 const socials = {
   X: {
@@ -26,6 +28,7 @@ const socials = {
 
 export default function Home() {
   const tech = ['TypeScript', 'React ⚛️', 'React Native | Expo 📱', 'Next.js ➡️', 'Express', 'Tailwind CSS', 'Postgres', 'Git 📦', 'AI 🤖'];
+
   return (
     <main className='mx-6 mt-8 max-w-4xl lg:mx-auto lg:mt-28'>
       {/* Hero */}
@@ -70,6 +73,8 @@ export default function Home() {
           ))}
         </ul>
       </div>
+
+      <DataCard />
 
       {/* Work experience */}
     </main>
