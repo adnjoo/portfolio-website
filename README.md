@@ -1,1 +1,10 @@
-🥞: next 14, tailwind, daisyui, vercel
+🥞: 
+- next 14
+- tailwind 
+- daisyui 
+- vercel
+
+---
+
+backend: 
+- express (deployed to railway 🚂)
