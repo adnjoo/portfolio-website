@@ -74,7 +74,7 @@ export default function Home() {
         </ul>
       </div>
 
-      <DataCard />
+      {/* <DataCard /> */}
 
       {/* Work experience */}
     </main>
