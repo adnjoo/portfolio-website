@@ -27,7 +27,17 @@ const socials = {
 };
 
 export default function Home() {
-  const tech = ['TypeScript', 'React ⚛️', 'React Native | Expo 📱', 'Next.js ➡️', 'Express', 'Tailwind CSS', 'Postgres', 'Git 📦', 'AI 🤖'];
+  const tech = [
+    'TypeScript',
+    'React ⚛️',
+    'React Native | Expo 📱',
+    'Next.js ➡️',
+    'Express',
+    'Tailwind CSS',
+    'Postgres',
+    'Git 📦',
+    'AI 🤖',
+  ];
 
   return (
     <main className='mx-6 mt-8 max-w-4xl lg:mx-auto lg:mt-28'>
@@ -36,14 +46,22 @@ export default function Home() {
       <h1 className='text-3xl sm:text-5xl'>
         Software designer, founder, and maker.
       </h1>
-      <p className='mt-6 text-base '>
-        Hi 👋, I&apos;m Andrew, a software designer and entrepreneur based in the SF
-        Bay Area. I&apos;m the co-founder and CEO of{' '}
-        <a href='https://bamboostud.io' target='_blank' className='link-primary'>
+      <p className='mt-6 text-base'>
+        Hi 👋, I&apos;m Andrew, a software designer and entrepreneur based in
+        the SF Bay Area.
+      </p>
+
+      <p className='mt-6 text-base'>
+        I&apos;m a co-founder of{' '}
+        <a
+          href='https://bamboostud.io'
+          target='_blank'
+          className='link-primary'
+        >
           bamboostud.io
         </a>
-        🎋, where we help empower companies and people to
-        manage their technologies and finances better.
+        🎋, where we help empower companies and people to manage their
+        technologies and finances better.
       </p>
 
       <div className='mt-2 flex gap-6'>
@@ -66,10 +84,12 @@ export default function Home() {
 
       {/* Tech */}
       <div className='mt-12'>
-        My favorite technologies to use in 2024 include: 
+        My favorite technologies to use in 2024 include:
         <ul className='list-inside list-disc '>
           {tech.map((tech) => (
-            <li key={tech} className='mt-1'>{tech}</li>
+            <li key={tech} className='mt-1'>
+              {tech}
+            </li>
           ))}
         </ul>
       </div>
