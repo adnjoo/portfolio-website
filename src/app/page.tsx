@@ -42,7 +42,7 @@ export default function Home() {
         <a href='https://bamboostud.io' target='_blank' className='link-primary'>
           bamboostud.io
         </a>
-        🎋, where we develop technologies that empower companies and people to
+        🎋, where we help empower companies and people to
         manage their technologies and finances better.
       </p>
 
