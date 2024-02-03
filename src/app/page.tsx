@@ -1,7 +1,7 @@
 import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 import ProfilePicture from '@/components/ProfilePicture';
-import { DataCard } from '@/components/DataCard';
+import HandWave from '@/components/HandWave';
 
 const socials = {
   X: {
@@ -47,7 +47,7 @@ export default function Home() {
         Software designer, founder, and maker.
       </h1>
       <p className='mt-6 text-base'>
-        Hi 👋, I&apos;m Andrew, a software designer and entrepreneur based in
+        Hi <HandWave />, I&apos;m Andrew, a software designer and entrepreneur based in
         the SF Bay Area.
       </p>
 
@@ -79,6 +79,7 @@ export default function Home() {
       </div>
 
       {/* Pics? */}
+      
 
       {/* Latest 3 blog posts */}
 
