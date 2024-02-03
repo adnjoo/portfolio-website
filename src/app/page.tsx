@@ -85,7 +85,7 @@ export default function Home() {
 
       {/* Tech */}
       <div className='mt-12'>
-        My favorite technologies to use in 2024 include:
+        My favorite stack to use in 2024 include:
         <ul className='list-inside list-disc '>
           {tech.map((tech) => (
             <li key={tech} className='mt-1'>
