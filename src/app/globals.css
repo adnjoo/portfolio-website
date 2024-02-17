@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* inspired by https://www.julienthibeaut.xyz/blog/create-animated-gradient-borders-with-css, inspired by https://typehero.dev/ */
+/* 👋 🤖/👩‍💻 inspired by https://www.julienthibeaut.xyz/blog/create-animated-gradient-borders-with-css, and https://typehero.dev/ */
 .pfp {
   border-radius: 50%;
   display: flex;
