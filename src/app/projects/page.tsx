@@ -2,10 +2,10 @@ import { IoIosLink } from 'react-icons/io';
 
 const projects = [
   {
-    name: 'Substrackr',
-    description: 'A web app that helps users track subscriptions.',
-    href: 'https://substrackr.com',
-    icon: 'https://www.substrackr.com/logo.png',
+    name: 'XpenseTrackr',
+    description: 'Supercharge your financial goals.',
+    href: 'https://xpensetrackr.com',
+    icon: 'https://www.xpensetrackr.com/logo.png',
   },
   {
     name: 'Red Border Chrome Extension',
