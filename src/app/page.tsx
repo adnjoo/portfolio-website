@@ -30,12 +30,11 @@ export default function Home() {
   const tech = [
     'TypeScript',
     'React ⚛️',
-    'React Native | Expo 📱',
+    'React Native',
     'Next.js ➡️',
-    'Express',
+    'Node.js',
     'Tailwind CSS',
     'Postgres',
-    'Git 📦',
     'AI 🤖',
   ];
 
