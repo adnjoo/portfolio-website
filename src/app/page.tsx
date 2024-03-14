@@ -33,7 +33,7 @@ export default function Home() {
     'React Native',
     'Next.js ➡️',
     'Node.js',
-    'Tailwind CSS',
+    'GCP/AWS',
     'Postgres',
     'AI 🤖',
   ];
