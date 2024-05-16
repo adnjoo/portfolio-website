@@ -1,7 +1,7 @@
-import matter from 'gray-matter';
-import fs from 'fs/promises';
-import path from 'path';
 import { cache } from 'react';
+import fs from 'fs/promises';
+import matter from 'gray-matter';
+import path from 'path';
 
 export const getPosts = cache(async (returnArchive = false) => {
   const posts = await fs.readdir(path.join(process.cwd(), 'posts'));

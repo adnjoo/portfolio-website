@@ -15,14 +15,14 @@ export const ThemeChanger = () => {
     } else {
       setTheme('cupcake');
     }
-  }
+  };
 
   // this line is the key to avoid the error.
   if (!hasMounted) return null;
 
   return (
     <button onClick={toggleTheme} className='p-2'>
-        {theme === 'cupcake' ? '🌞' : '🌚'}
+      {theme === 'cupcake' ? '🌞' : '🌚'}
     </button>
   );
 };

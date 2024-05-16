@@ -1,8 +1,9 @@
 'use client';
-import slugify from 'slugify';
-import copy from 'clipboard-copy'; // Import clipboard-copy for copying text to clipboard
+
 import { useState } from 'react';
-import { FaLink } from 'react-icons/fa'; // Import React icons for the link icon
+import { FaLink } from 'react-icons/fa';
+import copy from 'clipboard-copy';
+import slugify from 'slugify';
 
 export const H2Component = (props: any) => {
   const [copied, setCopied] = useState(false);

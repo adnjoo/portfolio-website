@@ -1,9 +1,9 @@
 'use client';
 
 import { IoMenu } from 'react-icons/io5';
-import { ThemeChanger } from '@/components/ThemeChanger';
-import ProfilePicture from '@/components/ProfilePicture';
 import { usePathname } from 'next/navigation';
+import ProfilePicture from '@/components/ProfilePicture';
+import { ThemeChanger } from '@/components/ThemeChanger';
 
 export const sitePages = [
   {

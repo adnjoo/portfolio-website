@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import './globals.css';
 import { Providers } from '@/app/providers';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: "drew's site",
@@ -19,10 +19,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <Navbar />
-          <main className='min-h-[90vh]'>
-
-          {children}
-          </main>
+          <main className='min-h-[90vh]'>{children}</main>
           <Footer />
         </Providers>
       </body>
