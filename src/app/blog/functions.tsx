@@ -29,7 +29,9 @@ export const getPosts = cache(async (returnArchive = false) => {
   }
 });
 
-export async function getPost(slug: string, returnArchive = false) {
-  const posts = await getPosts(returnArchive);
-  return posts.find((post) => post.id === slug);
-}
+export const getPost = cache(
+  async (slug: string, returnArchive: boolean = false) => {
+    const posts = await getPosts(returnArchive);
+    return posts.find((post) => post.id === slug);
+  }
+);
