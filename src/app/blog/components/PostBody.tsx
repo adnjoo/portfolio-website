@@ -1,10 +1,11 @@
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import { Code } from 'bright';
+import { H2Component } from './H2Component';
 
 export const mdxComponents = {
   pre: Code,
-  h2: (props: any) => <h2 className='text-2xl font-semibold' {...props} />,
+  h2: H2Component,
   h3: (props: any) => <h3 className='my-4 text-xl font-semibold' {...props} />,
   p: (props: any) => <p className='my-4' {...props} />,
   a: (props: any) => (
