@@ -1,5 +1,13 @@
 import { PostBody } from '../components/PostBody';
-import { getPost } from '../functions';
+import { getPosts, getPost } from '../functions';
+
+export async function generateStaticParams() {
+  const posts = await getPosts(false);
+
+  return posts.map((post: any) => ({
+    slug: post.id,
+  }));
+}
 
 export default async function PostPage({
   params,
