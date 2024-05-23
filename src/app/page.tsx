@@ -25,18 +25,50 @@ const socials = {
   },
 };
 
-export default function Home() {
-  const tech = [
-    'TypeScript',
-    'React ⚛️',
-    'React Native',
-    'Next.js ➡️',
-    'Node.js',
-    'GCP/AWS ☁️',
-    'Postgres',
-    'AI 🤖',
-  ];
+const tech = [
+  'TypeScript',
+  'React ⚛️',
+  'React Native',
+  'Next.js ➡️',
+  'Node.js',
+  'GCP/AWS ☁️',
+  'Postgres',
+];
 
+const plugins = [
+  {
+    name: 'Amazon Q',
+    href: 'https://aws.amazon.com/q/',
+    description: 'terminal autcomplete',
+  },
+  {
+    name: 'Codeium',
+    href: 'https://codeium.com',
+    description: 'faster coding',
+  },
+  {
+    name: 'VSCode',
+    href: 'https://code.visualstudio.com',
+    description: 'useful plugins',
+  },
+  {
+    name: 'Starship',
+    href: 'https://starship.rs',
+    description: 'colorize terminal',
+  },
+  {
+    name: 'ChatGPT',
+    href: 'https://chat.openai.com',
+    description: 'glue ideas',
+  },
+  {
+    name: "Rectangle",
+    href: "https://rectangleapp.com",
+    description: "move windows faster",
+  }
+];
+
+export default function Home() {
   return (
     <main className='mx-6 mt-8 max-w-4xl lg:mx-auto lg:mt-28'>
       {/* Hero */}
@@ -82,11 +114,31 @@ export default function Home() {
 
       {/* Tech */}
       <div className='mt-12'>
-        My favorite stack to use in 2024 include:
+        🥞 {new Date().getFullYear()}:
         <ul className='list-inside list-disc '>
           {tech.map((tech) => (
             <li key={tech} className='mt-1'>
               {tech}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Plugins */}
+      <div className='mt-12'>
+        ⚡️ Plugins:
+        <ul className='list-inside list-disc '>
+          {plugins.map((plugin) => (
+            <li key={plugin.name} className='mt-1'>
+              <a
+                href={plugin.href}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='link-primary'
+              >
+                {plugin.name}
+              </a>{' '}
+              - {plugin.description}
             </li>
           ))}
         </ul>
