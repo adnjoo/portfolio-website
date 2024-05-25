@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { TabNav } from '@radix-ui/themes';
 
 export const sitePages = [
@@ -20,21 +19,16 @@ export const sitePages = [
 ];
 
 const Navbar = () => {
-  const pathname = usePathname();
-  console.log(pathname);
-
   return (
     <TabNav.Root justify='center'>
       {sitePages.map((page) => (
-        <TabNav.Link
-          key={page.name}
-          asChild
-          active={
-            pathname === page.href ||
-            (pathname.includes(page.href) && page.href !== '/')
-          }
-        >
-          <Link href={page.href}>{page.name}</Link>
+        <TabNav.Link key={page.name} asChild>
+          <div className='group'>
+            <Link href={page.href}>
+              {page.name}
+              <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600' />
+            </Link>
+          </div>
         </TabNav.Link>
       ))}
     </TabNav.Root>
