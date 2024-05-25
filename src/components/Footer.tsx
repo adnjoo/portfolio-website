@@ -1,6 +1,7 @@
 'use client';
 
 import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
+import Link from 'next/link';
 import { sitePages } from './Navbar';
 
 const socials = {
@@ -34,13 +35,13 @@ export default function Footer() {
         <div>
           <div className='gap-8 flex mx-auto sm:mx-0 mb-8'>
             {sitePages.map((page) => (
-              <a
+              <Link
                 key={page.name}
                 href={page.href}
                 className='hover:underline text-sm font-light'
               >
                 {page.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className='text-sm font-light'>
