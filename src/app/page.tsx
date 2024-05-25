@@ -1,7 +1,5 @@
 import { Link } from '@radix-ui/themes';
-import HandWave from '@/components/HandWave';
 import ProfilePicture from '@/components/ProfilePicture';
-import { OrbitingCirclesDemo } from '@/components/circles';
 
 const plugins = [
   {
@@ -49,10 +47,9 @@ export default function Home() {
       </span>
 
       {/* Tech */}
-      <div className='mt-6'>
+      {/* <div className='mt-6'>
         <div className='mb-2'>I like to build with e.g.</div>
-        <OrbitingCirclesDemo />
-      </div>
+      </div> */}
 
       {/* Plugins */}
       <div className='mt-8'>
