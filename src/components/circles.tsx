@@ -3,8 +3,8 @@ import OrbitingCircles from './orbiting-circles';
 
 export function OrbitingCirclesDemo() {
   return (
-    <div className='relative flex h-[200px] w-[200px] sm:h-[400px] sm:w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl'>
-      <span className='pointer-events-none whitespace-pre-wrap text-center text-8xl font-semibold leading-none  dark:from-white dark:to-slate-900/10'>
+    <div className='relative flex h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl'>
+      <span className='pointer-events-none whitespace-pre-wrap text-center text-6xl font-semibold leading-none dark:from-white dark:to-slate-900/10 animate-pulse'>
         🥞
       </span>
 
@@ -13,7 +13,7 @@ export function OrbitingCirclesDemo() {
         className='h-[50px] w-[50px] border-none bg-transparent'
         duration={20}
         delay={20}
-        radius={80}
+        radius={60}
       >
         <Icons.react fill='#60c7de' />
       </OrbitingCircles>
@@ -21,7 +21,7 @@ export function OrbitingCirclesDemo() {
         className='h-[30px] w-[30px] border-none bg-transparent'
         duration={20}
         delay={10}
-        radius={80}
+        radius={60}
       >
         <Icons.typescript fill='#007acc' />
       </OrbitingCircles>
@@ -30,7 +30,7 @@ export function OrbitingCirclesDemo() {
       <OrbitingCircles
         className='h-[50px] w-[50px] border-none bg-transparent'
         reverse
-        radius={150}
+        radius={110}
         duration={20}
       >
         <Icons.node fill='#53a244' />
@@ -38,7 +38,7 @@ export function OrbitingCirclesDemo() {
       <OrbitingCircles
         className='h-[50px] w-[50px] border-none bg-transparent'
         reverse
-        radius={150}
+        radius={110}
         duration={20}
         delay={20}
       >

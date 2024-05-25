@@ -43,9 +43,6 @@ export default function Projects() {
       <h1 className='mx-auto mt-12 text-3xl sm:text-5xl'>
         Things I&apos;ve made trying to put my dent in the universe 🌌
       </h1>
-      <p className='mt-6 text-base'>
-        I love making stuff, and I love doing it well.
-      </p>
 
       {projects.map((project) => (
         <Project key={project.name} {...project} />

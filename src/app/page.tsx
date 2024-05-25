@@ -1,31 +1,7 @@
-import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
-import { Link } from '@radix-ui/themes';
+import { Link, Text } from '@radix-ui/themes';
 import HandWave from '@/components/HandWave';
 import ProfilePicture from '@/components/ProfilePicture';
 import { OrbitingCirclesDemo } from '@/components/circles';
-
-const socials = {
-  X: {
-    name: 'X',
-    href: 'https://x.com/adnjoo',
-    icon: <BsTwitterX size={24} />,
-  },
-  Instagram: {
-    name: 'Instagram',
-    href: 'https://instagram.com/adnjoo',
-    icon: <BsInstagram size={24} />,
-  },
-  GitHub: {
-    name: 'GitHub',
-    href: 'https://github.com/adnjoo',
-    icon: <BsGithub size={24} />,
-  },
-  LinkedIn: {
-    name: 'LinkedIn',
-    href: 'https://linkedin.com/in/adnjoo',
-    icon: <BsLinkedin size={24} />,
-  },
-};
 
 const plugins = [
   {
@@ -62,47 +38,31 @@ const plugins = [
 
 export default function Home() {
   return (
-    <main className='mx-6 mt-8 max-w-4xl lg:mx-auto lg:mt-28'>
+    <main className='mx-6 mt-8 max-w-4xl lg:mx-auto'>
       {/* Hero */}
       <ProfilePicture />
-      <p className='mt-6 text-base'>
+      <h1 className='mt-6 text-lg'>
         Hi <HandWave />, I&apos;m Andrew, a software designer based in the SF
         Bay Area.
-      </p>
+      </h1>
 
       <p className='mt-6 text-base'>
         I&apos;m a co-founder of{' '}
-        <Link
-          href='https://bamboostud.io'
-          target='_blank'
-        >
+        <Link href='https://bamboostud.io' target='_blank'>
           bamboostud.io
         </Link>
         🎋, where we help empower people to manage their technologies better.
       </p>
 
-      <div className='mt-2 flex gap-6'>
-        {Object.entries(socials).map(([name, social]) => (
-          <a
-            key={name}
-            href={social.href}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='mt-6 flex items-center no-underline transition duration-200 ease-in-out hover:text-slate-600 hover:animate-pulse'
-          >
-            {social?.icon}
-          </a>
-        ))}
-      </div>
-
       {/* Tech */}
-      <div className='mt-12'>
+      <div className='mt-6'>
+        <div className='mb-2'>I like to build with e.g.</div>
         <OrbitingCirclesDemo />
       </div>
 
       {/* Plugins */}
-      <div className='mt-12'>
-        ⚡️ Plugins:
+      <div className='mt-8'>
+        Some plugins I use:
         <ul className='list-inside list-disc '>
           {plugins.map((plugin) => (
             <li key={plugin.name} className='mt-1'>
