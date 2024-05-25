@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Theme } from '@radix-ui/themes';
+import { Theme as RadixTheme } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body>
-        <Theme>
+        <RadixTheme accentColor='indigo' grayColor='sand' radius='large'>
           <Navbar />
           <main className='min-h-screen'>{children}</main>
           <Footer />
-        </Theme>
+        </RadixTheme>
       </body>
     </html>
   );
