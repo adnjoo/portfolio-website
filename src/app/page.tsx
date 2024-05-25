@@ -1,4 +1,5 @@
 import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { Link } from '@radix-ui/themes';
 import HandWave from '@/components/HandWave';
 import ProfilePicture from '@/components/ProfilePicture';
 
@@ -38,7 +39,7 @@ const tech = [
 const plugins = [
   {
     name: 'Amazon Q',
-    href: 'https://aws.amazon.com/q/',
+    href: 'https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-getting-started-installing.html',
     description: 'terminal autcomplete',
   },
   {
@@ -62,10 +63,10 @@ const plugins = [
     description: 'glue ideas',
   },
   {
-    name: "Rectangle",
-    href: "https://rectangleapp.com",
-    description: "move windows faster",
-  }
+    name: 'Rectangle',
+    href: 'https://rectangleapp.com',
+    description: 'move windows faster',
+  },
 ];
 
 export default function Home() {
@@ -108,10 +109,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Pics? */}
-
-      {/* Latest 3 blog posts */}
-
       {/* Tech */}
       <div className='mt-12'>
         🥞 {new Date().getFullYear()}:
@@ -130,23 +127,19 @@ export default function Home() {
         <ul className='list-inside list-disc '>
           {plugins.map((plugin) => (
             <li key={plugin.name} className='mt-1'>
-              <a
+              <Link
                 href={plugin.href}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='link-primary'
               >
                 {plugin.name}
-              </a>{' '}
+              </Link>{' '}
               - {plugin.description}
             </li>
           ))}
         </ul>
       </div>
-
-      {/* <DataCard /> */}
-
-      {/* Work experience */}
     </main>
   );
 }
