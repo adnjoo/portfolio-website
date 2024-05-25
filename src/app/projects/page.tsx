@@ -2,12 +2,6 @@ import { IoIosLink } from 'react-icons/io';
 
 const projects = [
   {
-    name: 'XTrack',
-    description: 'Supercharge your financial goals.',
-    href: 'https://xtrack.ing',
-    icon: 'https://www.xtrack.ing/logo.png',
-  },
-  {
     name: 'Red Border Chrome Extension',
     description:
       'A Chrome extension that helps web developers see HTML elements on a site.',
@@ -46,12 +40,9 @@ const Project = ({ name, description, href, icon, userCount }: any) => {
 export default function Projects() {
   return (
     <div className='mx-4 flex max-w-4xl flex-col lg:mx-auto'>
-      <h1 className='mx-auto mt-12 text-3xl sm:text-5xl'>
+      <h1 className='mx-auto mt-12 text-3xl'>
         Things I&apos;ve made trying to put my dent in the universe 🌌
       </h1>
-      <p className='mt-6 text-base'>
-        I love making stuff, and I love doing it well.
-      </p>
 
       {projects.map((project) => (
         <Project key={project.name} {...project} />

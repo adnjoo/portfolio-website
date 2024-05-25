@@ -1,28 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* 👋 🤖/👩‍💻 inspired by https://www.julienthibeaut.xyz/blog/create-animated-gradient-borders-with-css, and https://typehero.dev/ */
-.pfp {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #0000;
-  background:
-    linear-gradient(#131219, #131219) padding-box,
-    linear-gradient(var(--angle), #070707, #687aff) border-box;
-  animation: 8s rotate linear infinite;
-}
-
-@keyframes rotate {
-  to {
-    --angle: 360deg;
-  }
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}

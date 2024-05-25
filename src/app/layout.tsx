@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { Providers } from '@/app/providers';
+import { Theme } from '@radix-ui/themes';
+import '@radix-ui/themes/styles.css';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import './globals.css';
@@ -17,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body>
-        <Providers>
+        <Theme>
           <Navbar />
-          <main className='min-h-[90vh]'>{children}</main>
+          <main className='min-h-screen'>{children}</main>
           <Footer />
-        </Providers>
+        </Theme>
       </body>
     </html>
   );
