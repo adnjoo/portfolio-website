@@ -20,7 +20,7 @@ export default function RootLayout({
       <body>
         <Theme>
           <Navbar />
-          <main className='min-h-[90vh]'>{children}</main>
+          <main className='min-h-screen'>{children}</main>
           <Footer />
         </Theme>
       </body>

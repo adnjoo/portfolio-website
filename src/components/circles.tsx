@@ -10,7 +10,7 @@ export function OrbitingCirclesDemo() {
 
       <OrbitingCircles
         className='h-[30px] w-[30px] border-none bg-transparent'
-        radius={60}
+        radius={70}
         duration={20}
       >
         <Icons.node fill='#53a244' />
@@ -19,15 +19,15 @@ export function OrbitingCirclesDemo() {
         className='h-[35px] w-[35px] border-none bg-transparent'
         duration={20}
         delay={5}
-        radius={60}
+        radius={40}
       >
         <Icons.react fill='#60c7de' />
       </OrbitingCircles>
       <OrbitingCircles
-        className='h-[25px] w-[25px] border-none bg-transparent'
+        className='h-[15px] w-[15px] border-none bg-transparent'
         duration={20}
         delay={15}
-        radius={60}
+        radius={30}
       >
         <Icons.typescript fill='#007acc' />
       </OrbitingCircles>
