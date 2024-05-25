@@ -65,9 +65,6 @@ export default function Home() {
     <main className='mx-6 mt-8 max-w-4xl lg:mx-auto lg:mt-28'>
       {/* Hero */}
       <ProfilePicture />
-      <h1 className='text-3xl sm:text-5xl'>
-        Software designer, founder, and maker.
-      </h1>
       <p className='mt-6 text-base'>
         Hi <HandWave />, I&apos;m Andrew, a software designer based in the SF
         Bay Area.
@@ -75,13 +72,12 @@ export default function Home() {
 
       <p className='mt-6 text-base'>
         I&apos;m a co-founder of{' '}
-        <a
+        <Link
           href='https://bamboostud.io'
           target='_blank'
-          className='link-primary'
         >
           bamboostud.io
-        </a>
+        </Link>
         🎋, where we help empower people to manage their technologies better.
       </p>
 

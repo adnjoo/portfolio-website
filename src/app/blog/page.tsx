@@ -1,4 +1,6 @@
-import { getPosts } from "./functions";
+import Link from 'next/link';
+import { Link as RadixLink } from '@radix-ui/themes';
+import { getPosts } from './functions';
 
 export default async function Blog() {
   const posts = await getPosts();
@@ -18,7 +20,9 @@ export default async function Blog() {
                 timeZone: 'UTC',
               })}
             </span>
-            <a href={`/blog/${post.id}`} className='link'>{post.title} </a>
+            <RadixLink asChild>
+              <Link href={`/blog/${post.id}`}>{post.title}</Link>
+            </RadixLink>
           </li>
         ))}
       </ul>
