@@ -2,6 +2,7 @@ import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { Link } from '@radix-ui/themes';
 import HandWave from '@/components/HandWave';
 import ProfilePicture from '@/components/ProfilePicture';
+import { OrbitingCirclesDemo } from '@/components/circles';
 
 const socials = {
   X: {
@@ -25,16 +26,6 @@ const socials = {
     icon: <BsLinkedin size={24} />,
   },
 };
-
-const tech = [
-  'TypeScript',
-  'React ⚛️',
-  'React Native',
-  'Next.js ➡️',
-  'Node.js',
-  'GCP/AWS ☁️',
-  'Postgres',
-];
 
 const plugins = [
   {
@@ -91,8 +82,7 @@ export default function Home() {
         >
           bamboostud.io
         </a>
-        🎋, where we help empower people to manage their
-        technologies better.
+        🎋, where we help empower people to manage their technologies better.
       </p>
 
       <div className='mt-2 flex gap-6'>
@@ -111,14 +101,7 @@ export default function Home() {
 
       {/* Tech */}
       <div className='mt-12'>
-        🥞 {new Date().getFullYear()}:
-        <ul className='list-inside list-disc '>
-          {tech.map((tech) => (
-            <li key={tech} className='mt-1'>
-              {tech}
-            </li>
-          ))}
-        </ul>
+        <OrbitingCirclesDemo />
       </div>
 
       {/* Plugins */}
