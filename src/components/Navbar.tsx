@@ -24,7 +24,7 @@ const Navbar = () => {
       {sitePages.map((page) => (
         <TabNav.Link key={page.name} asChild>
           <div className='group'>
-            <Link href={page.href}>
+            <Link href={page.href} className='text-black'>
               {page.name}
               <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600' />
             </Link>

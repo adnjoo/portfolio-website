@@ -5,7 +5,6 @@ import { getPosts } from './functions';
 export default async function Blog() {
   const posts = await getPosts();
 
-  // console.log(posts);
   return (
     <div className='mt-12 flex flex-col items-center justify-center'>
       <h1 className='mb-12 text-3xl sm:text-5xl'>Blog</h1>
