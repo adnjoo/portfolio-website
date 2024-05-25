@@ -4,41 +4,36 @@ import OrbitingCircles from './orbiting-circles';
 export function OrbitingCirclesDemo() {
   return (
     <div className='relative flex h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl'>
-      <span className='pointer-events-none whitespace-pre-wrap text-center text-6xl font-semibold leading-none dark:from-white dark:to-slate-900/10 animate-pulse'>
+      <span className='pointer-events-none whitespace-pre-wrap text-center text-4xl font-semibold leading-none'>
         🥞
       </span>
 
-      {/* Inner Circles */}
-      <OrbitingCircles
-        className='h-[50px] w-[50px] border-none bg-transparent'
-        duration={20}
-        delay={20}
-        radius={60}
-      >
-        <Icons.react fill='#60c7de' />
-      </OrbitingCircles>
       <OrbitingCircles
         className='h-[30px] w-[30px] border-none bg-transparent'
-        duration={20}
-        delay={10}
         radius={60}
-      >
-        <Icons.typescript fill='#007acc' />
-      </OrbitingCircles>
-
-      {/* Outer Circles (reverse) */}
-      <OrbitingCircles
-        className='h-[50px] w-[50px] border-none bg-transparent'
-        reverse
-        radius={110}
         duration={20}
       >
         <Icons.node fill='#53a244' />
       </OrbitingCircles>
       <OrbitingCircles
-        className='h-[50px] w-[50px] border-none bg-transparent'
-        reverse
-        radius={110}
+        className='h-[35px] w-[35px] border-none bg-transparent'
+        duration={20}
+        delay={5}
+        radius={60}
+      >
+        <Icons.react fill='#60c7de' />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className='h-[25px] w-[25px] border-none bg-transparent'
+        duration={20}
+        delay={15}
+        radius={60}
+      >
+        <Icons.typescript fill='#007acc' />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className='h-[30px] w-[30px] border-none bg-transparent'
+        radius={60}
         duration={20}
         delay={20}
       >

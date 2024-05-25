@@ -38,21 +38,15 @@ const plugins = [
 
 export default function Home() {
   return (
-    <main className='mx-6 mt-8 max-w-4xl lg:mx-auto'>
+    <main className='mx-6 mt-12 max-w-4xl lg:mx-auto'>
       {/* Hero */}
-      <ProfilePicture />
-      <h1 className='mt-6 text-lg'>
-        Hi <HandWave />, I&apos;m Andrew, a software designer based in the SF
-        Bay Area.
-      </h1>
-
-      <p className='mt-6 text-base'>
-        I&apos;m a co-founder of{' '}
-        <Link href='https://bamboostud.io' target='_blank'>
-          bamboostud.io
-        </Link>
-        🎋, where we help empower people to manage their technologies better.
-      </p>
+      <span className='flex items-center gap-4'>
+        <ProfilePicture />
+        <div>
+          <h1 className='text-xl'>Andrew Njoo</h1>
+          <h1 className='text-lg'>Software Engineer in SFBA 🌁</h1>
+        </div>
+      </span>
 
       {/* Tech */}
       <div className='mt-6'>

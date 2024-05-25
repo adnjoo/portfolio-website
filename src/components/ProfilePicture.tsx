@@ -1,7 +1,7 @@
 const ProfilePicture = () => {
   return (
     <img
-      className='my-4 h-16 w-16 rounded-full border-2 border-black'
+      className='h-11 w-11 rounded-full'
       src='https://avatars.githubusercontent.com/u/22807629?v=4'
       alt='pfp'
     />

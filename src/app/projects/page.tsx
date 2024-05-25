@@ -40,7 +40,7 @@ const Project = ({ name, description, href, icon, userCount }: any) => {
 export default function Projects() {
   return (
     <div className='mx-4 flex max-w-4xl flex-col lg:mx-auto'>
-      <h1 className='mx-auto mt-12 text-3xl sm:text-5xl'>
+      <h1 className='mx-auto mt-12 text-3xl'>
         Things I&apos;ve made trying to put my dent in the universe 🌌
       </h1>
 
