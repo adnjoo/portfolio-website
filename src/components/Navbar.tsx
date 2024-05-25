@@ -21,11 +21,19 @@ export const sitePages = [
 
 const Navbar = () => {
   const pathname = usePathname();
+  console.log(pathname);
 
   return (
     <TabNav.Root justify='center'>
       {sitePages.map((page) => (
-        <TabNav.Link key={page.name} asChild active={pathname === page.href}>
+        <TabNav.Link
+          key={page.name}
+          asChild
+          active={
+            pathname === page.href ||
+            (pathname.includes(page.href) && page.href !== '/')
+          }
+        >
           <Link href={page.href}>{page.name}</Link>
         </TabNav.Link>
       ))}
