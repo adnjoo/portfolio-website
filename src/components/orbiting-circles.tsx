@@ -1,4 +1,4 @@
-import { cn } from "@/utils/cn";
+import { cn } from '@/utils/cn';
 
 export default function OrbitingCircles({
   className,
@@ -21,17 +21,17 @@ export default function OrbitingCircles({
     <>
       {path && (
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          className="pointer-events-none absolute inset-0 h-full w-full"
+          xmlns='http://www.w3.org/2000/svg'
+          version='1.1'
+          className='pointer-events-none absolute inset-0 h-full w-full'
         >
           <circle
-            className="stroke-black/10 stroke-1 dark:stroke-white/10"
-            cx="50%"
-            cy="50%"
+            className='stroke-black/10 stroke-1 dark:stroke-white/10'
+            cx='50%'
+            cy='50%'
             r={radius}
-            fill="none"
-            strokeDasharray={"4 4"}
+            fill='none'
+            strokeDasharray={'4 4'}
           />
         </svg>
       )}
@@ -39,15 +39,14 @@ export default function OrbitingCircles({
       <div
         style={
           {
-            "--duration": duration,
-            "--radius": radius,
-            "--delay": -delay,
+            '--duration': duration,
+            '--radius': radius,
+            '--delay': -delay,
           } as React.CSSProperties
         }
         className={cn(
-          "absolute flex h-full w-full transform-gpu animate-orbit items-center justify-center rounded-full border bg-black/10 [animation-delay:calc(var(--delay)*1000ms)] dark:bg-white/10",
-          { "[animation-direction:reverse]": reverse },
-          className,
+          'absolute flex h-full w-full animate-orbit items-center justify-center rounded-full border bg-black/10 [animation-delay:calc(var(--delay)*1000ms)] dark:bg-white/10',
+          className
         )}
       >
         {children}

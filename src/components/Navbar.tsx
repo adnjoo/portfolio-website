@@ -20,14 +20,18 @@ export const sitePages = [
 
 const Navbar = () => {
   return (
-    <TabNav.Root justify='center'>
+    <div className='flex flex-row gap-8 justify-center'>
       {sitePages.map((page) => (
-        <Link href={page.href} className='text-black group ml-8 my-2' key={page.name}>
+        <Link
+          href={page.href}
+          className='text-black group my-2'
+          key={page.name}
+        >
           {page.name}
           <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600' />
         </Link>
       ))}
-    </TabNav.Root>
+    </div>
   );
 };
 

@@ -51,7 +51,7 @@ export default function Footer() {
   return (
     <footer className='my-4'>
       <div className='my-8 w-full border-t border-gray-400'></div>
-      <div className='flex justify-between sm:flex-row mx-4 sm:mx-24'>
+      <div className='flex justify-between flex-col sm:flex-row mx-4 sm:mx-24'>
         <div>
           <div className='gap-8 flex mx-auto sm:mx-0 mb-8'>
             {sitePages.map((page) => (
@@ -64,11 +64,11 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <div className='text-sm font-light'>
+          <div className='text-sm font-light hidden sm:block'>
             © {new Date().getFullYear()} Andrew Njoo. All rights reserved.
           </div>
         </div>
-        <div className='text-center text-sm font-light'>
+        <div className='text-center text-sm font-light mb-4 sm:mb-0'>
           <div className='flex gap-6'>
             {Object.entries(socials).map(([name, social]) => (
               <a
