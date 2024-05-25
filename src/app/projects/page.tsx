@@ -40,6 +40,9 @@ const Project = ({ name, description, href, icon, userCount }: any) => {
 export default function Projects() {
   return (
     <div className='mx-4 flex max-w-4xl flex-col lg:mx-auto'>
+      {/* Gradient Background */}
+      <div className='absolute -z-10 top-[20%] left-[70%] opacity-10 right-0 bottom-0 bg-gradient-to-br blur-3xl from-indigo-500 via-purple-500 to-pink-500'></div>
+
       <h1 className='mx-auto mt-12 text-3xl'>
         Things I&apos;ve made trying to put my dent in the universe 🌌
       </h1>
