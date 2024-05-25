@@ -1,4 +1,4 @@
-import { Link, Text } from '@radix-ui/themes';
+import { Link } from '@radix-ui/themes';
 import HandWave from '@/components/HandWave';
 import ProfilePicture from '@/components/ProfilePicture';
 import { OrbitingCirclesDemo } from '@/components/circles';
