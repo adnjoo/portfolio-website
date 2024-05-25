@@ -1,11 +1,10 @@
 import { Link } from '@radix-ui/themes';
-import ProfilePicture from '@/components/ProfilePicture';
 
 const plugins = [
   {
     name: 'Amazon Q',
     href: 'https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-getting-started-installing.html',
-    description: 'terminal autcomplete',
+    description: 'terminal autocomplete',
   },
   {
     name: 'Codeium',
@@ -39,7 +38,11 @@ export default function Home() {
     <main className='mx-6 mt-12 max-w-4xl lg:mx-auto'>
       {/* Hero */}
       <span className='flex items-center gap-4'>
-        <ProfilePicture />
+        <img
+          className='h-11 w-11 rounded-full'
+          src='https://avatars.githubusercontent.com/u/22807629?v=4'
+          alt='pfp'
+        />
         <div>
           <h1 className='text-xl'>Andrew Njoo</h1>
           <h1 className='text-lg'>Software Engineer in SFBA 🌁</h1>
@@ -52,6 +55,7 @@ export default function Home() {
       </div> */}
 
       {/* Plugins */}
+      {/* Pull from raindrop */}
       <div className='mt-8'>
         Some plugins I use:
         <ul className='list-inside list-disc '>
