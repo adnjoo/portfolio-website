@@ -8,22 +8,42 @@ const socials = {
   X: {
     name: 'X',
     href: 'https://x.com/adnjoo',
-    icon: <BsTwitterX size={20} />,
+    icon: (
+      <BsTwitterX
+        size={20}
+        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900'
+      />
+    ),
   },
   Instagram: {
     name: 'Instagram',
     href: 'https://instagram.com/adnjoo',
-    icon: <BsInstagram size={20} />,
+    icon: (
+      <BsInstagram
+        size={20}
+        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900'
+      />
+    ),
   },
   GitHub: {
     name: 'GitHub',
     href: 'https://github.com/adnjoo',
-    icon: <BsGithub size={20} />,
+    icon: (
+      <BsGithub
+        size={20}
+        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900'
+      />
+    ),
   },
   LinkedIn: {
     name: 'LinkedIn',
     href: 'https://linkedin.com/in/adnjoo',
-    icon: <BsLinkedin size={20} />,
+    icon: (
+      <BsLinkedin
+        size={20}
+        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900'
+      />
+    ),
   },
 };
 
@@ -31,7 +51,7 @@ export default function Footer() {
   return (
     <footer className='my-4'>
       <div className='my-8 w-full border-t border-gray-400'></div>
-      <div className='flex flex-col justify-between sm:flex-row mx-4 sm:mx-24'>
+      <div className='flex justify-between sm:flex-row mx-4 sm:mx-24'>
         <div>
           <div className='gap-8 flex mx-auto sm:mx-0 mb-8'>
             {sitePages.map((page) => (
@@ -56,7 +76,7 @@ export default function Footer() {
                 href={social.href}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex items-center no-underline transition duration-200 ease-in-out hover:text-slate-600'
+                className='flex items-center no-underline'
               >
                 {social?.icon}
               </a>
