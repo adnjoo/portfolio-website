@@ -78,8 +78,8 @@ export default function Home() {
         Software designer, founder, and maker.
       </h1>
       <p className='mt-6 text-base'>
-        Hi <HandWave />, I&apos;m Andrew, a software designer and entrepreneur
-        based in the SF Bay Area.
+        Hi <HandWave />, I&apos;m Andrew, a software designer based in the SF
+        Bay Area.
       </p>
 
       <p className='mt-6 text-base'>
@@ -91,8 +91,8 @@ export default function Home() {
         >
           bamboostud.io
         </a>
-        🎋, where we help empower companies and people to manage their
-        technologies and finances better.
+        🎋, where we help empower people to manage their
+        technologies better.
       </p>
 
       <div className='mt-2 flex gap-6'>
@@ -102,7 +102,7 @@ export default function Home() {
             href={social.href}
             target='_blank'
             rel='noopener noreferrer'
-            className='mt-6 flex items-center no-underline transition duration-200 ease-in-out hover:text-slate-600'
+            className='mt-6 flex items-center no-underline transition duration-200 ease-in-out hover:text-slate-600 hover:animate-pulse'
           >
             {social?.icon}
           </a>
