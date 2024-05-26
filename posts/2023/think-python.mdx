@@ -9,15 +9,12 @@ This a review of Think Python 2e by Allen Downey.
 
 This book is divided into 21 chapters and is about 257 pages long
 
-
 ### 1 - Way of the program 🥋
 
 - most important skill for computer scientist is problem solving
 - a program is a sequence of instructions that specifies how to perform a computation
 - formal languages are designed by people for specific applications
 - evidence that shows people respond to computers as if they are people (the media equation, Reeves & Nass 1996)
-
- 
 
 ### 2 - variables, expressions and statements ⚽
 
@@ -34,8 +31,8 @@ This book is divided into 21 chapters and is about 257 pages long
 - to ensure that a function is defined before its first use, you have to know the order statements run in which is called the flow of execution
 - a parameter is what is defined in the function, and the argument is what is passed into the function.
 - to keep track of which variables can be used, we can draw stack diagrams
-    - each function is represented by a frame
-    - if an error occurs, a list of functions is printed which is called a traceback
+  - each function is represented by a frame
+  - if an error occurs, a list of functions is printed which is called a traceback
 - fruitful 🍇 functions return something; void 🌌 functions don’t
 
 ### 4 - interface design
@@ -43,12 +40,10 @@ This book is divided into 21 chapters and is about 257 pages long
 - turtle 🐢 module
 - wrapping a piece of code in a function is called encapsulation 💊
 - a docstring 📄 is a string at the beginning of a function that explains the interface like:
-    
-    ```python
-    def x:
-    	"""this function does something"""
-    ```
-    
+  ```python
+  def x:
+  	"""this function does something"""
+  ```
 
 ### 5 - conditionals and recursion 🔁
 
@@ -95,7 +90,7 @@ def estimate_pi():
     inverse = 2 * math.sqrt(2) * sum / 9801
     return 1 / inverse
 
-	
+
 print (estimate_pi())
 print (math.pi)
 print (estimate_pi() - math.pi)
@@ -230,7 +225,7 @@ def printall(*args):
 
 - persistence is when some data is kept in permanent storage
 - `os` module has functions for working with files and directories e.g. `os.cwd` gets the name of the current directory
-- sometimes errors happens when reading/writing files; handling an exception with a `try` statement is called ****************catching**************** an exception
+- sometimes errors happens when reading/writing files; handling an exception with a `try` statement is called ******\*\*\*\*******catching******\*\*\*\******* an exception
 - a database is a file that’s organized for storing data; python has a module called **dbm**
 - `pickle` module can translate any type of object into a string suitable for storage in a database
 
@@ -254,8 +249,8 @@ def printall(*args):
 ### 17 - classes and methods
 
 - a **method** is a function that’s associated with a particular class.
-    - there are 2 syntactic differences: 1) they’re defined inside a class definition in order to make the r/s b/w the class and method explicit
-    - the syntax for invoking a method is different
+  - there are 2 syntactic differences: 1) they’re defined inside a class definition in order to make the r/s b/w the class and method explicit
+  - the syntax for invoking a method is different
 - **positional argument** is an argument that doesn’t have a default value
 
 ```python
@@ -278,7 +273,7 @@ sketch(parrot, cage, dead=True)
 - pros of inheritance include code reuse; cons of inheritance are that it sometimes makes programs difficult to read
 - when objects in one class contain references to objects in another class; this relationship is called **HAS-A**
 - when one class might inherit from another; this relationship is called **IS-A**
-- these relationships can be shown in a **************************class diagram**************************
+- these relationships can be shown in a ************\*\*************class diagram************\*\*************
 - **data encapsulation** (aka data hiding) is the mechanism where implementation details of a class are hidden from a user
 
 ### 19 - the goodies
@@ -347,10 +342,10 @@ def is_anagram(w1, w2):
 
 - analysis of algorithms is a branch of CS that studies the performance of algorithms, especially their runtime and space requirements
 - relative performance might depend on details of the dataset; one way to avoid this is to analyze the worst-case scenario.
-- the ************************leading term************************ is the term with the highest exponent
+- the **********\*\*\*\***********leading term**********\*\*\*\*********** is the term with the highest exponent
 - in general we expect an algorithm with a smaller leading term to be a better algorithm for large problems, but for small problems, there may be a **crossover point**
 - an **order of growth** is a set of functions whose growth behavior is considered equivalent.
-    - Some examples include O(1) constant, O(log n) (logarithmic for any base), O(n) linear, O(n log n) linearithmic, O(n^2) quadratic, O(n^3) cubic, O(c^n) exponential (for any c)
+  - Some examples include O(1) constant, O(log n) (logarithmic for any base), O(n) linear, O(n log n) linearithmic, O(n^2) quadratic, O(n^3) cubic, O(c^n) exponential (for any c)
 - in python 🐍 , most arithmetic operations are constant time. Indexing operations are also constant time.
 - a for loop that traverses a sequence/dictionary is usually linear
 - Python dictionaries are implemented using **hashtables**

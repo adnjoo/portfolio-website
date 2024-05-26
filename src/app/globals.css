@@ -5,11 +5,11 @@
 /* shadcn */
 @layer base {
   :root {
-    --background: #e7e7e1;
+    --background: #f6f6f6;
   }
 
   .dark {
-    --background: 224 71% 4%;
+    --background: #131313;
   }
 }
 

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function FramerPill({ items, idx }: any) {
   return (
     <motion.div
-      className='framer-pill border flex rounded-xl overflow-x-hidden dark:border-gray-600'
+      className='framer-pill border border-gray-400 flex rounded-xl overflow-x-hidden dark:border-gray-600'
       drag='x'
       dragConstraints={{ left: -100, right: 100 }}
       whileTap={{ cursor: 'grabbing' }}
@@ -22,7 +22,7 @@ export default function FramerPill({ items, idx }: any) {
           whileHover={{ scale: 1.1 }}
           initial={{ scale: 0, opacity: 0 }} // Initial state for the images
           animate={{ scale: 1, opacity: 1 }} // Animate to this state
-          transition={{ duration: 1.5, delay: index * 1 }} // Staggered transition
+          transition={{ duration: 1.5, delay: index * 0.5 }} // Staggered transition
         />
       ))}
     </motion.div>

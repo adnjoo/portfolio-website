@@ -80,7 +80,7 @@ reduce (aka fold/inject) 💉
 
 ### graph-like data models 〽️
 
-graph consists of vertices/nodes and edges/relationships 
+graph consists of vertices/nodes and edges/relationships
 
 ### triple store
 
@@ -133,11 +133,11 @@ The process of getting data into a data warehouse (is called Extract-Transform-L
 
 Google Dremel (2010) [link](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36632.pdf)
 
-bitmap encoding 
+bitmap encoding
 
 ### high level takeaway 😎
 
-OLTP system - user facing 
+OLTP system - user facing
 
 OLAP system - BA facing
 
@@ -227,14 +227,14 @@ handling node outages
 
 - follower failure - catch-up recovery 🏃
 - leader failure - failover 🛑
-    - GitHub 2012-09-14, out-of-date MySQL follower promoted to leader, [link](https://github.blog/2012-09-14-github-availability-this-week/)
+  - GitHub 2012-09-14, out-of-date MySQL follower promoted to leader, [link](https://github.blog/2012-09-14-github-availability-this-week/)
 
 replication logs implementation
 
 - write-ahead log (WAL )shipping
 - logical (row-based) log replication
 - trigger-based replication
-    - triggers, stored procedures
+  - triggers, stored procedures
 
 eventual consistency
 
@@ -266,7 +266,7 @@ version vectors
 
 Amazon dynamo 🧨 [link](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
 
-ACID - (atomicity, consistency, isolation, durability) 
+ACID - (atomicity, consistency, isolation, durability)
 
 read request sent to several nodes in parallel
 
@@ -312,7 +312,7 @@ partition with high load - hot spot ☀️
 
 hash function to get partition for a key 🔑
 
-consistent hashing aka hash partitioning (Karger et al) [link](https://www.cs.princeton.edu/courses/archive/fall09/cos518/papers/chash.pdf) 
+consistent hashing aka hash partitioning (Karger et al) [link](https://www.cs.princeton.edu/courses/archive/fall09/cos518/papers/chash.pdf)
 
 rebalancing (moving load from one node in cluster to another)
 
@@ -360,29 +360,29 @@ write skew
 
 - isolation levels are hard to understand
 - solution is serializable isolation
-    - literal transaction execution in order (VoltDB, Redis, Datomic)
-    - two-phase locking
-        - predicate locks
-        - index-range locks
-    - serializable snapshot isolation (SSI)\
+  - literal transaction execution in order (VoltDB, Redis, Datomic)
+  - two-phase locking
+    - predicate locks
+    - index-range locks
+  - serializable snapshot isolation (SSI)\
 
 ### high level takeaway
 
 - transaction abort
 - for complex access patterns, transactions can reduce errors
 - concurrency control
-    - isolation levels include read committed, snapshot isolation aka repeatable read, serializable
+  - isolation levels include read committed, snapshot isolation aka repeatable read, serializable
 - examples of race conditions 🏎️
-    - dirty reads
-    - dirty writes
-    - read skew (nonrepeatable reads)
-    - lost updates
-    - write skew
-    - phantom reads
+  - dirty reads
+  - dirty writes
+  - read skew (nonrepeatable reads)
+  - lost updates
+  - write skew
+  - phantom reads
 - implementing serializable transactions
-    - literal transaction execution in order
-    - 2PL
-    - SSI
+  - literal transaction execution in order
+  - 2PL
+  - SSI
 
 ## c8 - trouble with distributed systems
 
@@ -410,7 +410,7 @@ linearizability aka atomic consistency
 
 CAP theorem 🧢
 
-consistency, availability, partition tolerance - pick 2 out of 3 
+consistency, availability, partition tolerance - pick 2 out of 3
 
 lamport timestamp (1978)
 

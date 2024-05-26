@@ -24,7 +24,6 @@ export default async function Blog() {
               )}
               <li className='flex flex-col'>
                 <div className='flex gap-1 sm:gap-4'>
-
                   <Link href={`/blog/${post.id}`} className='text-sm my-link'>
                     {post.title}
                   </Link>
@@ -37,7 +36,7 @@ export default async function Blog() {
                       timeZone: 'UTC',
                     })}
                   </span>
-                  
+
                   <span className='flex text-xs items-center'>
                     {post.readingTime}
                   </span>
