@@ -29,7 +29,7 @@ export default function RootLayout({
         <NextThemeProvider attribute='class'>
           <RadixTheme accentColor='indigo' grayColor='sand' radius='large'>
             <Navbar />
-            <main className='min-h-screen'>{children}</main>
+            <main className='min-h-screen overflow-x-hidden'>{children}</main>
             <Footer />
           </RadixTheme>
         </NextThemeProvider>
