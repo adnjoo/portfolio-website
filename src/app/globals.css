@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* shadcn */
+@layer base {
+  :root {
+    --background: 33 43% 82%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background;
+  }
+}
+
 /* Fonts */
 .radix-themes {
   --default-font-family: var(--font-varela-round);
