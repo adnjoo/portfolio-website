@@ -10,7 +10,7 @@ export default function FramerPill({ items, idx }: any) {
       dragConstraints={{ left: -100, right: 100 }}
       whileTap={{ cursor: 'grabbing' }}
       initial={{ x: -150, opacity: 0 }} // Initial state for the container
-      animate={{ x: idx*10, opacity: 1 }} // Animate to this state
+      animate={{ x: idx * 10, opacity: 1 }} // Animate to this state
       transition={{ duration: 5 }} // Transition settings
     >
       {items.map((item: any, index: any) => (

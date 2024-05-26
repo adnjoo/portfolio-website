@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       animation: {
         'spin-slow': 'spin 40s linear infinite',
-      }
+      },
     },
   },
 };

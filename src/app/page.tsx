@@ -18,8 +18,6 @@ const plugins = [
   'https://www.svgrepo.com/show/452103/soundcloud.svg',
 ];
 
-
-
 export default function Home() {
   return (
     <main className='mx-6 mt-12 max-w-4xl lg:mx-auto'>
@@ -37,7 +35,11 @@ export default function Home() {
           <h1 className='text-xl'>Andrew Njoo</h1>
           <h1 className='text-lg'>
             Software Engineer |{' '}
-            <a href='https://www.google.com/maps?q=37.773972,-122.431297' target='_blank' rel='noopener noreferrer'>
+            <a
+              href='https://www.google.com/maps?q=37.773972,-122.431297'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               SFBA 🌁
             </a>
           </h1>

@@ -10,7 +10,7 @@ const varelaRound = Varela_Round({
   subsets: ['latin'],
   weight: ['400'],
   variable: '--font-varela-round',
-})
+});
 
 export const metadata: Metadata = {
   title: "drew's site",
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning className={varelaRound.variable}>
-      <body >
+      <body>
         <RadixTheme accentColor='indigo' grayColor='sand' radius='large'>
           <Navbar />
           <main className='min-h-screen'>{children}</main>

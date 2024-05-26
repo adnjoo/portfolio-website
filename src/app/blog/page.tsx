@@ -1,29 +1,46 @@
+import React from 'react';
 import Link from 'next/link';
 import { Link as RadixLink } from '@radix-ui/themes';
 import { getPosts } from './functions';
 
 export default async function Blog() {
   const posts = await getPosts();
+  let lastYear: number | null = null;
 
   return (
     <div className='mt-12 flex flex-col items-center justify-center'>
-      <h1 className='mb-12 text-3xl'>Blog</h1>
-      <ul className='flex flex-col gap-4'>
-        {posts.map((post: any) => (
-          <li key={post.id} className='flex flex-col'>
-            <span>
-              {new Date(post.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric',
-                timeZone: 'UTC',
-              })}
-            </span>
-            <RadixLink asChild>
-              <Link href={`/blog/${post.id}`}>{post.title}</Link>
-            </RadixLink>
-          </li>
-        ))}
+      <h1 className='mb-8 text-3xl'>Blog</h1>
+      <ul className='flex flex-col gap-1 mx-4'>
+        {posts.map((post: any) => {
+          const postYear = new Date(post.date).getFullYear();
+          const showYearSeparator = postYear !== lastYear;
+          lastYear = postYear;
+
+          return (
+            <React.Fragment key={post.id}>
+              {showYearSeparator && (
+                <li className='flex flex-col items-center'>
+                  <div className='mt-6 mb-2 text-xl font-bold'>{postYear}</div>
+                </li>
+              )}
+              <li className='flex flex-col'>
+                <div className='flex gap-4'>
+                  <RadixLink asChild>
+                    <Link href={`/blog/${post.id}`} className='text-sm'>{post.title}</Link>
+                  </RadixLink>
+                  <span className='flex text-xs items-center'>
+                    {new Date(post.date).toLocaleDateString('fr-CH', {
+                      year: 'numeric',
+                      month: 'numeric',
+                      day: 'numeric',
+                      timeZone: 'UTC',
+                    })}
+                  </span>
+                </div>
+              </li>
+            </React.Fragment>
+          );
+        })}
       </ul>
     </div>
   );
