@@ -12,7 +12,7 @@ export const H2Component = (props: any) => {
   const headingId = slugify(headingText, { lower: true });
 
   const handleCopyLink = () => {
-    const url = `${window.location.href}#${headingId}`;
+    const url = `${window.location.origin}${window.location.pathname}#${headingId}`;
     copy(url)
       .then(() => setCopied(true))
       .catch((error) => console.error('Copy failed', error));

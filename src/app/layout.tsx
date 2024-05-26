@@ -25,15 +25,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning className={varelaRound.variable}>
-      <NextThemeProvider attribute='class'>
-          <body>
-        <RadixTheme accentColor='indigo' grayColor='sand' radius='large'>
+      <body>
+        <NextThemeProvider attribute='class'>
+          <RadixTheme accentColor='indigo' grayColor='sand' radius='large'>
             <Navbar />
             <main className='min-h-screen'>{children}</main>
             <Footer />
-        </RadixTheme>
-          </body>
-      </NextThemeProvider>
+          </RadixTheme>
+        </NextThemeProvider>
+      </body>
     </html>
   );
 }
