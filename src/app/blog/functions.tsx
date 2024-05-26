@@ -20,6 +20,14 @@ async function readDirRecursive(dir: string): Promise<string[]> {
   return results;
 }
 
+// Function to estimate reading time based on word count
+function estimateReadingTime(content: string): string {
+  const wordsPerMinute = 200; // Average reading speed
+  const wordCount = content.split(/\s+/).length;
+  const minutes = Math.ceil(wordCount / wordsPerMinute);
+  return `${minutes}' read`;
+}
+
 export const getPosts = cache(async (returnArchive = false) => {
   const postDir = path.join(process.cwd(), 'posts');
   const postFiles = await readDirRecursive(postDir);
@@ -29,10 +37,14 @@ export const getPosts = cache(async (returnArchive = false) => {
     const { data, content } = matter(postContent);
     const id = path.basename(filePath, '.mdx'); // Use only the file name as the slug
 
+    // Estimate reading time
+    const readingTime = estimateReadingTime(content);
+
     return {
       ...data,
       id,
       body: content,
+      readingTime,
     };
   }) as any;
 

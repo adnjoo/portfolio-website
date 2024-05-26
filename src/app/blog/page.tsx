@@ -26,7 +26,9 @@ export default async function Blog() {
               <li className='flex flex-col'>
                 <div className='flex gap-4'>
                   <RadixLink asChild>
-                    <Link href={`/blog/${post.id}`} className='text-sm'>{post.title}</Link>
+                    <Link href={`/blog/${post.id}`} className='text-sm'>
+                      {post.title}
+                    </Link>
                   </RadixLink>
                   <span className='flex text-xs items-center'>
                     {new Date(post.date).toLocaleDateString('fr-CH', {
@@ -35,6 +37,9 @@ export default async function Blog() {
                       day: 'numeric',
                       timeZone: 'UTC',
                     })}
+                  </span>
+                  <span className='flex text-xs items-center'>
+                    {post.readingTime}
                   </span>
                 </div>
               </li>
