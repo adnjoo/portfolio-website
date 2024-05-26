@@ -23,6 +23,14 @@ const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
+  useEffect(() => {
+    const checkLocalStorage = localStorage.getItem('theme');
+    if (!checkLocalStorage) {
+      const checkDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
+      setTheme(checkDarkTheme ? 'dark' : 'light');
+    }
+  }, []);
+
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
