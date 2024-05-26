@@ -1,5 +1,6 @@
-import Link from 'next/link';
+import { Suspense } from 'react';
 import FramerPill from '@/components/FramerPill';
+import Songs from '@/components/Songs';
 
 const tech = [
   'https://www.svgrepo.com/show/374146/typescript-official.svg',
@@ -19,22 +20,7 @@ const plugins = [
   'https://www.svgrepo.com/show/452103/soundcloud.svg',
 ];
 
-async function getLikedSongs() {
-  try {
-    const response = await fetch(process.env.URL + '/soundcloud', {
-      cache: 'no-store',
-    });
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error fetching liked songs:', error);
-    return [];
-  }
-}
-
 export default async function Home() {
-  const { data: likedSongs } = await getLikedSongs();
-
   return (
     <main className='mx-6 mt-12 max-w-4xl lg:mx-auto'>
       {/* Grid Background */}
@@ -74,22 +60,9 @@ export default async function Home() {
         <FramerPill items={plugins} idx={1} />
       </div>
 
-      <div className='mt-8'>
-        <h2 className='text-lg font-bold mb-2'>Liked Songs</h2>
-        <ul className='animate-in'>
-          {likedSongs?.map((song: any, index: number) => (
-            <li key={index}>
-              <Link
-                className='text-xs my-link'
-                href={`https://soundcloud.com${song.link}#play`}
-                target='_blank'
-              >
-                {song.songName}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <Suspense fallback='Loading...'>
+        <Songs />
+      </Suspense>
     </main>
   );
 }
