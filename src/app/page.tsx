@@ -2,7 +2,7 @@ import { Link } from '@radix-ui/themes';
 import FramerPill from '@/components/FramerPill';
 
 const tech = [
-  'https://www.svgrepo.com/show/452045/js.svg',
+  'https://www.svgrepo.com/show/374146/typescript-official.svg',
   'https://www.svgrepo.com/show/452092/react.svg',
   'https://www.svgrepo.com/show/354113/nextjs-icon.svg',
   'https://www.svgrepo.com/show/378837/node.svg',
