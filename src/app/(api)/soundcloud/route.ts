@@ -20,7 +20,7 @@ export async function GET(request: Request) {
     let match;
     while ((match = h2Regex.exec(text)) !== null) {
       const link = match[1];
-      const songName = match[2].replace(/&amp;/g, '&');
+      const songName = match[2].replace(/&amp;/g, '&').replace(/&#x27;/g, "'");
 
       data.push({ songName, link });
     }
