@@ -49,7 +49,7 @@ const socials = {
 
 export default function Footer() {
   return (
-    <footer className='my-4'>
+    <footer className='py-4'>
       <div className='my-8 w-full border-t border-gray-400'></div>
       <div className='flex justify-between flex-col sm:flex-row mx-4 sm:mx-24'>
         <div>
@@ -58,7 +58,7 @@ export default function Footer() {
               <Link
                 key={page.name}
                 href={page.href}
-                className='hover:underline text-sm font-light'
+                className='my-link text-sm font-light'
               >
                 {page.name}
               </Link>

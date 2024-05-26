@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "hsl(var(--background))",
+        background: "var(--background)",
       },
       animation: {
         'spin-slow': 'spin 40s linear infinite',

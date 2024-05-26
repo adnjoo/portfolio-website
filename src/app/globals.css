@@ -5,7 +5,7 @@
 /* shadcn */
 @layer base {
   :root {
-    --background: 33 43% 82%;
+    --background: #e7e7e1;
   }
 
   .dark {
@@ -14,14 +14,17 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
     @apply bg-background;
   }
 }
 
-/* Fonts */
-.radix-themes {
-  --default-font-family: var(--font-varela-round);
+/* Link */
+.my-link {
+  @apply hover:underline;
 }
 
 /* Framer Motion */

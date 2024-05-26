@@ -1,16 +1,14 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';
-import { Varela_Round } from 'next/font/google';
-import { Theme } from '@radix-ui/themes';
-import '@radix-ui/themes/styles.css';
+import { Roboto_Slab } from 'next/font/google';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import './globals.css';
 
-const varelaRound = Varela_Round({
+const font = Roboto_Slab({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-varela-round',
+  display: 'swap',
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -24,14 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning className={varelaRound.variable}>
-      <body className='bg-background'>
+    <html lang='en' suppressHydrationWarning className={font.className}>
+      <body>
         <ThemeProvider attribute='class'>
-          <Theme accentColor='indigo' grayColor='sand' radius='large'>
-            <Navbar />
-            <main className='min-h-screen overflow-x-hidden'>{children}</main>
-            <Footer />
-          </Theme>
+          <Navbar />
+          <main className='min-h-screen overflow-x-hidden'>{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
