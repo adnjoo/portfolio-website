@@ -19,3 +19,19 @@
   flex: 0 0 auto;
   transition: transform 0.3s ease;
 }
+
+/* Animate in */
+.animate-in {
+  animation: animateIn 2s ease 0.15s both;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

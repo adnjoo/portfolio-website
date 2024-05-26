@@ -11,7 +11,7 @@ export default function FramerPill({ items, idx }: any) {
       whileTap={{ cursor: 'grabbing' }}
       initial={{ x: -150, opacity: 0 }} // Initial state for the container
       animate={{ x: idx * 10, opacity: 1 }} // Animate to this state
-      transition={{ duration: 5 }} // Transition settings
+      transition={{ duration: 1 }} // Transition settings
     >
       {items.map((item: any, index: any) => (
         <motion.img
@@ -22,7 +22,7 @@ export default function FramerPill({ items, idx }: any) {
           whileHover={{ scale: 1.1 }}
           initial={{ scale: 0, opacity: 0 }} // Initial state for the images
           animate={{ scale: 1, opacity: 1 }} // Animate to this state
-          transition={{ duration: 3, delay: index * 1 }} // Staggered transition
+          transition={{ duration: 1.5, delay: index * 1 }} // Staggered transition
         />
       ))}
     </motion.div>
