@@ -1,4 +1,4 @@
-import { Link } from '@radix-ui/themes';
+import FramerPill from '@/components/FramerPill';
 
 const tech = [
   'https://www.svgrepo.com/show/452045/js.svg',
@@ -18,6 +18,8 @@ const plugins = [
   'https://www.svgrepo.com/show/452103/soundcloud.svg',
 ];
 
+
+
 export default function Home() {
   return (
     <main className='mx-6 mt-12 max-w-4xl lg:mx-auto'>
@@ -35,7 +37,7 @@ export default function Home() {
           <h1 className='text-xl'>Andrew Njoo</h1>
           <h1 className='text-lg'>
             Software Engineer |{' '}
-            <a href='https://www.google.com/maps/place/37.7775,-122.416389'>
+            <a href='https://www.google.com/maps?q=37.773972,-122.431297' target='_blank' rel='noopener noreferrer'>
               SFBA 🌁
             </a>
           </h1>
@@ -45,32 +47,13 @@ export default function Home() {
       {/* Tech */}
       <div className='mt-8'>
         <div className='mb-2'>💻</div>
-        <div className='flex gap-4'>
-          {tech.map((tech) => (
-            <img
-              key={tech}
-              className={`h-10 w-10 ${tech.includes('452092') ? 'animate-spin-slow' : 'hover:scale-110 transition duration-300'}`}
-              src={tech}
-              alt='tech'
-            />
-          ))}
-        </div>
+        <FramerPill items={tech} idx={0} />
       </div>
 
       {/* Plugins */}
-      {/* TODO: Pull from raindrop */}
       <div className='mt-8'>
         <div className='mb-2'>❤️</div>
-        <div className='flex gap-4'>
-          {plugins.map((plugin) => (
-            <img
-              key={plugin}
-              className='h-10 w-10 hover:scale-110 transition duration-300'
-              src={plugin}
-              alt='plugin'
-            />
-          ))}
-        </div>
+        <FramerPill items={plugins} idx={1} />
       </div>
     </main>
   );

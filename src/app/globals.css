@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.framer-pill {
+  display: flex;
+  overflow-x: hidden;
+  cursor: grab;
+  padding: 20px 0;
+  gap: 16px;
+}
+.framer-pill-item {
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+}
