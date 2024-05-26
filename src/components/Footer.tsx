@@ -11,7 +11,7 @@ const socials = {
     icon: (
       <BsTwitterX
         size={20}
-        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900'
+        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900 dark:fill-gray-400'
       />
     ),
   },
@@ -21,7 +21,7 @@ const socials = {
     icon: (
       <BsInstagram
         size={20}
-        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900'
+        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900 dark:fill-gray-400'
       />
     ),
   },
@@ -31,7 +31,7 @@ const socials = {
     icon: (
       <BsGithub
         size={20}
-        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900'
+        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900 dark:fill-gray-400'
       />
     ),
   },
@@ -41,7 +41,7 @@ const socials = {
     icon: (
       <BsLinkedin
         size={20}
-        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900'
+        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900 dark:fill-gray-400'
       />
     ),
   },
@@ -68,7 +68,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Andrew Njoo. All rights reserved.
           </div>
         </div>
-        <div className='text-center text-sm font-light mb-4 sm:mb-0'>
+        <div className='text-center text-sm mb-4 sm:mb-0'>
           <div className='flex gap-6'>
             {Object.entries(socials).map(([name, social]) => (
               <a

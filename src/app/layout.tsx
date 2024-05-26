@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ThemeProvider as NextThemeProvider } from 'next-themes';
 import { Varela_Round } from 'next/font/google';
 import { Theme as RadixTheme } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
@@ -24,13 +25,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning className={varelaRound.variable}>
-      <body>
+      <NextThemeProvider attribute='class'>
+          <body>
         <RadixTheme accentColor='indigo' grayColor='sand' radius='large'>
-          <Navbar />
-          <main className='min-h-screen'>{children}</main>
-          <Footer />
+            <Navbar />
+            <main className='min-h-screen'>{children}</main>
+            <Footer />
         </RadixTheme>
-      </body>
+          </body>
+      </NextThemeProvider>
     </html>
   );
 }

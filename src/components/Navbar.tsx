@@ -1,7 +1,8 @@
 'use client';
 
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 import Link from 'next/link';
-import { TabNav } from '@radix-ui/themes';
 
 export const sitePages = [
   {
@@ -19,12 +20,42 @@ export const sitePages = [
 ];
 
 const Navbar = () => {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <div className='flex flex-row gap-8 justify-center pt-4 sm:pt-8'>
+      <div className='items-center justify-center flex'>
+        {theme === 'light' ? (
+          <button
+            className='hover:animate-pulse'
+            onClick={() => setTheme('dark')}
+          >
+            🌚
+          </button>
+        ) : (
+          <button
+            className='hover:animate-pulse'
+            onClick={() => setTheme('light')}
+          >
+            🌝
+          </button>
+        )}
+      </div>
+
       {sitePages.map((page) => (
         <Link
           href={page.href}
-          className='text-black group my-2'
+          className='text-black group my-2 dark:text-white'
           key={page.name}
         >
           {page.name}

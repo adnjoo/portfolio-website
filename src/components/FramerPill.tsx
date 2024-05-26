@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function FramerPill({ items, idx }: any) {
   return (
     <motion.div
-      className='framer-pill border flex rounded-xl overflow-x-hidden'
+      className='framer-pill border flex rounded-xl overflow-x-hidden dark:border-gray-600'
       drag='x'
       dragConstraints={{ left: -100, right: 100 }}
       whileTap={{ cursor: 'grabbing' }}
