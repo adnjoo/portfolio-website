@@ -23,7 +23,6 @@ async function getLikedSongs() {
   try {
     const response = await fetch(process.env.URL + '/soundcloud', { cache: 'no-store' });
     const data = await response.json();
-    console.log(data);
     return data;
   } catch (error) {
     console.error('Error fetching liked songs:', error);
