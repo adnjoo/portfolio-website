@@ -68,7 +68,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Andrew Njoo. All rights reserved.
           </div>
         </div>
-        <div className='text-center text-sm mb-4 sm:mb-0'>
+        <div className='text-center text-sm mb-8 sm:mb-0'>
           <div className='flex gap-6'>
             {Object.entries(socials).map(([name, social]) => (
               <a
