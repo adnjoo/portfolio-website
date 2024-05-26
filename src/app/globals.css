@@ -2,9 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fonts */
-.radix-themes {
-  --default-font-family: var(--font-varela-round);
+/* shadcn */
+@layer base {
+  :root {
+    --background: #f6f6f6;
+  }
+
+  .dark {
+    --background: #131313;
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background;
+  }
+}
+
+/* Link */
+.my-link {
+  @apply hover:underline;
 }
 
 /* Framer Motion */

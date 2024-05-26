@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "count": "node ./scripts/count.js"
+    "count": "node ./scripts/count.js",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
-    "@radix-ui/themes": "^3.0.5",
     "axios": "^1.7.2",
     "bright": "^0.8.4",
     "cheerio": "^1.0.0-rc.12",

@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { Link as RadixLink } from '@radix-ui/themes';
 import { getPosts } from './functions';
 
 export default async function Blog() {
@@ -25,11 +24,10 @@ export default async function Blog() {
               )}
               <li className='flex flex-col'>
                 <div className='flex gap-1 sm:gap-4'>
-                  <RadixLink asChild>
-                    <Link href={`/blog/${post.id}`} className='text-sm'>
-                      {post.title}
-                    </Link>
-                  </RadixLink>
+                  <Link href={`/blog/${post.id}`} className='text-sm my-link'>
+                    {post.title}
+                  </Link>
+
                   <span className='flex text-xs items-center'>
                     {new Date(post.date).toLocaleDateString('fr-CH', {
                       year: '2-digit',
@@ -38,6 +36,7 @@ export default async function Blog() {
                       timeZone: 'UTC',
                     })}
                   </span>
+
                   <span className='flex text-xs items-center'>
                     {post.readingTime}
                   </span>
