@@ -20,7 +20,7 @@ export const sitePages = [
 
 const Navbar = () => {
   return (
-    <div className='flex flex-row gap-8 justify-center'>
+    <div className='flex flex-row gap-8 justify-center pt-4 sm:pt-8'>
       {sitePages.map((page) => (
         <Link
           href={page.href}

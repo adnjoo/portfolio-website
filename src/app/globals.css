@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts */
+.radix-themes {
+  --default-font-family: var(--font-varela-round);
+}
+
+/* Framer Motion */
 .framer-pill {
   display: flex;
   overflow-x: hidden;

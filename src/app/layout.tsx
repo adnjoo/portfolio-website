@@ -1,9 +1,16 @@
 import type { Metadata } from 'next';
+import { Varela_Round } from 'next/font/google';
 import { Theme as RadixTheme } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import './globals.css';
+
+const varelaRound = Varela_Round({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-varela-round',
+})
 
 export const metadata: Metadata = {
   title: "drew's site",
@@ -16,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
-      <body>
+    <html lang='en' suppressHydrationWarning className={varelaRound.variable}>
+      <body >
         <RadixTheme accentColor='indigo' grayColor='sand' radius='large'>
           <Navbar />
           <main className='min-h-screen'>{children}</main>
