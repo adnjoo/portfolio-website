@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@radix-ui/themes": "^3.0.5",
+    "axios": "^1.7.2",
     "bright": "^0.8.4",
     "cheerio": "^1.0.0-rc.12",
     "clipboard-copy": "^4.0.1",
