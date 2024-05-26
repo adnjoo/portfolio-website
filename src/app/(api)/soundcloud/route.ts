@@ -1,6 +1,6 @@
+import { NextResponse } from 'next/server';
 import axios from 'axios';
 import cheerio from 'cheerio';
-import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -16,12 +16,12 @@ export async function GET(request: Request) {
     const h2Regex = /"><a itemprop="url" href="(.*?)">(.*?)<\/a>/g;
 
     const data = [];
-    
+
     let match;
     while ((match = h2Regex.exec(text)) !== null) {
       const link = match[1];
       const songName = match[2].replace(/&amp;/g, '&');
-      
+
       data.push({ songName, link });
     }
 

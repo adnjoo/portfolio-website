@@ -21,7 +21,9 @@ const plugins = [
 
 async function getLikedSongs() {
   try {
-    const response = await fetch(process.env.URL + '/soundcloud', { cache: 'no-store' });
+    const response = await fetch(process.env.URL + '/soundcloud', {
+      cache: 'no-store',
+    });
     const data = await response.json();
     return data;
   } catch (error) {
