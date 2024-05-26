@@ -1,3 +1,4 @@
+import { Link } from '@radix-ui/themes';
 import FramerPill from '@/components/FramerPill';
 
 const tech = [
@@ -18,7 +19,21 @@ const plugins = [
   'https://www.svgrepo.com/show/452103/soundcloud.svg',
 ];
 
-export default function Home() {
+async function getLikedSongs() {
+  try {
+    const response = await fetch(process.env.URL + '/soundcloud', { cache: 'no-store' });
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Error fetching liked songs:', error);
+    return [];
+  }
+}
+
+export default async function Home() {
+  const { data: likedSongs } = await getLikedSongs();
+
   return (
     <main className='mx-6 mt-12 max-w-4xl lg:mx-auto'>
       {/* Grid Background */}
@@ -56,6 +71,23 @@ export default function Home() {
       <div className='mt-8'>
         <div className='mb-2'>❤️</div>
         <FramerPill items={plugins} idx={1} />
+      </div>
+
+      <div className='mt-8'>
+        <h2 className='text-lg font-bold mb-2'>Liked Songs</h2>
+        <ul className='animate-in'>
+          {likedSongs?.map((song: any, index: number) => (
+            <li key={index}>
+              <Link
+                className='text-xs'
+                href={`https://soundcloud.com${song.link}#play`}
+                target='_blank'
+              >
+                {song.songName}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </main>
   );

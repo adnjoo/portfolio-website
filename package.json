@@ -12,6 +12,7 @@
   "dependencies": {
     "@radix-ui/themes": "^3.0.5",
     "bright": "^0.8.4",
+    "cheerio": "^1.0.0-rc.12",
     "clipboard-copy": "^4.0.1",
     "framer-motion": "^11.2.6",
     "gray-matter": "^4.0.3",
