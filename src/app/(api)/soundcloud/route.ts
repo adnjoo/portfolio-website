@@ -2,7 +2,9 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 import { NextResponse } from 'next/server';
 
-export async function GET() {
+export const dynamic = 'force-dynamic';
+
+export async function GET(request: Request) {
   try {
     const response = await axios.get('https://soundcloud.com/adnjoo/likes');
     const html = response.data;
