@@ -1,5 +1,6 @@
 import { PostBody } from '../components/PostBody';
 import { getPosts, getPost } from '../functions';
+import { siteConfig } from '@/config/site';
 
 export async function generateStaticParams() {
   const posts = await getPosts(false);
@@ -7,6 +8,15 @@ export async function generateStaticParams() {
   return posts.map((post: any) => ({
     slug: post.id,
   }));
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const post = await getPost(params.slug, true);
+  const title = `${post.title} | ${siteConfig.name}`;
+  return {
+    title,
+    description: post.body.slice(0, 50),
+  };
 }
 
 export default async function PostPage({
