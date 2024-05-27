@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function FramerPill({ items, idx }: any) {
   return (
     <motion.div
-      className='framer-pill border border-gray-400 flex rounded-xl overflow-x-hidden dark:border-gray-600'
+      className='framer-pill border border-gray-400 flex rounded-xl overflow-x-hidden dark:border-gray-600 shadow-lg' // Added shadow-lg for the container
       drag='x'
       dragConstraints={{ left: -100, right: 100 }}
       whileTap={{ cursor: 'grabbing' }}
@@ -18,7 +18,7 @@ export default function FramerPill({ items, idx }: any) {
           key={index}
           src={item}
           alt={`item-${index}`}
-          className='framer-pill-item h-10 w-10 mx-1'
+          className='framer-pill-item h-10 w-10 mx-1' // Added shadow-md for the images
           whileHover={{ scale: 1.1 }}
           initial={{ scale: 0, opacity: 0 }} // Initial state for the images
           animate={{ scale: 1, opacity: 1 }} // Animate to this state
