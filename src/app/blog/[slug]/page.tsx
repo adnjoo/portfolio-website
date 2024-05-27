@@ -12,7 +12,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug, true);
-  const title = `${post.title} | ${siteConfig.name}`;
+  let title = post.title.length > 20 ? `${post.title.slice(0, 20)}...` : post.title;
+  title += ` | ${siteConfig.name}`;
+
   return {
     title,
     description: post.body.slice(0, 50),
