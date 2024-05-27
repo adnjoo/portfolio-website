@@ -10,17 +10,17 @@ Notes on DDIA - Kleppmann
 
 3 parts, 12 chapters
 
-## part 1 - foundations of data systems
+## P1 - foundations of data systems
 
-## c1 - RSM
+### 1 - RSM
 
 database, cache, search index, stream processing, batch processing
 
-### reliability
+**reliability**
 
 fault tolerant / resilient
 
-### scalability
+**scalability**
 
 load parameters
 
@@ -36,13 +36,13 @@ scaling out (horizontal)
 
 elastic systems
 
-### maintainability
+**maintainability**
 
 majority of the cost of software is maintenance - 🐞 bugs, looking into failures, adapting it, paying tech debt, adding new features
 
-### operability
+**operability**
 
-### simplicity - big ball of mud
+**simplicity - big ball of mud**
 
 symptoms - explosion of state space, tight coupling of modules, tangled dependencies, inconsistent naming, hacks etc.
 
@@ -50,19 +50,19 @@ accidental complexity (mosely and marks, 2006) [link](https://curtclifton.net/pa
 
 abstraction 👍
 
-### evolvability / plasticity
+**evolvability / plasticity**
 
-### high level takeaway - RSM 😎
+**high level takeaway - RSM** 😎
 
-## c2 - data models, query languages
+### 2 - data models, query languages
 
-## SQL (based on Codd 1970)
+**SQL (based on Codd 1970)**
 
 data stored in relations (tables), where reach relation is an unordered collection of tuples (rows)
 
 query optimizer 🌈
 
-## nosql (2010s) 🌲
+**nosql (2010s) 🌲**
 
 impedance mismatch (between application code + storage layer)
 
@@ -72,17 +72,17 @@ better for document-like structure (tree of one-to-many relationships)
 
 declarative vs imperative languages
 
-### mapreduce
+**mapreduce**
 
 map (aka collect) 🗾
 
 reduce (aka fold/inject) 💉
 
-### graph-like data models 〽️
+**graph-like data models 〽️**
 
 graph consists of vertices/nodes and edges/relationships
 
-### triple store
+**triple store**
 
 SPO (subject predicate/verb object) (jim, likes, bananas)
 
@@ -94,11 +94,11 @@ Datalog
 
 unusual data models - GenBank (genome), particle physics (LHC), information retrieval/full text search
 
-### high level takeaway 😎
+**high level takeaway** 😎
 
 3 types - relational, document (NoSQL), graph (NoSQL)
 
-## c3 - internals of storage systems
+### 3 - internals of storage systems
 
 optimize for transactional workloads, analytics
 
@@ -117,7 +117,7 @@ Log-Structured Merge-Tree (LSM-Tree)
 
 Bloom filter 🌹
 
-### B-tree (most widely used indexing structure) 🌲
+**B-tree (most widely used indexing structure) 🌲**
 
 depth of O(log n)
 
@@ -135,7 +135,7 @@ Google Dremel (2010) [link](https://static.googleusercontent.com/media/research.
 
 bitmap encoding
 
-### high level takeaway 😎
+**high level takeaway** 😎
 
 OLTP system - user facing
 
@@ -145,7 +145,7 @@ log structured school (append only) e.g. Cassandra, LSM tree
 
 update-in place - B-trees
 
-## c4 - serialization
+### 4 - serialization
 
 encoding/serialization/marshalling
 
@@ -177,14 +177,14 @@ message broker aka message queue
 
 actor model 👨‍🎤
 
-### high level takeaway
+**high level takeaway**
 
 - rolling upgrades - evolvability
 - textual formats (e.g. JSON, XML, CSV) are widespread
 - binary schema-driven formats like Thrift, Protocol Buffers, Avro allow compact encoding but the downside is the data needs to be decoded for humans
 - data-flows include databases, RPC/REST APIs, and async message passing using message brokers/actors
 
-## part 2 - distributed data
+## P2 - distributed data
 
 why distribute data - scalability, fault tolerance/ high availability, latency
 
@@ -201,7 +201,7 @@ shared-nothing architecture (horizontal scaling)
 - replication (provides redundancy)
 - paritioning/sharding
 
-## c5 - replication
+### 5 - replication
 
 difficulty is in handling changes to data
 
@@ -246,7 +246,7 @@ monotonic reads - won’t see time ⌚ go backwards
 
 consisten prefix reads
 
-## multi-leader replication
+**multi-leader replication**
 
 aka master-master / active-active replication
 
@@ -262,7 +262,7 @@ replication topology - circular 🟡, star/tree ⭐🌲, all-to-all
 
 version vectors
 
-## leaderless replication
+**leaderless replication**
 
 Amazon dynamo 🧨 [link](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
 
@@ -281,7 +281,7 @@ last write wins (LWW) - discard concurrent writes
 
 - achieves eventual convergence at the cost of durability
 
-### high level takeaway
+**high level takeaway**
 
 - high availability (HA)
 - disconnected operation
@@ -302,7 +302,7 @@ strange effects of replication lag
 - monotonic reads
 - consistent prefix reads
 
-## c6 - partitioning
+### 6 - partitioning
 
 shard (MongoDB), region (HBase), tablet (Bigtable), vnode (Cassandra), vBucket (Couchbase)
 
@@ -320,7 +320,7 @@ request routing / service discovery
 
 Apache ZooKeeper (keep track of cluster metadata)
 
-### high level takeaway
+**high level takeaway**
 
 - key range partitioning
 - hash partitioning
@@ -328,7 +328,7 @@ Apache ZooKeeper (keep track of cluster metadata)
 - document-partitioned indexes (local indexes)
 - term-partitioned indexes (global indexes)
 
-## c7 - transactions
+### 7 - transactions
 
 ACID criteria
 
@@ -356,7 +356,7 @@ atomic write operation ⚛️
 
 write skew
 
-### serializability
+**serializability**
 
 - isolation levels are hard to understand
 - solution is serializable isolation
@@ -366,7 +366,7 @@ write skew
     - index-range locks
   - serializable snapshot isolation (SSI)\
 
-### high level takeaway
+**high level takeaway**
 
 - transaction abort
 - for complex access patterns, transactions can reduce errors
@@ -384,7 +384,7 @@ write skew
   - 2PL
   - SSI
 
-## c8 - trouble with distributed systems
+### 8 - trouble with distributed systems
 
 partial failures - nondeterministic
 
@@ -396,11 +396,11 @@ Byzantine faults
 
 Byzantine fault-tolerant - even if some nodes are malicious
 
-### high level takeaway
+**high level takeaway**
 
 - first step is to detect fault
 
-## c9 - consistency and consensus
+### 9 - consistency and consensus
 
 eventual consistency / convergence
 
@@ -425,23 +425,25 @@ FLP result
 
 2PC (two phase commit)
 
-### high level takeaway
+**high level takeaway**
 
 - linearizability
 - causality
 - consensus
 
-## part 3 - derived data
+## P3 - derived data
 
-## c10 - batch processing
+### 10 - batch processing
 
 unix philosophy
 
 mapreduce
 
-### high level takeaway
+**high level takeaway**
 
-`awk, grep, sort`
+```bash
+awk, grep, sort
+```
 
 2 main problems
 
@@ -454,7 +456,7 @@ join algorithms
 - broadcast hash joins
 - partitioned hash joins
 
-## c11 - stream processing
+### 11 - stream processing
 
 (unbounded inputs)
 
@@ -469,7 +471,7 @@ types of windows 🪟
 - sliding window
 - session window
 
-### high level takeaway
+**high level takeaway**
 
 - AMQP/JMS-style message broker
 - log-based message broker
@@ -480,13 +482,13 @@ types of windows 🪟
 - stream-table joins
 - table-table joins
 
-## c12 - future of data systems
+### 12 - future of data systems
 
 lambda architecture 🇬🇷
 
 dataflow
 
-### high level takeaway
+#**high level takeaway**
 
 loosely coupled components
 
