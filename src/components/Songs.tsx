@@ -17,7 +17,7 @@ export default async function Songs() {
   const { data: likedSongs } = await getLikedSongs();
   return (
     <div className='mt-8'>
-      <h2 className='text-lg font-bold mb-2'>Liked Songs</h2>
+      <h2 className='mb-2 text-lg font-bold'>Liked Songs</h2>
       <ul className='animate-in'>
         {likedSongs?.map((song: any, index: number) => (
           <li key={index}>

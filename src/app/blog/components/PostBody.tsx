@@ -6,7 +6,12 @@ import { H2Component } from './H2Component';
 
 export const mdxComponents = {
   pre: Code,
-  code: (props: any) => <code className='text-black bg-gray-200 dark:bg-gray-700 dark:text-white rounded px-1' {...props} />,
+  code: (props: any) => (
+    <code
+      className='rounded bg-gray-200 px-1 text-black dark:bg-gray-700 dark:text-white'
+      {...props}
+    />
+  ),
   h2: H2Component,
   h3: (props: any) => <h3 className='my-4 text-xl font-semibold' {...props} />,
   p: (props: any) => <p className='my-4' {...props} />,
@@ -16,7 +21,7 @@ export const mdxComponents = {
     </Link>
   ),
   hr: (props: any) => <hr className='my-4' {...props} />,
-  li: (props: any) => <li className='my-2 mx-4 list-disc' {...props} />,
+  li: (props: any) => <li className='mx-4 my-2 list-disc' {...props} />,
 };
 
 export function PostBody({ children }: { children: string }) {

@@ -9,7 +9,7 @@ export default async function Blog() {
   return (
     <div className='mt-12 flex flex-col items-center justify-center'>
       <h1 className='mb-8 text-3xl'>Blog</h1>
-      <ul className='flex flex-col gap-1 mx-4'>
+      <ul className='mx-4 flex flex-col gap-1'>
         {posts.map((post: any) => {
           const postYear = new Date(post.date).getFullYear();
           const showYearSeparator = postYear !== lastYear;
@@ -19,16 +19,16 @@ export default async function Blog() {
             <React.Fragment key={post.id}>
               {showYearSeparator && (
                 <li className='flex flex-col items-center'>
-                  <div className='mt-6 mb-2 text-xl font-bold'>{postYear}</div>
+                  <div className='mb-2 mt-6 text-xl font-bold'>{postYear}</div>
                 </li>
               )}
               <li className='flex flex-col'>
                 <div className='flex gap-1 sm:gap-4'>
-                  <Link href={`/blog/${post.id}`} className='text-sm my-link'>
+                  <Link href={`/blog/${post.id}`} className='my-link text-sm'>
                     {post.title}
                   </Link>
 
-                  <span className='flex text-xs items-center'>
+                  <span className='flex items-center text-xs'>
                     {new Date(post.date).toLocaleDateString('fr-CH', {
                       year: '2-digit',
                       month: 'numeric',
@@ -37,7 +37,7 @@ export default async function Blog() {
                     })}
                   </span>
 
-                  <span className='flex text-xs items-center'>
+                  <span className='flex items-center text-xs'>
                     {post.readingTime}
                   </span>
                 </div>
