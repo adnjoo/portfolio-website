@@ -6,6 +6,12 @@ import { H2Component } from './H2Component';
 
 export const mdxComponents = {
   pre: Code,
+  code: (props: any) => (
+    <code
+      className='rounded bg-gray-200 px-1 text-black dark:bg-gray-700 dark:text-white'
+      {...props}
+    />
+  ),
   h2: H2Component,
   h3: (props: any) => <h3 className='my-4 text-xl font-semibold' {...props} />,
   p: (props: any) => <p className='my-4' {...props} />,
