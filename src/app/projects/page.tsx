@@ -6,7 +6,7 @@ const projects = [
     description:
       'A Chrome extension that helps web developers see HTML elements on a site.',
     href: 'https://chromewebstore.google.com/detail/red-border-chrome-extensi/cgbdhepdbbcdfdlopicohifabajofjbg',
-    icon: 'https://raw.githubusercontent.com/andrewnjoo/RedBorderChromeExtension/main/redborderchromeextension/images/icon.png',
+    icon: 'https://raw.githubusercontent.com/andrewnjoo/RedBorderChromeExtension/main/redborderchromeextension/images/icon128.png',
   },
   {
     name: 'Movie App',
