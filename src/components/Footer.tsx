@@ -51,9 +51,9 @@ export default function Footer() {
   return (
     <footer className='py-4'>
       <div className='my-8 w-full border-t border-gray-400'></div>
-      <div className='flex justify-between flex-col sm:flex-row mx-4 sm:mx-24'>
+      <div className='mx-4 flex flex-col justify-between sm:mx-24 sm:flex-row'>
         <div>
-          <div className='gap-8 flex mx-auto sm:mx-0 mb-8'>
+          <div className='mx-auto mb-8 flex gap-8 sm:mx-0'>
             {sitePages.map((page) => (
               <Link
                 key={page.name}
@@ -64,11 +64,11 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <div className='text-sm font-light hidden sm:block'>
+          <div className='hidden text-sm font-light sm:block'>
             © {new Date().getFullYear()} Andrew Njoo. All rights reserved.
           </div>
         </div>
-        <div className='text-center text-sm mb-8 sm:mb-0'>
+        <div className='mb-8 text-center text-sm sm:mb-0'>
           <div className='flex gap-6'>
             {Object.entries(socials).map(([name, social]) => (
               <a

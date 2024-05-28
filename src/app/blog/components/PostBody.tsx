@@ -15,7 +15,7 @@ export const mdxComponents = {
     </Link>
   ),
   hr: (props: any) => <hr className='my-4' {...props} />,
-  li: (props: any) => <li className='my-2 mx-4 list-disc' {...props} />,
+  li: (props: any) => <li className='mx-4 my-2 list-disc' {...props} />,
 };
 
 export function PostBody({ children }: { children: string }) {

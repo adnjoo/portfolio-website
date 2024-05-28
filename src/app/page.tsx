@@ -24,7 +24,7 @@ export default async function Home() {
   return (
     <main className='mx-6 mt-12 max-w-4xl lg:mx-auto'>
       {/* Grid Background */}
-      <div className='absolute -z-10 inset-0 h-full w-full bg-background dark:bg-transparent bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]' />
+      <div className='absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] dark:bg-transparent' />
 
       {/* Hero */}
       <span className='flex items-center gap-4'>

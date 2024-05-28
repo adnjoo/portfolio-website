@@ -58,5 +58,5 @@
 
 /* blog code */
 code {
-  @apply text-black bg-gray-200 dark:bg-gray-700 dark:text-white rounded px-1;
+  @apply rounded bg-gray-200 px-1 text-black dark:bg-gray-700 dark:text-white;
 }

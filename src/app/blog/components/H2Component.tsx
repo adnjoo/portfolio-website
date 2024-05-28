@@ -22,7 +22,7 @@ export const H2Component = (props: any) => {
   return (
     <h2
       id={headingId}
-      className='flex flex-row items-center text-xl font-semibold my-4'
+      className='my-4 flex flex-row items-center text-xl font-semibold'
       {...props}
     >
       {headingText}
