@@ -55,3 +55,8 @@
     transform: translateY(0);
   }
 }
+
+/* blog code */
+code {
+  @apply text-black bg-gray-200 dark:bg-gray-700 dark:text-white rounded px-1;
+}
