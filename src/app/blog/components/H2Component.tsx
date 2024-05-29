@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { FaLink } from 'react-icons/fa';
 import copy from 'clipboard-copy';
+import { Link } from 'lucide-react';
 import slugify from 'slugify';
 
 export const H2Component = (props: any) => {
@@ -31,7 +31,7 @@ export const H2Component = (props: any) => {
         onClick={handleCopyLink}
         title='Copy Link'
       >
-        <FaLink size={14} />
+        <Link size={14} />
       </button>
       {copied && <span className='ml-1 text-sm text-green-500'>Copied!</span>}
     </h2>
