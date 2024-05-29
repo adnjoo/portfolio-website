@@ -1,8 +1,6 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
+import { Suspense } from 'react';
 import Link from 'next/link';
+import { DarkMode } from './DarkMode';
 
 export const sitePages = [
   {
@@ -20,44 +18,12 @@ export const sitePages = [
 ];
 
 const Navbar = () => {
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  useEffect(() => {
-    const checkLocalStorage = localStorage.getItem('theme');
-    if (!checkLocalStorage) {
-      const checkDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
-      setTheme(checkDarkTheme ? 'dark' : 'light');
-    }
-  }, []);
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
   return (
     <div className='flex flex-row justify-center gap-8 pt-4 sm:pt-8'>
       <div className='flex items-center justify-center'>
-        {theme === 'light' ? (
-          <button
-            className='hover:animate-pulse'
-            onClick={() => setTheme('dark')}
-          >
-            🌚
-          </button>
-        ) : (
-          <button
-            className='hover:animate-pulse'
-            onClick={() => setTheme('light')}
-          >
-            🌝
-          </button>
-        )}
+        <Suspense fallback={<div className='h-5 w-5' />}>
+          <DarkMode />
+        </Suspense>
       </div>
 
       {sitePages.map((page) => (
