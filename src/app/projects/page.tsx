@@ -1,6 +1,12 @@
-import { IoIosLink } from 'react-icons/io';
+import { Link } from 'lucide-react';
 
 const projects = [
+  {
+    name: 'Xtrack',
+    description: 'A web app that helps users get more done using gamification',
+    href: 'https://xtrack.ing',
+    icon: 'https://xtrack.ing/logo.png',
+  },
   {
     name: 'Red Border Chrome Extension',
     description:
@@ -27,7 +33,7 @@ const Project = ({ name, description, href, icon, userCount }: any) => {
             <p className='inline-flex gap-2 text-base'>
               {description}
               <a href={href} target='_blank' rel='noopener noreferrer'>
-                <IoIosLink size={24} />
+                <Link size={24} />
               </a>
             </p>
           </div>

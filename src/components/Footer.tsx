@@ -1,7 +1,7 @@
 'use client';
 
-import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 import Link from 'next/link';
+import { Instagram, Twitter, Github, Linkedin } from 'lucide-react';
 import { sitePages } from './Navbar';
 
 const socials = {
@@ -9,9 +9,9 @@ const socials = {
     name: 'X',
     href: 'https://x.com/adnjoo',
     icon: (
-      <BsTwitterX
+      <Twitter
         size={20}
-        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900 dark:fill-gray-400'
+        className='text-black hover:text-gray-500 dark:text-white'
       />
     ),
   },
@@ -19,9 +19,9 @@ const socials = {
     name: 'Instagram',
     href: 'https://instagram.com/adnjoo',
     icon: (
-      <BsInstagram
+      <Instagram
         size={20}
-        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900 dark:fill-gray-400'
+        className='text-black hover:text-gray-500 dark:text-white'
       />
     ),
   },
@@ -29,9 +29,9 @@ const socials = {
     name: 'GitHub',
     href: 'https://github.com/adnjoo',
     icon: (
-      <BsGithub
+      <Github
         size={20}
-        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900 dark:fill-gray-400'
+        className='text-black hover:text-gray-500 dark:text-white'
       />
     ),
   },
@@ -39,9 +39,9 @@ const socials = {
     name: 'LinkedIn',
     href: 'https://linkedin.com/in/adnjoo',
     icon: (
-      <BsLinkedin
+      <Linkedin
         size={20}
-        className='text-gray-600 transition duration-200 ease-in-out hover:text-gray-900 dark:fill-gray-400'
+        className='text-black hover:text-gray-500 dark:text-white'
       />
     ),
   },
