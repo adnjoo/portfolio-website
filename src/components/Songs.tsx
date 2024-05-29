@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 async function getLikedSongs() {
   try {
-    const response = await fetch(process.env.URL + '/soundcloud', {
+    const response = await fetch(process.env.URL + '/api/soundcloud', {
       cache: 'no-store',
     });
     const data = await response.json();
