@@ -21,7 +21,7 @@ export default async function Saves() {
       </div>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
         {data.map((bookmark: any) => (
-          <div key={bookmark.id} className='rounded bg-white p-4 shadow-md'>
+          <div key={bookmark.id} className='rounded bg-white p-4 shadow-md dark:bg-transparent dark:border'>
             <h2 className='mb-2 text-sm font-semibold'>{bookmark.title}</h2>
             {bookmark.raindrops.map((raindrop: any) => (
               <div key={raindrop._id}>
