@@ -22,6 +22,9 @@ export const mdxComponents = {
   ),
   hr: (props: any) => <hr className='my-4' {...props} />,
   li: (props: any) => <li className='mx-4 my-2 list-disc' {...props} />,
+  blockquote: (props: any) => (
+    <blockquote className='my-4 border-l-4 border-gray-300 pl-4' {...props} />
+  ),
 };
 
 export function PostBody({ children }: { children: string }) {
