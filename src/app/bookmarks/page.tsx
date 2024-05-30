@@ -13,13 +13,13 @@ async function getBookmarks() {
   }
 }
 
-export default async function Swipe() {
+export default async function Bookmarks() {
   const data = await getBookmarks();
   return (
     <div className='container mx-auto mt-8 px-4'>
       <h1 className='mb-4 text-2xl font-bold'>Bookmarks</h1>
       <div className='mb-4'>
-      Inspired by reading <Link href='/blog/steal-laa' className='my-link'>Steal LAA</Link>, I&apos;ve decided to keep a swipe file, to keep tabs on cool Internet stuff.
+      Keeping tabs on cool stuff.
       </div>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
         {data.map((bookmark: any) => (

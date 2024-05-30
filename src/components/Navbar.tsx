@@ -18,7 +18,7 @@ export const sitePages = [
   },
   {
     name: '🛟',
-    href: '/swipe',
+    href: '/bookmarks',
   },
 ];
 
