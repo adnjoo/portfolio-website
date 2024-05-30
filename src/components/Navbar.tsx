@@ -16,6 +16,10 @@ export const sitePages = [
     name: 'Blog',
     href: '/blog',
   },
+  {
+    name: '🛟',
+    href: '/swipe',
+  },
 ];
 
 const Navbar = () => {
