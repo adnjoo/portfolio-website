@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+
 import { getPosts } from '@/app/blog/functions';
 
 export async function GET() {

@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
 import copy from 'clipboard-copy';
 import { Link } from 'lucide-react';
+import { useState } from 'react';
 import slugify from 'slugify';
 
 export const H2Component = (props: any) => {

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';
 import { Roboto_Slab } from 'next/font/google';
+
+import '@/app/globals.css';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { siteConfig } from '@/config/site';
-import './globals.css';
 
 const font = Roboto_Slab({
   subsets: ['latin'],

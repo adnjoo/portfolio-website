@@ -1,7 +1,7 @@
-import { cache } from 'react';
 import fs from 'fs/promises';
 import matter from 'gray-matter';
 import path from 'path';
+import { cache } from 'react';
 
 // Helper function to recursively read all files in a directory
 async function readDirRecursive(dir: string): Promise<string[]> {

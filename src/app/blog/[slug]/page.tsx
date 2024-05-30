@@ -1,8 +1,9 @@
 import { Suspense } from 'react';
+
+import { getPosts, getPost } from '@/app/blog/functions';
+import { PostBody } from '@/components/PostBody';
 import ScrollIndicator from '@/components/ScrollIndicator';
 import { siteConfig } from '@/config/site';
-import { PostBody } from '@/components/PostBody';
-import { getPosts, getPost } from '../functions';
 
 export async function generateStaticParams() {
   const posts = await getPosts(false);

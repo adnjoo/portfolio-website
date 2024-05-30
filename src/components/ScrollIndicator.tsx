@@ -7,7 +7,8 @@ const useScrollIndicator = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+      const { scrollTop, scrollHeight, clientHeight } =
+        document.documentElement;
       const scrollTopMax = scrollHeight - clientHeight;
       const scrolled = (scrollTop / scrollTopMax) * 100;
       setScrollPercentage(scrolled);
@@ -24,14 +25,13 @@ const useScrollIndicator = () => {
   return scrollPercentage;
 };
 
-
 const ScrollIndicator = () => {
   const scrollPercentage = useScrollIndicator();
 
   return (
-    <div className="fixed w-full h-[2.5px] top-0 left-0 bg-transparent z-50">
+    <div className='fixed left-0 top-0 z-50 h-[2.5px] w-full bg-transparent'>
       <div
-        className="h-full w-0 bg-sky-600"
+        className='h-full w-0 bg-sky-600'
         style={{ width: `${scrollPercentage}%` }}
       ></div>
     </div>

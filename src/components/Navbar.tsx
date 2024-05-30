@@ -1,5 +1,6 @@
-import { Suspense } from 'react';
 import Link from 'next/link';
+import { Suspense } from 'react';
+
 import { DarkMode } from './DarkMode';
 
 export const sitePages = [

@@ -1,7 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { Instagram, Twitter, Github, Linkedin } from 'lucide-react';
+import Link from 'next/link';
+
 import { sitePages } from './Navbar';
 
 const socials = {

@@ -1,6 +1,6 @@
-import { NextResponse } from 'next/server';
 import axios from 'axios';
 import cheerio from 'cheerio';
+import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 

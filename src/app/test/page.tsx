@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
+
 import './a.css';
 
 export default function Page() {
