@@ -1,7 +1,8 @@
+import { Code } from 'bright';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Link from 'next/link';
-import { Code } from 'bright';
 import remarkGfm from 'remark-gfm';
+
 import { H2Component } from './H2Component';
 
 export const mdxComponents = {

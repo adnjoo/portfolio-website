@@ -1,6 +1,9 @@
+import { Suspense } from 'react';
+
+import { getPosts, getPost } from '@/app/blog/functions';
+import { PostBody } from '@/components/PostBody';
+import ScrollIndicator from '@/components/ScrollIndicator';
 import { siteConfig } from '@/config/site';
-import { PostBody } from '../components/PostBody';
-import { getPosts, getPost } from '../functions';
 
 export async function generateStaticParams() {
   const posts = await getPosts(false);
@@ -34,6 +37,10 @@ export default async function PostPage({
   const post: any = await getPost(params.slug, true);
   return (
     <div className='mx-4 md:mx-24'>
+      <Suspense fallback={null}>
+        <ScrollIndicator />
+      </Suspense>
+
       <h1 className='mb-6 mt-12 text-3xl sm:mt-24'>{post.title}</h1>
       <PostBody>{post.body}</PostBody>
     </div>

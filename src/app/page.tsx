@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+
 import FramerPill from '@/components/FramerPill';
 import Songs from '@/components/Songs';
 
