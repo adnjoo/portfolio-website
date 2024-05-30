@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 async function getBookmarks() {
   try {
     const response = await fetch(process.env.URL + '/api/raindrop', {
@@ -13,11 +11,11 @@ async function getBookmarks() {
   }
 }
 
-export default async function Bookmarks() {
+export default async function Saves() {
   const data = await getBookmarks();
   return (
     <div className='container mx-auto mt-8 px-4'>
-      <h1 className='mb-4 text-2xl font-bold'>Bookmarks</h1>
+      <h1 className='mb-4 text-2xl font-bold'>Saves</h1>
       <div className='mb-4'>
       Keeping tabs on cool stuff.
       </div>

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export async function GET() {
+export async function GET(request: Request) {
   const res = await fetch('https://api.raindrop.io/rest/v1/collections', {
     headers: {
       Authorization: `Bearer ${process.env.RAINDROP_TOKEN}`,
