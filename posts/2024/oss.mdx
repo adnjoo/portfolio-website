@@ -1,0 +1,37 @@
+---
+title: 'Contributing to open source 💻'
+date: '2024-03-15'
+---
+In this blog post I'll talk about why you'd want to contribute to open source software (OSS) and how one might go about doing so.
+
+### Why contribute?
+
+- One reason to contribute is that it could help other people. 
+- Another reason is that it simulates a work environment; this could be a 
+good idea for e.g. students/interns or devs attempting to break into the tech industry. Some companies even hire based on OSS work e.g. GitLab and [37Signals](https://37signals.com/podcast/open-source-beyond-the-market/)
+- Thirdly, contributing can help hone your skills.
+- Fourthly, it's kind of a cool bragging right 🤣.
+
+### How to contribute
+
+I've kept track of my OSS contributions in this repo: [https://github.com/andrewnjoo/oss-contributions](https://github.com/andrewnjoo/oss-contributions)
+
+One of my first tries at contributing was a fail ❌. I tried to fix the get started documentation in the [react-rails](https://github.com/reactjs/react-rails) repo. 
+
+When adding `react-rails` to a rails project, there was an [install error](https://github.com/reactjs/react-rails/issues/1324). I tried to fix this by specifying the [version](https://github.com/reactjs/react-rails/pull/1325) in the get started docs, but it didn't go through as 
+it would have required additional docs update (whenever there was a dependency upgrade) so the PR was closed.
+
+My second try ✅ came from working on a side project I had at the time ([xtrack.ing](https://github.com/adnjoo/xtrack)). 
+
+I saw an opportunity to improve keyboard navigation & accessibility when using the [Tab](https://www.tremor.so/docs/ui/tabs) component in `tremor` (a React component library). I found that the underlying code was using [headlessui](https://headlessui.com/react/tabs) (a popular UI library)
+so I made an issue and then a PR (to change a class from `focus:ring-0` to `focus:ring` ). This allowed you to see which tab is selected when you use your arrow keys to move around tabs.
+
+<img src='/images/2024/oss-tremor.png' width='350' />
+
+### Conclusion
+
+In conclusion, I would recommend contributing to open source as it's fun, you get to simulate a work environment, and you can make the world a better place (with software 😊).
+
+I would recommend looking at e.g. OSS issue aggregating sites like https://up-for-grabs.net/#/ or https://goodfirstissue.dev/, or just whatever tool | framework etc. you're using.
+
+Don't forget to read the contributor guidelines ([ex. NextJS](https://github.com/vercel/next.js/blob/canary/contributing.md)) as some repos can be quite large and have alot of things going on.
