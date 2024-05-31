@@ -41,7 +41,10 @@ export default async function PostPage({
         <ScrollIndicator />
       </Suspense>
 
-      <h1 className='mb-6 mt-12 text-3xl sm:mt-24'>{post.title}</h1>
+      <h1 className='mb-2 mt-12 text-3xl sm:mt-24'>
+        {post.title}
+        <p className='mb-4 text-sm text-gray-500'>{post.date}</p>
+      </h1>
       <PostBody>{post.body}</PostBody>
     </div>
   );
